@@ -231,6 +231,7 @@
     }
 
     .btn-group__cart-btn {
+    .btn-group__cart-btn {
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -316,7 +317,14 @@
     height: 5rem;
 }
 
+.btn_blue {
+    background: #4E7CD7;
+    border-radius: 0.4rem;
+}
 
+.btn_blue:hover {
+    background: #345493;
+}
 
 .disabled {
     display: none;
