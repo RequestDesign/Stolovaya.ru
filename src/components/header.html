@@ -43,20 +43,24 @@
     </button>
     <form class="header-middle__search-container">
       <div class="select-wrapper">
-        <select class="search-select" name="category" id="category">
-          <option class="search-select__option" value="">Все категории</option>
-          <option class="search-select__option" value="">Тепловое</option>
-          <option class="search-select__option" value="">Холодильное</option>
-          <option class="search-select__option" value="">Электромеханическое</option>
-          <option class="search-select__option" value="">Посудомоечное</option>
-          <option class="search-select__option" value="">Хлебопекарное</option>
-          <option class="search-select__option" value="">Линии раздач</option>
-          <option class="search-select__option" value="">Нейтральное</option>
-          <option class="search-select__option" value="">Для фастфуда</option>
-          <option class="search-select__option" value="">Для зала</option>
-          <option class="search-select__option" value="">Вспомогательное</option>
-          <option class="search-select__option" value="">Для магазинов</option>
-        </select>
+        <button class="select-btn">
+          <img src="../assets/images/select-btn.svg" alt="">
+        </button>
+        <input class="search-select" type="text" name="" id="" value="Все категории" disabled>
+        <ul class="search-select disabled" name="category" id="category">
+          <li class="search-select__option" value="">Все категории</li>
+          <li class="search-select__option" value="">Тепловое</li>
+          <li class="search-select__option" value="">Холодильное</li>
+          <li class="search-select__option" value="">Электромеханическое</li>
+          <li class="search-select__option" value="">Посудомоечное</li>
+          <li class="search-select__option" value="">Хлебопекарное</li>
+          <li class="search-select__option" value="">Линии раздач</li>
+          <li class="search-select__option" value="">Нейтральное</li>
+          <li class="search-select__option" value="">Для фастфуда</li>
+          <li class="search-select__option" value="">Для зала</li>
+          <li class="search-select__option" value="">Вспомогательное</li>
+          <li class="search-select__option" value="">Для магазинов</li>
+        </ul>
       </div>
       <input class="search-input" type="search" name="search" id="search" placeholder="Поиск товаров">
       <button class="search-btn btn_blue"><img src="../assets/images/search-btn.svg" alt="Поиск"></button>
@@ -66,10 +70,6 @@
       <button class="btn-group__cart-btn">
         <div class="cart-btn__img-container"><img src="../assets/images/cart-btn.svg" alt=""></div>
         <div class="btn-group__btn-text">Корзина</div>
-      </button>
-      <button class="btn-group__fav-btn">
-        <div class="fav-btn__img-container"><img src="../assets/images/fav-img.svg" alt=""></div>
-        <div class="btn-group__btn-text">Избранное</div>
       </button>
     </div>
   </div>
@@ -111,6 +111,6 @@
       <li class="header-bottom__list__item">
         <a href="" class="list__item__link">blank</a>
       </li>
-    </ul>  
+    </ul>
   </div>
 </header>
