@@ -1,8 +1,6 @@
-import $ from "jquery";
 import Swiper from "swiper";
-import {
-	Navigation,
-} from "swiper/modules";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
 
 function remToPx(remValue) {
     var htmlFontSize = parseFloat(
@@ -12,11 +10,11 @@ function remToPx(remValue) {
     return Math.round(pxValue) + "px";
 }
 
-const categorySwiper = new Swiper(".catalogue__category-slider", {
-    slidesPerView: 3,
-    // spaceBetween: `${remToPx(2)}rem`,
+const swiper = new Swiper(".catalogue__category-slider", {
     modules: [Navigation],
+    spaceBetween: `${remToPx(2)}rem`,
+    slidesPerView: 6,
     navigation: {
         nextEl: ".swiper-button-next",
-      },
+    }
 });
