@@ -1,0 +1,16 @@
+.breadcrumbs{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 5rem;
+
+    a{
+        font-size: 1.6rem;
+        color: #AFB7C5;
+        line-height: 125%;
+    }
+    svg {
+        width: 2rem;
+        height: 2rem;
+    }
+}

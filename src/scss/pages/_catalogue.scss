@@ -1,0 +1,47 @@
+.catalogue {
+    &__title {
+        font-size: 4rem;
+        line-height: 115%;
+        font-weight: 500;
+        margin-bottom: 4rem;
+    }
+
+    &__category-slider {
+        .swiper-wrapper{
+            display: flex;
+            width: 189.5rem;
+        }
+        .swiper-slide {
+            display: block;
+            width: 25.4rem;
+            height: 10.8rem;
+            padding: 1.2rem 0;
+            background-color: #fff;
+            box-shadow: 0 0.4rem 6rem 0 rgba(175, 183, 197, 0.2);
+            position: relative;
+            border-radius: 0.4rem;
+
+            &__img {
+                width: 7rem;
+                height: 6rem;
+
+                margin: 0 auto;
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            &__title {
+                font-size: 1.6rem;
+                line-height: 125%;
+                font-weight: 500;
+
+                position: absolute;
+                top: 7.6rem;
+                left: 50%;
+                transform: translateX(-50%);
+                
+            }
+        }
+    }
+}

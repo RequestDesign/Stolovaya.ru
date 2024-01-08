@@ -1,5 +1,6 @@
 import "./index.scss";
 import "./js/pages/home";
+import "./js/pages/catalogue";
 import "./js/components/header";
 import { example } from "./js/utils/constants";
 import gsap from "gsap";
