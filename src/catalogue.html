@@ -150,13 +150,215 @@
                                 <div class="title">Цена</div>
 
                                 <div class="price-toggler-container">
-                                    <input type="text" class="price-toggler__left" />
-                                    <input type="text" class="price-toggler__right" />
-                                    <div class="price-toggler"></div>
+                                    <div class="slider-line">
+                                        <div class="price-slider"></div>
+                                    </div>
+
+                                    <div class="range-input">
+                                        <input type="range" class="min-range" min="0" max="10000" value="2500" step="1" />
+                                        <input type="range" class="max-range" min="0" max="10000" value="8500" step="1" />
+                                    </div>
+
+                                    <div class="price-inputs">
+                                        <div class="price-input-wrapper">
+                                            <span>От</span>
+                                            <input type="number" class="min-input" value="2500" />
+                                        </div>
+                                        <div class="price-input-wrapper">
+                                            <span>До</span>
+                                            <input type="number" class="max-input" value="8500" />
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+
+                            <div class="filter__item">
+                                <div class="title">Тип</div>
+                                <div class="filter__inputs">
+                                    <label class="checkbox-wrapper">
+                                        <input type="radio" name="type" checked />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Бойлерные</span>
+                                    </label>
+
+                                    <label class="checkbox-wrapper">
+                                        <input type="radio" name="type" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Инжекторные</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="filter__item">
+                                <div class="title">Wi-Fi</div>
+                                <div class="filter__inputs">
+                                    <label class="checkbox-wrapper">
+                                        <input type="radio" name="wi-fi" checked />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Есть</span>
+                                    </label>
+
+                                    <label class="checkbox-wrapper">
+                                        <input type="radio" name="wi-fi" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Нет</span>
+                                    </label>
+
+                                    <label class="checkbox-wrapper">
+                                        <input type="radio" name="wi-fi" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Опция</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="filter__item">
+                                <div class="title">Производитель</div>
+                                <div class="filter__inputs">
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Rada</span>
+                                    </label>
+
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Abat</span>
+                                    </label>
+
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Simeco</span>
+                                    </label>
+
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Polair</span>
+                                    </label>
+
+                                    <a href="#!" class="show-more-link">Показать еще</a>
+                                </div>
+                            </div>
+
+                            <div class="filter__item">
+                                <div class="title">Страна</div>
+                                <div class="filter__inputs">
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Россия</span>
+                                    </label>
+
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Италия</span>
+                                    </label>
+
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Германия</span>
+                                    </label>
+
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" />
+                                        <div class="custom-checkbox"></div>
+                                        <span>Польша</span>
+                                    </label>
+
+                                    <a href="#!" class="show-more-link">Показать еще</a>
+                                </div>
+                            </div>
+
+                            <div class="filter__item">
+                                <div class="title">Глубина (мм)</div>
+
+                                <div class="price-toggler-container">
+                                    <div class="slider-line">
+                                        <div class="price-slider"></div>
+                                    </div>
+
+                                    <div class="range-input">
+                                        <input type="range" class="min-range" min="0" max="10000" value="2500" step="1" />
+                                        <input type="range" class="max-range" min="0" max="10000" value="8500" step="1" />
+                                    </div>
+
+                                    <div class="price-inputs">
+                                        <div class="price-input-wrapper">
+                                            <span>От</span>
+                                            <input type="number" class="min-input" value="2500" />
+                                        </div>
+                                        <div class="price-input-wrapper">
+                                            <span>До</span>
+                                            <input type="number" class="max-input" value="8500" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__item">
+                                <div class="title">Ширина (мм)</div>
+
+                                <div class="price-toggler-container">
+                                    <div class="slider-line">
+                                        <div class="price-slider"></div>
+                                    </div>
+
+                                    <div class="range-input">
+                                        <input type="range" class="min-range" min="0" max="10000" value="2500" step="1" />
+                                        <input type="range" class="max-range" min="0" max="10000" value="8500" step="1" />
+                                    </div>
+
+                                    <div class="price-inputs">
+                                        <div class="price-input-wrapper">
+                                            <span>От</span>
+                                            <input type="number" class="min-input" value="2500" />
+                                        </div>
+                                        <div class="price-input-wrapper">
+                                            <span>До</span>
+                                            <input type="number" class="max-input" value="8500" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__item">
+                                <div class="title">Высота (мм)</div>
+
+                                <div class="price-toggler-container">
+                                    <div class="slider-line">
+                                        <div class="price-slider"></div>
+                                    </div>
+
+                                    <div class="range-input">
+                                        <input type="range" class="min-range" min="0" max="10000" value="2500" step="1" />
+                                        <input type="range" class="max-range" min="0" max="10000" value="8500" step="1" />
+                                    </div>
+
+                                    <div class="price-inputs">
+                                        <div class="price-input-wrapper">
+                                            <span>От</span>
+                                            <input type="number" class="min-input" value="2500" />
+                                        </div>
+                                        <div class="price-input-wrapper">
+                                            <span>До</span>
+                                            <input type="number" class="max-input" value="8500" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__btns">
+                                <button class="btn-show">Показать</button>
+                                <button class="btn-reset-filters">Сбросить фильтры</button>
                             </div>
                         </div>
                     </div>
+
                     <div class="catalogue__main">main</div>
                 </div>
             </div>
