@@ -130,6 +130,30 @@
             top: 2.9rem;
             left: 2.5rem;
         }
+        
+        .search-select {
+            padding-right: 4.8rem;
+            padding-left: 2rem;
+            width: 29.5rem;
+            height: 6.4rem;
+            background: transparent;
+            text-align: right;
+            font-family: 'Inter';
+            font-size: 1.6rem;
+            border: 1px solid #AFB7C5;
+            border-right: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            cursor: pointer;
+        }
+
+
+        .select-btn {
+            position: absolute;
+            top: 2.9rem;
+            left: 2.5rem;
+        }
 
         .search-select {
             padding-right: 4.8rem;
@@ -160,6 +184,9 @@
         height: 2.4rem;
         background-color: #4E7CD7;
     }
+    
+
+   
 
 
 
@@ -214,6 +241,7 @@
         margin-right: 4rem;
     }
 
+    .btn-group__cart-btn {
     .btn-group__cart-btn {
         display: flex;
         flex-direction: column;
@@ -300,6 +328,10 @@
     height: 5rem;
 }
 
+.btn_blue {
+    background: #4E7CD7;
+    border-radius: 0.4rem;
+}
 
 
 .disabled {
