@@ -25,7 +25,7 @@ const swiperBrands = new Swiper(".catalogue__brands-slider", {
     loop: true,
     modules: [Navigation],
     spaceBetween: `${remToPx(1.2)}rem`,
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     navigation: {
         nextEl: ".swiper-button-next",
     },
@@ -42,11 +42,65 @@ const swiperBrands = new Swiper(".catalogue__brands-slider", {
 // });
 
 
+//catalogue pagination
+$(function () {
+    const $pages = $(".cards-page");
+    const $pagination = $(".pagination");
+    const $buttonPrev = $(".button-prev");
+    const $buttonNext = $(".button-next");
+    let currentPage = 0;
 
+    for (let i = 0; i < $pages.length; i++) {
+        $pagination.append(`<button data-index="${i}">${i + 1}</button>`);
+    }
 
+    //show initial page
+    showPage(currentPage);
+    updateButtonState();
 
+    //pagination button click
+    $pagination.on("click", "button", function () {
+        currentPage = parseInt($(this).attr("data-index"));
+        showPage(currentPage);
+        updateButtonState();
+    });
 
+    //next button click
+    $buttonNext.on("click", function () {
+        if (currentPage < $pages.length - 1) {
+            currentPage++;
+            showPage(currentPage);
+            updateButtonState();
+        }
+    });
 
+    //prev button click
+    $buttonPrev.on("click", function () {
+        if (currentPage > 0) {
+            currentPage--;
+            showPage(currentPage);
+            updateButtonState();
+        }
+    });
+
+    //show the current page
+    function showPage(index) {
+        $pages.removeClass("active");
+        $pages.eq(index).addClass("active");
+        updatePagination();
+    }
+
+    //update pagination button styles
+    function updatePagination() {
+        $pagination.find("button").removeClass("active");
+        $pagination.find(`button[data-index="${currentPage}"]`).addClass("active");
+    }
+
+    function updateButtonState() {
+        $buttonPrev.prop("disabled", currentPage === 0);
+        $buttonNext.prop("disabled", currentPage === $pages.length - 1);
+    }
+});
 
 //filter range
 const rangevalue = document.querySelector(".slider-line .price-slider");

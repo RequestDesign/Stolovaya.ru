@@ -1,4 +1,7 @@
 .catalogue {
+
+    margin-bottom: 13rem;
+    
     &__title {
         font-size: 4rem;
         line-height: 115%;
@@ -298,9 +301,65 @@
         display: block;
     }
 
+    .cards-pages-controls{
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+
+        &__btn{
+            width: 6rem;
+            height: 6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 0.1rem solid #8AD74E;
+            background-color: #8AD74E;
+            border-radius: 0.2rem;
+
+            .icon{
+                width: 3rem;
+                height: 3rem;
+            }
+
+            svg{
+                width: 0.9rem;
+                height: 1.9rem;
+
+                path{
+                    fill: #fff
+                }
+            }
+
+            &:disabled{
+                background-color: #fff;
+
+                svg{
+                    path{
+                        fill: #8AD74E;
+                    }
+                }
+            }
+        }
+    }
+
     .pagination {
         display: flex;
-        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    .pagination button {
+        cursor: pointer;
+        font-size: 2.4rem;
+        line-height: 116.667%;
+        color: rgba(175, 183, 197, 0.60);
+
+        &.active{
+            color: #8AD74E;
+            font-weight: 600;
+        }
     }
 }
 
