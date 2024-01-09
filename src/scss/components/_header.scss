@@ -43,23 +43,7 @@
 
     .header-top__info-list__item:hover,
     .header-top__contacts-list__item:hover {
-    .header-top__info-list__item,
-    .header-top__contacts-list__item {
-        transition: color 0.2s;
-
-        path {
-            transition: fill 0.2s;
-        }
-    }
-
-    .header-top__info-list__item:hover,
-    .header-top__contacts-list__item:hover {
         color: #4E7CD7;
-
-
-        path {
-            fill: #4E7CD7;
-        }
 
 
         path {
@@ -317,14 +301,7 @@
     height: 5rem;
 }
 
-.btn_blue {
-    background: #4E7CD7;
-    border-radius: 0.4rem;
-}
 
-.btn_blue:hover {
-    background: #345493;
-}
 
 .disabled {
     display: none;
