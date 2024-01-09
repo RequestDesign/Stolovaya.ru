@@ -98,6 +98,8 @@ body {
     }
 }
 
+
+//fav icon
 .fav-icon {
     width: 3.6rem;
     height: 3.6rem;
@@ -109,4 +111,53 @@ body {
         width: 2.4rem;
         height: 2.4rem;
     }
+}
+
+//checkbox & radio
+.checkbox-wrapper {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        display: none;
+    }
+
+    .custom-checkbox {
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: #eff1f4;
+        border-radius: 0.2rem;
+    }
+
+    input[type="checkbox"]:checked ~ .custom-checkbox,
+    input[type="radio"]:checked ~ .custom-checkbox {
+        background-color: #ae47ff;
+        background-image: url("./../../assets/images/arrow-white-icon.svg");
+        background-repeat: no-repeat;
+        background-size: 1.4rem 1rem;
+        background-position: center;
+    }
+
+    span {
+        line-height: 133.333%;
+        font-size: 1.8rem;
+    }
+}
+
+//show more
+.show-more-link {
+    color: #4e7cd7;
+    font-size: 1.6rem;
+    line-height: 125%;
+    font-weight: 500;
+    display: block;
+    margin-top: 1.6rem;
+}
+
+.btn__show-more{
+    display: block;
+    width: fit-content;
+    margin: 4rem auto 0;
 }
