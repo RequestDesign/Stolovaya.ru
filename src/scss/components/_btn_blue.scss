@@ -1,0 +1,14 @@
+.btn_blue {
+    background: #4E7CD7;
+    border-radius: 0.4rem;
+    color: #FFFFFF;
+    transition: background-color 0.2s;
+}
+
+.btn_blue:hover {
+    background: #345493;
+}
+
+.btn_blue:disabled {
+    background: #AFB7C5;
+}

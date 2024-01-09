@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack</title>
-  </head>
-  <body>
-    <include
-      src="./components/header.html"></include>
 
-      <a href="./catalogue.html" style="font-size: 5rem">Каталог</a><br/>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webpack</title>
+</head>
+
+<body>
+  <include src="./components/header.html"></include>
+
+  <div class="container" style="display: flex; flex-direction: column; gap: 3em;">
+    <a href="./main.html" style="font-size: 5em;">Главная</a>
+    <a href="./catalogue.html" style="font-size: 5rem">Каталог</a><br />
+  </div>
+</body>
+
 </html>
