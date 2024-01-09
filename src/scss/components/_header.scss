@@ -43,7 +43,23 @@
 
     .header-top__info-list__item:hover,
     .header-top__contacts-list__item:hover {
+    .header-top__info-list__item,
+    .header-top__contacts-list__item {
+        transition: color 0.2s;
+
+        path {
+            transition: fill 0.2s;
+        }
+    }
+
+    .header-top__info-list__item:hover,
+    .header-top__contacts-list__item:hover {
         color: #4E7CD7;
+
+
+        path {
+            fill: #4E7CD7;
+        }
 
 
         path {
@@ -130,7 +146,7 @@
             top: 2.9rem;
             left: 2.5rem;
         }
-        
+
         .search-select {
             padding-right: 4.8rem;
             padding-left: 2rem;
@@ -160,9 +176,9 @@
         height: 2.4rem;
         background-color: #4E7CD7;
     }
-    
 
-   
+
+
 
     .search-select::-ms-expand {
         display: none;
@@ -279,7 +295,7 @@
         position: absolute;
         z-index: 1;
         width: 30rem;
-        height: 10rem;
+        height: 6rem;
         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .8) 15%, #fff 70%);
     }
 }
@@ -300,14 +316,7 @@
     height: 5rem;
 }
 
-.btn_blue {
-    background: #4E7CD7;
-    border-radius: 0.4rem;
-}
 
-.btn_blue:hover {
-    background: #345493;
-}
 
 .disabled {
     display: none;
