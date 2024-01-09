@@ -1,6 +1,7 @@
 import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
+import $ from "jquery";
 
 function remToPx(remValue) {
     var htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
@@ -8,6 +9,7 @@ function remToPx(remValue) {
     return Math.round(pxValue) + "px";
 }
 
+//category swiper
 const swiper = new Swiper(".catalogue__category-slider", {
     loop: true,
     modules: [Navigation],
@@ -18,6 +20,35 @@ const swiper = new Swiper(".catalogue__category-slider", {
     },
 });
 
+//brands swiper
+const swiperBrands = new Swiper(".catalogue__brands-slider", {
+    loop: true,
+    modules: [Navigation],
+    spaceBetween: `${remToPx(1.2)}rem`,
+    slidesPerView: 'auto',
+    navigation: {
+        nextEl: ".swiper-button-next",
+    },
+});
+
+//main catalogue swiper
+// const swiperCatalogue = new Swiper(".catalogue__main-slider", {
+//     modules: [Navigation],
+//     slidesPerView: 1,
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// });
+
+
+
+
+
+
+
+
+//filter range
 const rangevalue = document.querySelector(".slider-line .price-slider");
 const rangeInputvalue = document.querySelectorAll(".range-input input");
 
@@ -84,3 +115,18 @@ for (let i = 0; i < priceInputvalue.length; i++) {
         });
     }
 }
+
+//sorting dropdown
+$(function () {
+    $(".catalogue__sorting__top").on("click", function () {
+        $(".catalogue__sorting").toggleClass("open");
+        $(".catalogue__sorting__dropdown").slideToggle();
+    });
+
+    $(".catalogue__sorting__dropdown .option").on("click", function () {
+        let selectedOptionText = $(this).text();
+        $(".sort-by").text(selectedOptionText);
+        $(".catalogue__sorting").removeClass("open");
+        $(".catalogue__sorting__dropdown").slideUp();
+    });
+});
