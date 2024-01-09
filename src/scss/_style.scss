@@ -1,0 +1,112 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    &.lock {
+        overflow: hidden;
+        touch-action: none;
+    }
+}
+
+//buttons
+.btn {
+    font-size: 1.8rem;
+    line-height: 133.333%;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 0.4rem;
+    transition: background-color 0.2s ease;
+
+    &:disabled {
+        background-color: #afb7c5;
+        color: #fff;
+
+        &:hover {
+            background-color: #afb7c5;
+        }
+    }
+
+    &__primary {
+        background-color: #4e7cd7;
+        color: #fff;
+        padding: 1.8rem 2.4rem;
+
+        &:hover {
+            background-color: #345493;
+        }
+
+        &--green {
+            background-color: #8ad74e;
+
+            &:hover {
+                background-color: #8ad74e;
+            }
+        }
+
+        &--gray {
+            background-color: #afb7c5;
+
+            &:hover {
+                background-color: #afb7c5;
+            }
+        }
+    }
+
+    &__with-icon {
+        padding: 1.8rem 2.4rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 0.8rem;
+                height: 1.5rem;
+            }
+
+            &--big {
+                svg {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                }
+            }
+        }
+    }
+
+    &__secondary {
+        background-color: #fff;
+        color: #4e7cd7;
+        padding: 1.4rem 2.4rem;
+    }
+
+    .btn__primary.btn__with-icon {
+        padding: 1.2rem 2.4rem;
+    }
+
+    &__transparent {
+        background-color: unset;
+        color: #4e7cd7;
+    }
+}
+
+.fav-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+}
