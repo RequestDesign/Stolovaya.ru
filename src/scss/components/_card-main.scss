@@ -10,13 +10,28 @@
     align-items: center;
     gap: 4.1rem;
 
+    @media (max-width: 48em) {
+        width: 33.6rem;
+        height: 62.8rem;
+        border-radius: 0.8rem;
+        padding: 9.2rem 2rem 2rem 2rem;
+        position: relative;
+    }
+
     &__top {
         width: 100%;
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: 48em) {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+        }
+
         .tags {
             display: flex;
+            flex-wrap: wrap;
             gap: 0.8rem;
         }
 
@@ -28,6 +43,12 @@
             white-space: nowrap;
             font-size: 1.6rem;
             line-height: 125%;
+
+            @media (max-width: 48em) {
+                border-radius: 0.8rem;
+                font-size: 2.4rem;
+                line-height: 133.333%;
+            }
         }
     }
 
@@ -45,13 +66,24 @@
             justify-content: space-between;
             align-items: center;
 
+            @media (max-width: 48em) {
+                margin-bottom: 2.4rem;
+            }
+
             .brand {
                 width: 8.4rem;
                 height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 48em) {
+                    width: 11rem;
+                    height: 3.2rem;
+                }
 
                 img {
                     width: 100%;
-                    height: 100%;
                 }
             }
 
@@ -59,6 +91,11 @@
                 color: #afb7c5;
                 font-size: 1.6rem;
                 line-height: 125%;
+
+                @media (max-width: 48em) {
+                    font-size: 2.4rem;
+                    line-height: 133.333%;
+                }
             }
         }
 
@@ -70,6 +107,11 @@
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
+
+            @media (max-width: 48em) {
+                line-height: 142.857%;
+                font-size: 2.8rem;
+            }
         }
 
         &__bottom {
@@ -80,9 +122,35 @@
             .price {
                 font-size: 2.8rem;
                 font-weight: 700;
+
+                @media (max-width: 48em) {
+                    font-size: 4rem;
+                    font-weight: 600;
+                }
+
                 span {
                     font-size: 2rem;
                     font-weight: 500;
+
+                    @media (max-width: 48em) {
+                        font-size: 2.4rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            @media (max-width: 48em) {
+                .btn {
+                    padding: 2rem;
+                    .icon {
+                        width: 4rem;
+                        height: 4rem;
+
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
                 }
             }
         }
