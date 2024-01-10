@@ -182,3 +182,30 @@ $(function () {
         $(".catalogue__sorting__dropdown").slideUp();
     });
 });
+
+//open filter on mobile
+$(".btn__open-filter").on("click", function (e) {
+    e.preventDefault();
+    $("body").addClass("lock");
+    $(".catalogue__filter").slideToggle();
+});
+
+//close filter on mobile
+$(".btn__close").on("click", function (e) {
+    e.preventDefault();
+    $("body").removeClass("lock");
+    $(".catalogue__filter").slideToggle();
+});
+
+//show more filter items
+$(".show-more-link").on("click", function () {
+    let showMoreItems = $(this).siblings(".show-more-items");
+    if (showMoreItems.is(":visible")) {
+        showMoreItems.slideUp();
+        $(this).text('Показать еще');
+    } else {
+        showMoreItems.slideDown();
+        $(this).text('Скрыть');
+    }
+});
+
