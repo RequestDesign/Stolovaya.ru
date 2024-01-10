@@ -13,10 +13,17 @@ function remToPx(remValue) {
 const swiper = new Swiper(".catalogue__category-slider", {
     loop: true,
     modules: [Navigation],
-    spaceBetween: `${remToPx(2)}rem`,
-    slidesPerView: 6,
     navigation: {
         nextEl: ".swiper-button-next",
+    },
+    slidesPerView: "auto",
+    spaceBetween: `${remToPx(1.6)}rem`,
+
+    breakpoints: {
+        769: {
+            spaceBetween: `${remToPx(2)}rem`,
+            slidesPerView: 6,
+        },
     },
 });
 
@@ -29,18 +36,19 @@ const swiperBrands = new Swiper(".catalogue__brands-slider", {
     navigation: {
         nextEl: ".swiper-button-next",
     },
+    breakpoints: {
+        769: {
+            spaceBetween: `${remToPx(1.6)}rem`,
+        },
+    },
 });
 
-//main catalogue swiper
-// const swiperCatalogue = new Swiper(".catalogue__main-slider", {
-//     modules: [Navigation],
-//     slidesPerView: 1,
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-// });
-
+//features swiper mobile
+const swiperFeatures = new Swiper(".catalogue__features-slider", {
+    loop: true,
+    spaceBetween: `${remToPx(1.6)}rem`,
+    slidesPerView: "auto",
+});
 
 //catalogue pagination
 $(function () {
@@ -103,72 +111,62 @@ $(function () {
 });
 
 //filter range
-const rangevalue = document.querySelector(".slider-line .price-slider");
-const rangeInputvalue = document.querySelectorAll(".range-input input");
+$(function () {
+    $(".filter__item--slider").each(function () {
+        const rangeInput = $(this).find(".range-input input");
+        const priceInput = $(this).find(".price-input input");
+        const progress = $(this).find(".slider .progress");
+        let priceGap = 1000;
 
-let priceGap = 500;
+        function updateSlider() {
+            let minVal = parseInt(rangeInput.eq(0).val());
+            let maxVal = parseInt(rangeInput.eq(1).val());
+            let range = parseInt(rangeInput.eq(1).attr("max")) - parseInt(rangeInput.eq(0).attr("min"));
 
-const priceInputvalue = document.querySelectorAll(".price-input-wrapper input");
-for (let i = 0; i < priceInputvalue.length; i++) {
-    priceInputvalue[i].addEventListener("input", (e) => {
-        let minp = parseInt(priceInputvalue[0].value);
-        let maxp = parseInt(priceInputvalue[1].value);
-        let diff = maxp - minp;
+            let left = ((minVal - parseInt(rangeInput.eq(0).attr("min"))) / range) * 100 + "%";
+            let width = ((maxVal - minVal) / range) * 100 + "%";
 
-        if (minp < 0) {
-            priceInputvalue[0].value = 0;
-            minp = 0;
-        }
-        if (maxp > 1000000) {
-            priceInputvalue[1].value = 1000000;
-            maxp = 1000000;
-        }
+            progress.css({ left: left, width: width });
 
-        if (minp > maxp - priceGap) {
-            priceInputvalue[0].value = maxp - priceGap;
-            minp = maxp - priceGap;
-
-            if (minp < 0) {
-                priceInputvalue[0].value = 0;
-                minp = 0;
-            }
+            priceInput.eq(0).val(minVal);
+            priceInput.eq(1).val(maxVal);
         }
 
-        if (diff >= priceGap && maxp <= rangeInputvalue[1].max) {
-            if (e.target.className === "min-input") {
-                rangeInputvalue[0].value = minp;
-                let value1 = rangeInputvalue[0].max;
-                rangevalue.style.left = `${(minp / value1) * 100}%`;
-            } else {
-                rangeInputvalue[1].value = maxp;
-                let value2 = rangeInputvalue[1].max;
-                rangevalue.style.right = `${100 - (maxp / value2) * 100}%`;
-            }
-        }
-    });
+        priceInput.on("input", function (e) {
+            let minVal = parseInt(priceInput.eq(0).val());
+            let maxVal = parseInt(priceInput.eq(1).val());
 
-    for (let i = 0; i < rangeInputvalue.length; i++) {
-        rangeInputvalue[i].addEventListener("input", (e) => {
-            let minVal = parseInt(rangeInputvalue[0].value);
-            let maxVal = parseInt(rangeInputvalue[1].value);
-
-            let diff = maxVal - minVal;
-
-            if (diff < priceGap) {
-                if (e.target.className === "min-range") {
-                    rangeInputvalue[0].value = maxVal - priceGap;
+            if (maxVal - minVal >= priceGap && maxVal <= 10000) {
+                if (e.target.className === "input-min") {
+                    rangeInput.eq(0).val(minVal);
                 } else {
-                    rangeInputvalue[1].value = minVal + priceGap;
+                    rangeInput.eq(1).val(maxVal);
                 }
-            } else {
-                priceInputvalue[0].value = minVal;
-                priceInputvalue[1].value = maxVal;
-                rangevalue.style.left = `${(minVal / rangeInputvalue[0].max) * 100}%`;
-                rangevalue.style.right = `${100 - (maxVal / rangeInputvalue[1].max) * 100}%`;
+
+                updateSlider();
             }
         });
-    }
-}
+
+        rangeInput.on("input", function (e) {
+            let minVal = parseInt(rangeInput.eq(0).val());
+            let maxVal = parseInt(rangeInput.eq(1).val());
+
+            if (maxVal - minVal < priceGap) {
+                if (e.target.className === "range-min") {
+                    rangeInput.eq(0).val(maxVal - priceGap);
+                } else {
+                    rangeInput.eq(1).val(minVal + priceGap);
+                }
+            } else {
+                priceInput.eq(0).val(minVal);
+                priceInput.eq(1).val(maxVal);
+                updateSlider();
+            }
+        });
+        priceInput.on("change", updateSlider);
+        updateSlider();
+    });
+});
 
 //sorting dropdown
 $(function () {

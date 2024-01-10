@@ -20,6 +20,13 @@ body {
     border-radius: 0.4rem;
     transition: background-color 0.2s ease;
 
+    @media (max-width: 48em) {
+        border-radius: 0.8rem;
+        font-size: 2.8rem;
+        line-height: 142.857%;
+        font-weight: 500;
+    }
+
     &:disabled {
         background-color: #afb7c5;
         color: #fff;
@@ -33,6 +40,10 @@ body {
         background-color: #4e7cd7;
         color: #fff;
         padding: 1.8rem 2.4rem;
+
+        @media (max-width: 48em) {
+            padding: 2rem 3.8rem;
+        }
 
         &:hover {
             background-color: #345493;
@@ -106,6 +117,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    display: none;
 
     svg {
         width: 2.4rem;
@@ -160,4 +173,16 @@ body {
     display: block;
     width: fit-content;
     margin: 4rem auto 0;
+}
+
+@media (min-width: 48.01em) {
+    .mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 48em) {
+    .desktop {
+        display: none !important;
+    }
 }

@@ -1,16 +1,32 @@
-.breadcrumbs{
+.breadcrumbs {
     display: flex;
     align-items: center;
     gap: 0.8rem;
     margin-bottom: 5rem;
 
-    a{
+    @media (max-width: 48em) {
+        gap: 1.6rem;
+        margin-bottom: 4rem;
+    }
+
+    a {
         font-size: 1.6rem;
-        color: #AFB7C5;
+        color: #afb7c5;
         line-height: 125%;
+        white-space: nowrap;
+
+        @media (max-width: 48em) {
+            line-height: 142.857%;
+            font-size: 2.8rem;
+        }
     }
     svg {
         width: 2rem;
         height: 2rem;
+
+        @media (max-width: 48em) {
+            width: 3.6rem;
+            height: 3.6rem;
+        }
     }
 }
