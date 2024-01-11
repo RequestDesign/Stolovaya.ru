@@ -23,8 +23,11 @@ const headerSwiper = new Swiper('.swiper-header', {
 
 const searchSelect = document.querySelector('.search-select');
 
-searchSelect.addEventListener('input', resizeInput);
-resizeInput.call(searchSelect)
+if (searchSelect){
+    searchSelect.addEventListener('input', resizeInput);
+    resizeInput.call(searchSelect)
+}
+
 
 function resizeInput() {
     this.style.width = this.value.length + 'em'

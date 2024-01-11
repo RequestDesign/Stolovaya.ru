@@ -110,64 +110,6 @@ $(function () {
     }
 });
 
-//filter range
-$(function () {
-    $(".filter__item--slider").each(function () {
-        const rangeInput = $(this).find(".range-input input");
-        const priceInput = $(this).find(".price-input input");
-        const progress = $(this).find(".slider .progress");
-        let priceGap = 1000;
-
-        function updateSlider() {
-            let minVal = parseInt(rangeInput.eq(0).val());
-            let maxVal = parseInt(rangeInput.eq(1).val());
-            let range = parseInt(rangeInput.eq(1).attr("max")) - parseInt(rangeInput.eq(0).attr("min"));
-
-            let left = ((minVal - parseInt(rangeInput.eq(0).attr("min"))) / range) * 100 + "%";
-            let width = ((maxVal - minVal) / range) * 100 + "%";
-
-            progress.css({ left: left, width: width });
-
-            priceInput.eq(0).val(minVal);
-            priceInput.eq(1).val(maxVal);
-        }
-
-        priceInput.on("input", function (e) {
-            let minVal = parseInt(priceInput.eq(0).val());
-            let maxVal = parseInt(priceInput.eq(1).val());
-
-            if (maxVal - minVal >= priceGap && maxVal <= 10000) {
-                if (e.target.className === "input-min") {
-                    rangeInput.eq(0).val(minVal);
-                } else {
-                    rangeInput.eq(1).val(maxVal);
-                }
-
-                updateSlider();
-            }
-        });
-
-        rangeInput.on("input", function (e) {
-            let minVal = parseInt(rangeInput.eq(0).val());
-            let maxVal = parseInt(rangeInput.eq(1).val());
-
-            if (maxVal - minVal < priceGap) {
-                if (e.target.className === "range-min") {
-                    rangeInput.eq(0).val(maxVal - priceGap);
-                } else {
-                    rangeInput.eq(1).val(minVal + priceGap);
-                }
-            } else {
-                priceInput.eq(0).val(minVal);
-                priceInput.eq(1).val(maxVal);
-                updateSlider();
-            }
-        });
-        priceInput.on("change", updateSlider);
-        updateSlider();
-    });
-});
-
 //sorting dropdown
 $(function () {
     $(".catalogue__sorting__top").on("click", function () {
@@ -208,4 +150,3 @@ $(".show-more-link").on("click", function () {
         $(this).text('Скрыть');
     }
 });
-

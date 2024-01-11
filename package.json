@@ -49,6 +49,7 @@
     "jquery-ui": "^1.13.2",
     "jquery-ui-slider": "^1.12.1",
     "jsdom": "^22.1.0",
+    "nouislider": "^15.7.1",
     "swiper": "^11.0.5"
   }
 }
