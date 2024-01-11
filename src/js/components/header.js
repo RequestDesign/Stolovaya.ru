@@ -1,7 +1,6 @@
 import Swiper from 'swiper'
 import { Navigation } from 'swiper/modules';
 import 'swiper/css'
-import 'swiper/css/navigation'
 
 function remToPx(remValue) {
     var htmlFontSize = parseFloat(
@@ -11,7 +10,7 @@ function remToPx(remValue) {
     return Math.round(pxValue) + "px";
 }
 
-const headerSwiper = new Swiper('.swiper', {
+const headerSwiper = new Swiper('.swiper-header', {
     modules: [Navigation],
     direction: 'horizontal',
     loop: true,
