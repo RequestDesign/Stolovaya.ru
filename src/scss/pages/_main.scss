@@ -1,10 +1,16 @@
 .hero {
 
+
     margin-top: 0;
 
     .hero-top {
         display: flex;
         gap: 2rem;
+
+        @media (max-width: 48em) {
+            flex-direction: column;
+            gap: 1.6rem;
+        }
 
         &__big-banner {
             position: relative;
@@ -13,26 +19,57 @@
             height: 51rem;
             background: radial-gradient(124.62% 80.97% at 31.56% 47.16%, rgba(255, 255, 255, 0.00) 0%, rgba(175, 183, 197, 0.20) 77.19%), #EFF1F4;
 
+            @media (max-width: 48em) {
+                padding: 6.4rem 0 0 4rem;
+                width: 68.6rem;
+                height: 47.2rem;
+            }
+
             .big-banner__top-text {
+                position: inherit;
                 margin-bottom: 1.6rem;
                 width: 50.3rem;
                 font-size: 4rem;
                 line-height: 4.6rem;
                 font-weight: 500;
+                z-index: 2;
+
+                @media (max-width: 48em) {
+                    width: 59.2rem;
+                    font-size: 4.8rem;
+                    line-height: 5.6rem;
+                }
             }
 
             .big-banner__bottom-text {
+                position: inherit;
                 margin-bottom: 4rem;
                 width: 40.5rem;
                 font-size: 1.8rem;
                 line-height: 2.4rem;
                 font-weight: 400;
+                z-index: 2;
+
+                @media (max-width: 48em) {
+                    margin-bottom: 6.4rem;
+                    width: 48.4rem;
+                    font-size: 2.8rem;
+                    line-height: 4rem;
+                }
             }
 
             .big-banner__btn {
+                position: inherit;
                 padding: 1.8rem 2.4rem;
                 font-size: 1.8rem;
                 font-weight: 600;
+                z-index: 2;
+
+                @media (max-width: 48em) {
+                    padding: 2rem 3.8rem;
+                    font-size: 2.8rem;
+                    line-height: 4rem;
+                }
             }
 
             .big-banner__img-wrapper {
@@ -45,6 +82,13 @@
                     object-fit: fill;
                     height: 100%;
                 }
+
+                @media (max-width: 48em) {
+                    width: 38.2rem;
+                    height: 31rem;
+                    top: auto;
+                    bottom: 0;
+                }
             }
         }
 
@@ -55,23 +99,39 @@
             gap: 2rem;
 
             .small-banner {
-                padding: 1.6rem 0 0 1.6rem;
+                padding: 2rem;
                 width: 25.3rem;
                 height: 24.5rem;
                 border: 1px solid #EFF1F4;
-                border-radius: 0.4rem;
+                border-radius: 4px;
                 transition: background-color 0.2s;
+
+                @media (max-width: 48em) {
+                    padding: 4rem 4rem 3.2rem 4rem;
+                    width: 33.6rem;
+                    height: 38rem;
+                }
 
                 &__img-wrapper {
                     margin-bottom: 4rem;
                     width: 5.7rem;
                     height: 5.7rem;
+
+                    @media (max-width: 48em) {
+                        margin-bottom: 3.6rem;
+                        width: 6.4rem;
+                        height: 6.4rem;
+                    }
                 }
 
                 &__top-text {
                     margin-bottom: 1.2rem;
                     font-size: 1.8rem;
                     font-weight: 600;
+
+                    @media (max-width: 48em) {
+                        font-size: 3.2rem;
+                    }
                 }
 
                 &__bottom-text {
@@ -79,6 +139,11 @@
                     font-size: 1.6rem;
                     font-weight: 400;
                     line-height: 2rem;
+
+                    @media (max-width: 48em) {
+                        font-size: 2.4rem;
+                        line-height: 3.2rem;
+                    }
                 }
             }
 
@@ -95,6 +160,11 @@
         gap: 2rem;
         margin-top: 2rem;
 
+        @media (max-width: 48em) {
+            margin-top: 1.6rem;
+            gap: 1.6rem 1.4rem;
+        }
+
         &__brand-link {
             display: flex;
             justify-content: center;
@@ -104,8 +174,19 @@
             border: 1px solid #EFF1F4;
             border-radius: 0.4rem;
 
+            @media (max-width: 48em) {
+                width: 21rem;
+                max-width: 22rem;
+                height: 15.4rem;
+            }
+
             .brand-link__img-wrapper {
                 width: 17.5rem;
+
+                @media (max-width: 48em) {
+                    width: 17.4rem;
+
+                }
 
                 img {
                     filter: grayscale(1);
@@ -124,6 +205,12 @@
         &__all-brands-link {
             width: 25.3rem;
             height: 14.9rem;
+            display: flex !important;
+
+            @media (max-width: 48em) {
+                max-width: 22rem;
+                height: 15.4rem;
+            }
         }
 
     }
@@ -708,15 +795,46 @@ section {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    width: fit-content;
     color: #4E7CD7;
+
+    @media (max-width:48em) {
+        margin: 0 auto;
+        gap: 0.8rem;
+    }
 
     &__text {
         font-size: 1.8rem;
+        width: fit-content;
+
+        @media (max-width: 48em) {
+            font-size: 2.8rem;
+        }
     }
 
     &__arrow {
         width: 2.4rem;
         height: 2.4rem;
+
+        @media (max-width: 48em) {
+            width: 1.0896rem;
+            height: 2.3334rem;
+        }
+    }
+}
+
+.main-btn-link {
+    @media (max-width: 48em) {
+        display: none;
+    }
+}
+
+.main-btn-link_mobile {
+    display: none;
+
+    @media (max-width: 48em) {
+        display: flex;
+        margin-top: 5rem;
     }
 }
 
