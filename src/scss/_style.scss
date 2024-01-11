@@ -109,11 +109,53 @@ body {
     }
 }
 
-.btn__close{
-    svg{
+.btn__close {
+    svg {
         @media (max-width: 48em) {
             width: 4rem;
-            height: 4rem;  
+            height: 4rem;
+        }
+    }
+}
+
+//square pagination buttons
+.btn__square {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid #8ad74e;
+    background-color: #8ad74e;
+    border-radius: 0.2rem;
+
+    @media (max-width: 48em) {
+        border: 0.2rem solid #8ad74e;
+        border-radius: 0.4rem;
+    }
+
+    svg {
+        width: 0.9rem;
+        height: 1.9rem;
+
+        @media (max-width: 48em) {
+            width: 1.4rem;
+            height: 2.6rem;
+        }
+
+        path {
+            fill: #fff;
+        }
+    }
+
+    &:disabled {
+        background-color: #fff;
+
+        svg {
+            path {
+                fill: #8ad74e;
+            }
         }
     }
 }
@@ -125,7 +167,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     display: none;
 
     svg {
@@ -202,7 +244,7 @@ body {
     }
 }
 
-.btn__show-more{
+.btn__show-more {
     display: block;
     width: fit-content;
     margin: 4rem auto 0;
