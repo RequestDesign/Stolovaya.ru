@@ -28,7 +28,6 @@ if (searchSelect){
     resizeInput.call(searchSelect)
 }
 
-
 function resizeInput() {
     this.style.width = this.value.length + 'em'
 }

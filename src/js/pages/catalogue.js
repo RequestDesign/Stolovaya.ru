@@ -50,6 +50,18 @@ const swiperFeatures = new Swiper(".catalogue__features-slider", {
     slidesPerView: "auto",
 });
 
+//show more tabs 
+$('.btn__show-more-tabs').on('click', function(){
+    $('.catalogue__features__list').toggleClass('open')
+    $('.catalogue__features__list__additional').toggleClass('open')
+
+    if($('.catalogue__features__list').hasClass('open')){
+        $('.btn__show-more-tabs span').text('Скрыть')
+    } else {
+        $('.btn__show-more-tabs span').text('Показать больше')
+    }
+})
+
 //catalogue pagination
 $(function () {
     const $pages = $(".cards-page");
