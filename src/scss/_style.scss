@@ -118,7 +118,7 @@ body {
     }
 }
 
-//square pagination buttons
+//square swiper buttons
 .btn__square {
     width: 6rem;
     height: 6rem;
@@ -158,6 +158,16 @@ body {
             }
         }
     }
+}
+
+.swiper-button-disabled{
+    background-color: #fff;
+
+        svg {
+            path {
+                fill: #8ad74e;
+            }
+        }
 }
 
 //fav icon
@@ -248,6 +258,34 @@ body {
     display: block;
     width: fit-content;
     margin: 4rem auto 0;
+}
+
+.btn__details{
+    padding: unset;
+    font-size: 1.6rem;
+    padding: 0.2rem 0.1rem;
+
+    @media (max-width: 48em) {
+        padding: 0.8rem 0;
+        font-size: 3.2rem;
+    }
+}
+
+//load more link
+.load-more-link{
+    color: #4E7CD7;
+    line-height: 125%;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    &:hover{
+        color: #345493;
+    }
+
+    @media (max-width: 48em) {
+        line-height: 125%;
+        font-size: 3.2rem;
+    }
 }
 
 @media (min-width: 48.01em) {
