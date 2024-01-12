@@ -4,6 +4,10 @@
     box-shadow: none;
     height: 0.2rem;
     background-color: #afb7c5;
+
+    @media (max-width: 48em) {
+        height: 0.4rem;
+    }
 }
 
 .range-slider {
@@ -17,10 +21,18 @@
         border-radius: 100%;
         border: 0.5rem solid #eff1f4;
         cursor: pointer;
-        right: -1rem;
+        right: -2rem;
         top: -1rem;
         background: #ae47ff;
         box-shadow: unset;
+
+        @media (max-width: 48em) {
+            width: 4rem;
+            height: 4rem;
+            border: 0.8rem solid #eff1f4;
+            right: -3rem;
+            top: -2rem;
+        }
 
         &::before,
         &::after {
@@ -29,8 +41,7 @@
     }
 }
 
-
-.range-inputs{
+.range-inputs {
     margin-top: 2.3rem;
     display: flex;
     justify-content: space-between;
@@ -48,12 +59,16 @@
         margin-top: 4.2rem;
     }
 
-    .range-input{
+    .range-input {
         display: flex;
         gap: 0.4rem;
         width: 12rem;
 
-        input{
+        @media (max-width: 48em) {
+            width: 22rem;
+        }
+
+        input {
             width: 100%;
         }
     }
