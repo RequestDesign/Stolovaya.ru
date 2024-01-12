@@ -1,22 +1,52 @@
-footer {
+.footer {
     margin-top: 13rem;
 
-    .footer-content {
+    &-content {
         display: flex;
         justify-content: space-between;
         padding-top: 5rem;
         border-top: 1px solid #EFF1F4;
 
+        @media (max-width: 48em) {
+            flex-direction: column;
+            padding: 4rem 2rem 4.8rem 2rem;
+            border: none;
+            background: rgba(239, 241, 244, 0.40);
+            border-radius: 4px;
+        }
+
+        &__block-group {
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+        }
+
         &__block {
+
+            @media (max-width: 48em) {
+                border-bottom: 1px solid rgba(128, 128, 129, 0.10);
+                ;
+            }
 
             &__title {
                 margin-bottom: 4rem;
                 font-size: 2.4rem;
                 font-weight: 600;
+
+                @media (max-width: 48em) {
+                    margin-bottom: 0;
+                    padding: 2.4rem 3.2rem;
+                    font-size: 2.8rem;
+                    line-height: 4rem;
+                }
             }
 
             &__link {
                 max-width: 30.8rem;
+
+                @media (max-width: 48em) {
+                    max-width: auto;
+                }
 
                 &__btn {
                     margin-top: 3rem;
@@ -32,22 +62,62 @@ footer {
                     gap: 1.2rem;
                     margin-bottom: 3.8rem;
 
+
+                    @media (max-width: 48em) {
+                        gap: 1.25rem;
+                        margin-top: 4.8rem;
+                    }
+
                     &__img-wrapper {
                         width: 5.3rem;
                         height: 4.5rem;
+
+                        @media (max-width: 48em) {
+                            width: 8.4rem;
+                            height: 7.2rem;
+                        }
+
+                        img {
+                            filter: grayscale(1);
+                            transition: filter 0.2s;
+
+                            @media (max-width: 48em) {
+                                filter: none;
+                            }
+                        }
                     }
 
                     &__text {
                         font-size: 1.8rem;
                         font-weight: 400;
                         line-height: 2.4rem;
+
+
+                        @media (max-width: 48em) {
+                            font-size: 2.4rem;
+                            line-height: 3.2rem;
+                        }
+                    }
+                }
+
+                &__pp:hover {
+                    img {
+                        filter: grayscale(0);
                     }
                 }
             }
+
             &__list {
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
+                overflow: hidden;
+
+                @media (max-width: 48em) {
+                    padding-left: 3.2rem;
+                    height: 0;
+                    transition: height 0.2s;
+                }
 
                 &__item {
                     color: #808081;
@@ -55,6 +125,11 @@ footer {
                     font-weight: 400;
                     line-height: 2.8rem;
                     transition: color 0.2s;
+
+                    @media (max-width: 48em) {
+                        font-size: 2.8rem;
+                        line-height: 4rem;
+                    }
                 }
 
                 &__item:hover {
@@ -62,27 +137,110 @@ footer {
                 }
             }
         }
+
+        &--desk {
+
+            @media (max-width: 48em) {
+                display: none;
+            }
+        }
+
+        &--mobile {
+            display: none;
+
+            @media (max-width: 48em) {
+                display: flex;
+            }
+
+            &__top {
+                display: flex;
+                margin-bottom: 4.4rem;
+
+                .logo-link {
+
+                    @media (max-width: 48em) {
+                        margin-right: 4.4rem;
+                        margin-left: 1.2rem;
+                    }
+
+                    .logo-img-container {
+
+                        @media (max-width: 48em) {
+                            width: 27rem;
+                            height: 8.6rem;
+                        }
+                    }
+                }
+
+                .btn_blue {
+                    margin: 0;
+
+                    padding: 2rem 3.8rem;
+                    font-size: 2.8rem;
+                    line-height: 4rem;
+                }
+            }
+
+            .consult__middle__contacts {
+                height: auto;
+            }
+        }
     }
-    .footer-copyright {
+
+
+
+
+    &-copyright {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 5.5rem;
         padding-top: 2.2rem;
         border-top: 1px solid #EFF1F4;
+
+
+        @media (max-width: 48em) {
+            border: none;
+            margin-top: 4.8rem;
+            padding: 0;
+        }
+
         &__text {
             color: #808081;
             font-size: 1.6rem;
             font-weight: 400;
             line-height: 2rem;
+
+
+            @media (max-width: 48em) {
+                text-wrap: balance;
+                font-size: 2.4rem;
+                line-height: 3.2rem;
+            }
         }
 
         &__rd {
 
+            
+            @media (max-width: 48em) {
+                height: fit-content;               
+            }
+
             &__img-wrapper {
                 width: 17.2rem;
                 height: 4.3876rem;
+
+                
+                @media (max-width: 48em) {
+                    width: 22.6rem;
+                    height: auto;           
+                }
             }
         }
+    }
+
+    &--active {
+        height: auto;
+        padding-bottom: 2rem;
     }
 }

@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header header--desk">
   <div class="header-top">
     <div class="container">
       <ul class="header-top__info-list">
@@ -50,7 +50,6 @@
       <div class="logo-img-container">
         <img class="logo-img" src="../assets/images/header/logo.svg" alt="">
       </div>
-      <div class="logo-text">Столовые решения</div>
     </a>
     <button class="header-middle__catalog-button btn_blue">
       <div class="catalog-btn__img-container">
@@ -60,35 +59,129 @@
     </button>
     <form class="header-middle__search-container">
       <div class="select-wrapper">
-        <button class="select-btn">
-          <img src="../assets/images/header/select-btn.svg" alt="">
-        </button>
-        <input class="search-select" type="text" name="" id="" value="Все категории" disabled>
-        <ul class="search-select disabled" name="category" id="category">
-          <li class="search-select__option" value="">Все категории</li>
-          <li class="search-select__option" value="">Тепловое</li>
-          <li class="search-select__option" value="">Холодильное</li>
-          <li class="search-select__option" value="">Электромеханическое</li>
-          <li class="search-select__option" value="">Посудомоечное</li>
-          <li class="search-select__option" value="">Хлебопекарное</li>
-          <li class="search-select__option" value="">Линии раздач</li>
-          <li class="search-select__option" value="">Нейтральное</li>
-          <li class="search-select__option" value="">Для фастфуда</li>
-          <li class="search-select__option" value="">Для зала</li>
-          <li class="search-select__option" value="">Вспомогательное</li>
-          <li class="search-select__option" value="">Для магазинов</li>
-        </ul>
+        <div class="search-select_wrapper">
+          <button class="select-btn">
+            <img src="../assets/images/header/select-btn.svg" alt="">
+          </button>
+          <input class="search-select" type="text" name="" id="" value="Электромеханическое" disabled>
+        </div>
+        <div class="dropdown-wrapper disabled">
+          <ul class="search-select__options" name="category" id="category">
+            <li class="search-select__option">Все категории</li>
+            <li class="search-select__option">Тепловое</li>
+            <li class="search-select__option">Холодильное</li>
+            <li class="search-select__option">Электромеханическое</li>
+            <li class="search-select__option">Посудомоечное</li>
+            <li class="search-select__option">Хлебопекарное</li>
+            <li class="search-select__option">Линии раздач</li>
+            <li class="search-select__option">Нейтральное</li>
+            <li class="search-select__option">Для фастфуда</li>
+            <li class="search-select__option">Для зала</li>
+            <li class="search-select__option">Вспомогательное</li>
+            <li class="search-select__option">Для магазинов</li>
+          </ul>
+        </div>
       </div>
       <input class="search-input" type="search" name="search" id="search" placeholder="Поиск товаров">
       <button class="search-btn btn_blue"><img src="../assets/images/header/search-btn.svg" alt="Поиск"></button>
     </form>
     <div class="header-middle__btn-group">
       <button class="btn-group__call-btn btn_blue">Заказать звонок</button>
-      <button class="btn-group__cart-btn">
-        <div class="cart-btn__img-container"><img src="../assets/images/header/cart-btn.svg" alt=""></div>
-        <div class="btn-group__btn-text">Корзина</div>
+    </div>
+  </div>
+  <div class="container header-bottom">
+    <div class="swiper swiper-header">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Кондитерские</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Мини-пекарни</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Пищеблок</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Кофейни</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Кондитерская</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Блинная</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Бар</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Кафе</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Ресторан залов</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Вспомогательное</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">Для магазинов</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">blank</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">blank</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">blank</a>
+        </div>
+        <div class="swiper-slide">
+          <a href="" class="swiper-slide__link">blank</a>
+        </div>
+      </div>
+      <button class="swiper-button-next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="19" viewBox="0 0 9 19" fill="none">
+          <path
+            d="M0.133789 18.116V0.615967L8.00004 8.48222C8.23438 8.71663 8.36602 9.03451 8.36602 9.36597C8.36602 9.69742 8.23438 10.0153 8.00004 10.2497L0.133789 18.116Z"
+            fill="#8AD74E" />
+        </svg>
       </button>
     </div>
+    <ul class="header-bottom__list">
+
+    </ul>
+  </div>
+</header>
+
+<header class="header header--mobile">
+  <div class="header--mobile__top container">
+    <a class="logo-link" href="">
+      <div class="logo-img-container">
+        <img class="logo-img" src="../assets/images/header/logo.svg" alt="">
+      </div>
+    </a>
+    <li class="header-top__contacts-list__item">
+      <div class="contacts-list__item__img-container">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Icons 24" clip-path="url(#clip0_584_239)">
+            <path id="Vector"
+              d="M14.2002 16.261C11.2887 15.028 8.97343 12.7073 7.7472 9.79297L11.1472 6.38697L4.8872 0.121969L1.7162 3.29197C1.1662 3.84511 0.731342 4.50183 0.436795 5.22412C0.142247 5.94642 -0.00614821 6.71995 0.000195101 7.49997C0.000195101 14.748 9.25219 24 16.5002 24C17.2801 24.0066 18.0536 23.8583 18.7757 23.5637C19.4979 23.2692 20.1544 22.8342 20.7072 22.284L23.8782 19.113L17.6132 12.848L14.2002 16.261ZM19.2942 20.87C18.9264 21.2338 18.4901 21.521 18.0104 21.715C17.5308 21.909 17.0175 22.0058 16.5002 22C10.2672 22 2.0002 13.733 2.0002 7.49997C1.99431 6.9828 2.09116 6.46961 2.28514 5.99016C2.47911 5.51071 2.76635 5.07455 3.1302 4.70697L4.8872 2.94997L8.3242 6.38697L5.38919 9.32197L5.63419 9.93597C6.35544 11.8653 7.48296 13.617 8.94035 15.0725C10.3977 16.528 12.1509 17.6532 14.0812 18.372L14.6872 18.603L17.6132 15.676L21.0502 19.113L19.2942 20.87ZM15.0002 6.52897V1.99997H17.0002V5.61097C17.6612 4.94797 18.4512 4.15297 19.2392 3.36097C20.6052 1.98697 21.9512 0.634969 22.5392 0.0429688L23.9532 1.45697C23.3612 2.04897 22.0172 3.39897 20.6532 4.77097C19.8782 5.55497 19.1002 6.33997 18.4392 6.99997H22.0002V8.99997H17.5002C16.8412 9.00316 16.2078 8.74477 15.7391 8.28151C15.2704 7.81825 15.0047 7.18796 15.0002 6.52897Z"
+              fill="#3C3C3C" />
+          </g>
+          <defs>
+            <clipPath id="clip0_584_239">
+              <rect width="24" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <a href="tel:+78003338831">(800) 333-88-31</a>
+    </li>
+  </div>
+  <div class="container header-middle">
+    <form class="header-middle__search-container">
+      <input class="search-input" type="search" name="search" id="search" placeholder="Поиск товаров">
+      <button class="search-btn btn_blue"><img src="../assets/images/header/search-btn.svg" alt="Поиск"></button>
+    </form>
   </div>
   <div class="container header-bottom">
     <div class="swiper swiper-header">

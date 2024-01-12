@@ -23,9 +23,41 @@ const headerSwiper = new Swiper('.swiper-header', {
 
 const searchSelect = document.querySelector('.search-select');
 
-searchSelect.addEventListener('input', resizeInput);
-resizeInput.call(searchSelect)
+if (searchSelect){
+    searchSelect.addEventListener('input', resizeInput);
+    resizeInput.call(searchSelect)
+}
 
 function resizeInput() {
-    this.style.width = this.value.length + 'em'
+    this.style.width = this.value.length + '5px'
 }
+
+const select = document.querySelector('.search-select_wrapper')
+const dropdown = document.querySelector('.dropdown-wrapper')
+const arrowBtn = select.querySelector('.select-btn')
+
+function searchSelectOpen(e) {
+    e.preventDefault()
+
+    arrowBtn.classList.toggle('arrow--active')
+    dropdown.classList.toggle('disabled')
+}
+
+select.addEventListener('click', searchSelectOpen)
+
+const selectInput = document.querySelector('.search-select')
+const options = dropdown.querySelectorAll('.search-select__option')
+
+function selectChange(e) {
+    const target = e.target.textContent
+    selectInput.value = target
+
+}
+
+options.forEach(function (option) {
+    option.addEventListener('click', selectChange)
+})
+
+const header = document.querySelector('.header--desk')
+const fixed = header.offsetHeight;
+
