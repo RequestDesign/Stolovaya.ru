@@ -153,6 +153,12 @@
                     }
                 }
             }
+
+            .btn {
+                &:hover {
+                    background-color: #8ad74e;
+                }
+            }
         }
     }
 }
