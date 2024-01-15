@@ -1226,8 +1226,12 @@
     }
 }
 
-section {
+section:not(:first-of-type) {
     margin-top: 13rem;
+}
+
+section {
+    
 
     @media (max-width: 48em) {
         margin-top: 16rem;
