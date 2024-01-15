@@ -82,12 +82,22 @@ body {
             svg {
                 width: 0.8rem;
                 height: 1.5rem;
+
+                @media (max-width: 48em) {
+                    width: 1.2rem;
+                    height: 2.6rem;
+                }
             }
 
             &--big {
                 svg {
                     width: 2.4rem;
                     height: 2.4rem;
+                    
+                    @media (max-width: 48em) {
+                        width: 4rem;
+                        height: 4rem;
+                    }
                 }
             }
         }

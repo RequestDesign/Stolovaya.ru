@@ -1,4 +1,5 @@
 .catalogue {
+    margin: unset;
     margin-bottom: 13rem;
 
     @media (max-width: 48em) {
@@ -137,23 +138,22 @@
         position: relative;
 
         &__list {
-            
             display: flex;
             flex-wrap: wrap;
             gap: 0;
-            
+
             // transition: gap .2s ease;
 
-            &.open{
-                 gap: 1.2rem;
+            &.open {
+                gap: 1.2rem;
             }
 
-            &__main{
+            &__main {
                 display: flex;
                 gap: 1.2rem;
             }
 
-            &__additional{
+            &__additional {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 1.2rem;
@@ -163,7 +163,7 @@
 
                 // transition: height .2s ease;
 
-                &.open{
+                &.open {
                     height: 100%;
                     opacity: 1;
                 }
@@ -393,6 +393,7 @@
                 @media (max-width: 48em) {
                     font-size: 2.8rem;
                     line-height: 142.857%;
+                    font-weight: 500;
                 }
             }
 
@@ -412,12 +413,20 @@
             display: none;
             z-index: 2;
             background-color: #fff;
-            box-shadow: 0 0 0.8rem 0.4rem #00000023;
+            box-shadow: 0 0.4rem 6rem 0 rgba(175, 183, 197, 0.2);
             border-radius: 0.4rem;
-            padding: 0 1rem 1rem;
+            padding: 1.4rem 0;
             position: absolute;
-            top: calc(100% + 1rem);
+            top: calc(100% + 0.8rem);
             left: 0;
+            width: 25.6rem;
+
+            @media (max-width: 48em) {
+                top: calc(100% + 1.6rem);
+                border-radius: 0.8rem;
+                padding: 2.8rem 0;
+                width: 51.2rem;
+            }
 
             .option {
                 cursor: pointer;
@@ -425,8 +434,17 @@
                 line-height: 133.333%;
                 color: #3c3c3c;
                 white-space: nowrap;
-                border-bottom: 0.1rem solid #d7d7d7;
-                padding: 1rem 0;
+                padding: 0.6rem 2rem;
+
+                @media (max-width: 48em) {
+                    font-size: 2.8rem;
+                    line-height: 142.857%;
+                    padding: 1.2rem 4rem;
+                }
+
+                &:hover {
+                    background-color: #eff1f4;
+                }
             }
         }
 

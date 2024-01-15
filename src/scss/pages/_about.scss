@@ -1,4 +1,6 @@
 .about {
+    margin: unset;
+
     &__hero {
         position: relative;
         margin-bottom: 21.4rem;
@@ -387,11 +389,15 @@
         }
 
         .swiper-portfolio {
-            // margin-left: -15rem;
-            // margin-right: -15rem;
-            // padding-left: 15rem;
-            // padding-right: 15rem;
-            // width: calc(100vw - (100vw - 162rem) / 2);
+            width: calc(100% + 100vw - (100vw - 162rem) / 2);
+            margin-left: -100%;
+            padding-left: 100%;
+
+            @media (max-width: 48em){
+                width: unset;
+                margin: 0 -3.2rem;
+                padding: 0 3.2rem;
+            }
         }
 
         .swiper-slide {
@@ -426,6 +432,10 @@
 
             .btn {
                 padding: 1.2rem 2.4rem;
+
+                @media (max-width: 48em) {
+                    padding: 2rem 4rem;
+                }
             }
         }
     }
@@ -524,16 +534,6 @@
     &__clients {
         margin-bottom: 13rem;
 
-        & .clients .clients-content__right__cards {
-            @media (max-width: 48em) {
-                display: none;
-                // display: grid;
-                // grid-template-columns: repeat(2, 1fr);
-                // grid-column-gap: 1.6rem;
-                // grid-row-gap: 1.6rem;
-            }
-        }
-
         .clients__additional {
             margin-top: 2rem;
             display: grid;
@@ -557,6 +557,43 @@
             display: flex;
             position: relative;
             justify-content: space-between;
+
+            @media (max-width: 48em) {
+                flex-direction: column;
+                gap: 27.4rem;
+                padding: 0;
+            }
+
+            .consult__left{
+                @media (max-width: 48em) {
+                    padding: 0;
+                }
+            }
+
+            .consult__middle{
+                @media (max-width: 48em) {
+                    right: 0;
+                }
+            }
+
+            .consult__right{
+
+                @media (max-width: 48em) {
+                    margin: 0 -3.2rem;
+                    width: calc(100% + 6.4rem);
+                }
+
+            }
+
+            .btn{
+                width: 20.9rem;
+
+                @media (max-width: 48em) {
+                    margin-top: 4rem;
+                    width: fit-content;
+                }
+
+            }
         }
     }
 
