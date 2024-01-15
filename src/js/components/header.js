@@ -23,14 +23,11 @@ const headerSwiper = new Swiper('.swiper-header', {
 
 const searchSelect = document.querySelector('.search-select');
 
-if (searchSelect){
-    searchSelect.addEventListener('input', resizeInput);
-    resizeInput.call(searchSelect)
+function resizeInput() {
+    searchSelect.style.width = searchSelect.value.length + 'rem'
 }
 
-function resizeInput() {
-    this.style.width = this.value.length + '5px'
-}
+document.addEventListener('DOMContentLoaded', resizeInput)
 
 const select = document.querySelector('.search-select_wrapper')
 const dropdown = document.querySelector('.dropdown-wrapper')
@@ -51,13 +48,10 @@ const options = dropdown.querySelectorAll('.search-select__option')
 function selectChange(e) {
     const target = e.target.textContent
     selectInput.value = target
-
+    resizeInput()
 }
 
 options.forEach(function (option) {
     option.addEventListener('click', selectChange)
 })
-
-const header = document.querySelector('.header--desk')
-const fixed = header.offsetHeight;
 

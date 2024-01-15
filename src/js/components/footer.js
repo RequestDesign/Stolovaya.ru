@@ -1,5 +1,4 @@
 const footerMobile = document.querySelector(".footer-content--mobile")
-console.log(footerMobile)
 const footerSpoilerBtns = footerMobile.querySelectorAll(".footer-content__block__title");
 
 
