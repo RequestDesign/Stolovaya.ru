@@ -6,6 +6,7 @@
         <title>О компании</title>
     </head>
     <body>
+        <include src="./components/header.html"></include>
         <section class="about">
             <div class="container">
                 <div class="breadcrumbs">
@@ -375,7 +376,7 @@
                             </div>
                         </a>
                     </div>
-                    <a href="#!" class="load-more-link mobile">Загрузить еще</a>
+                    <a href="#!" class="load-more-link mobile" id="loadMorePartnersLink">Загрузить еще</a>
                 </div>
 
                 <div class="about__clients">
@@ -394,42 +395,42 @@
                                     <div class="section-title-btn__title">Наши клиенты:</div>
                                 </div>
                                 <div class="clients-content__right__cards">
-                                    <div class="clients-content__right__cards__card">
-                                        <div class="clients-content__right__cards__card__img-wrapper">
-                                            <img src="./assets/images/main/clients-card-1.png" alt="" />
+                                    <a href="#!" class="card-clients">
+                                        <div class="card-clients__img">
+                                            <img src="./assets/images/main/clients-card-1.png" alt="Министерство обороны Росийской Федерации" />
                                         </div>
-                                        <div class="clients-content__right__cards__card__text">Министерство обороны Росийской Федерации</div>
-                                    </div>
-                                    <div class="clients-content__right__cards__card">
-                                        <div class="clients-content__right__cards__card__img-wrapper">
-                                            <img src="./assets/images/main/clients-card-2.png" alt="" />
+                                        <div class="card-clients__title">Министерство обороны Росийской Федерации</div>
+                                    </a>
+                                    <a href="#!" class="card-clients">
+                                        <div class="card-clients__img">
+                                            <img src="./assets/images/main/clients-card-2.png" alt="Департамент здравоохранения  Москвы" />
                                         </div>
-                                        <div class="clients-content__right__cards__card__text">Департамент здравоохранения Москвы</div>
-                                    </div>
-                                    <div class="clients-content__right__cards__card">
-                                        <div class="clients-content__right__cards__card__img-wrapper">
-                                            <img src="./assets/images/main/clients-card-3.png" alt="" />
+                                        <div class="card-clients__title">Департамент здравоохранения  Москвы</div>
+                                    </a>
+                                    <a href="#!" class="card-clients">
+                                        <div class="card-clients__img">
+                                            <img src="./assets/images/main/clients-card-3.png" alt="Министерство внтруенних дел Росийской Федерации" />
                                         </div>
-                                        <div class="clients-content__right__cards__card__text">Министерство внутренних дел Росийской Федерации</div>
-                                    </div>
-                                    <div class="clients-content__right__cards__card">
-                                        <div class="clients-content__right__cards__card__img-wrapper">
-                                            <img src="./assets/images/main/clients-card-4.png" alt="" />
+                                        <div class="card-clients__title">Министерство внтруенних дел Росийской Федерации</div>
+                                    </a>
+                                    <a href="#!" class="card-clients">
+                                        <div class="card-clients__img">
+                                            <img src="./assets/images/main/clients-card-4.png" alt="Росгвардия" />
                                         </div>
-                                        <div class="clients-content__right__cards__card__text">Росгвардия</div>
-                                    </div>
-                                    <div class="clients-content__right__cards__card">
-                                        <div class="clients-content__right__cards__card__img-wrapper">
-                                            <img src="./assets/images/main/clients-card-5.png" alt="" />
+                                        <div class="card-clients__title">Росгвардия</div>
+                                    </a>
+                                    <a href="#!" class="card-clients">
+                                        <div class="card-clients__img">
+                                            <img src="./assets/images/main/clients-card-5.png" alt="Верховный Суд Российской Федерации" />
                                         </div>
-                                        <div class="clients-content__right__cards__card__text">Верховный Суд Российской Федерации</div>
-                                    </div>
-                                    <div class="clients-content__right__cards__card">
-                                        <div class="clients-content__right__cards__card__img-wrapper">
-                                            <img src="./assets/images/main/clients-card-6.png" alt="" />
+                                        <div class="card-clients__title">Верховный Суд Российской Федерации</div>
+                                    </a>
+                                    <a href="#!" class="card-clients">
+                                        <div class="card-clients__img">
+                                            <img src="./assets/images/main/clients-card-6.png" alt="Воздушно-десантное училище Н.Ф.Маргелова" />
                                         </div>
-                                        <div class="clients-content__right__cards__card__text">Воздушно-десантное училище Н.Ф.Маргелова</div>
-                                    </div>
+                                        <div class="card-clients__title">Воздушно-десантное училище Н.Ф.Маргелова</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -521,7 +522,7 @@
                         </a>
                     </div>
 
-                    <a href="#!" class="load-more-link mobile">Загрузить еще</a>
+                    <a href="#!" class="load-more-link mobile" id="loadMoreClientsLink">Загрузить еще</a>
                 </div>
 
                 <div class="about__contact">
@@ -530,7 +531,7 @@
 
                     <div class="consult">
                         <div class="consult__left">
-                            <div class="section-title-btn__title">Остались вопросы? </div>
+                            <div class="section-title-btn__title">НУЖНА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА?</div>
                             <form class="consult__left__form">
                                 <p class="consult__left__form__name">Оставьте свой номер телефона и наш сотрудник свяжется с
                                     вами в
@@ -588,8 +589,10 @@
                             <img src="./assets/images/main/consult-img.png" alt="">
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
+        <include src="./components/footer.html"></include>
     </body>
 </html>
