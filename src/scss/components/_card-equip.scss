@@ -1,0 +1,96 @@
+.card-equip {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    height: 29.4rem;
+    width: 66.3rem;
+    overflow: hidden;
+    border-radius: 0.4rem;
+    border: 0.1rem solid #eff1f4;
+    padding: 3rem 1.8rem 3rem 3rem;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+        box-shadow: 0 0.4rem 6rem 0 rgba(175, 183, 197, 0.2);
+    }
+
+    &__img {
+        width: 32.4rem;
+        height: 23.1rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 100%;
+        width: 28rem;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        line-height: 116.667%;
+        font-weight: 600;
+    }
+
+    &__bullets {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+
+        li {
+            font-size: 1.8rem;
+            color: #808081;
+            line-height: 133.333%;
+            padding-left: 2.8rem;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0.9rem;
+                left: 0.9rem;
+                width: 0.6rem;
+                height: 0.6rem;
+                background-color: #ffc700;
+                border-radius: 0.2rem;
+            }
+        }
+    }
+
+    &--big {
+        flex-direction: column;
+        gap: 2rem;
+        height: 60.7rem;
+        width: 93.7rem;
+        padding: 3rem 3rem 1.8rem 3rem;
+
+        .card-equip__img {
+            width: 87.7rem;
+            height: 43.1rem;
+            transform: rotate(-7.45deg);
+        }
+
+        .card-equip__text {
+            width: 59.6rem;
+            flex-direction: column;
+            gap: 1.2rem;
+            align-self: flex-start;
+            z-index: 1;
+        }
+
+        .card-equip__title {
+            font-size: 2.8rem;
+            line-height: 128.571%;
+        }
+
+        .card-equip__bullets {
+            gap: 1.2rem;
+        }
+    }
+}

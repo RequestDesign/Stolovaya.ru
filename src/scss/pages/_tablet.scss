@@ -1,11 +1,84 @@
-.tablet{
+.tablet {
     overflow-x: clip;
 
-    .contact{
+    &__request {
+        position: relative;
+        min-height: 32.9rem;
 
+        &__text {
+            width: 82rem;
+            padding-top: 8.1rem;
+
+            .title {
+                font-size: 4rem;
+                line-height: 115%;
+                font-weight: 500;
+                margin-bottom: 4rem;
+            }
+
+            .desc {
+                color: #808081;
+                font-size: 1.8rem;
+                line-height: 133.333%;
+                margin-bottom: 3rem;
+                width: 66.3rem;
+            }
+
+            .btn {
+                width: fit-content;
+            }
+        }
+        &__img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 80rem;
+            height: 100%;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__equip {
+        margin-bottom: 13rem;
+
+        &__title{
+            font-size: 4rem;
+            line-height: 115%;
+            font-weight: 500;
+            margin-bottom: 5rem;
+        }
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .cards-group {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+
+                &:nth-of-type(even) {
+                    .card-equip--big {
+                        grid-area: 1 / 2 / 3 / 3;
+                    }
+                }
+            }
+
+            .card-equip--big {
+                grid-area: 1 / 1 / 3 / 2;
+            }
+        }
+    }
+
+    .contact {
         @media (max-width: 48em) {
             margin: 0 -3.2rem;
         }
-
     }
 }
