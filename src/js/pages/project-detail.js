@@ -40,7 +40,7 @@ $(function () {
         for (let i = 0; i < 4; i++) {
             if (hiddenCards[i]) {
                 $(hiddenCards[i]).slideDown();
-                $(hiddenCards[i]).removeClass('hidden').css('display', 'block');
+                $(hiddenCards[i]).removeClass('hidden').css('display', 'flex');
             }
         }
 

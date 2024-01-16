@@ -359,8 +359,6 @@
         }
     }
 
-
-
     &__partners {
         margin-bottom: 13rem;
 
@@ -471,50 +469,9 @@
         }
     }
 
-    &__contact {
-        margin-bottom: 13rem;
-
-        .consult {
-            display: flex;
-            position: relative;
-            justify-content: space-between;
-
-            @media (max-width: 48em) {
-                flex-direction: column;
-                gap: 27.4rem;
-                padding: 0;
-            }
-
-            .consult__left{
-                @media (max-width: 48em) {
-                    padding: 0;
-                }
-            }
-
-            .consult__middle{
-                @media (max-width: 48em) {
-                    right: 0;
-                }
-            }
-
-            .consult__right{
-
-                @media (max-width: 48em) {
-                    margin: 0 -3.2rem;
-                    width: calc(100% + 6.4rem);
-                }
-
-            }
-
-            .btn{
-                width: 20.9rem;
-
-                @media (max-width: 48em) {
-                    margin-top: 4rem;
-                    width: fit-content;
-                }
-
-            }
+    .contact {
+        @media (max-width: 48em) {
+            margin: 0 -3.2rem;
         }
     }
 
