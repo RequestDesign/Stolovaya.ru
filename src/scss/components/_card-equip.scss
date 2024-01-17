@@ -10,6 +10,15 @@
     padding: 3rem 1.8rem 3rem 3rem;
     transition: box-shadow 0.2s;
 
+    @media (max-width: 48em) {
+        gap: 3.2rem;
+        height: 27.8rem;
+        width: 100%;
+        border-radius: 0.8rem;
+        border: 0.2rem solid #eff1f4;
+        padding: 2.4rem;
+    }
+
     &:hover {
         box-shadow: 0 0.4rem 6rem 0 rgba(175, 183, 197, 0.2);
     }
@@ -17,6 +26,11 @@
     &__img {
         width: 32.4rem;
         height: 23.1rem;
+
+        @media (max-width: 48em) {
+            width: 22rem;
+            height: 22.4rem;
+        }
 
         img {
             height: 100%;
@@ -30,12 +44,24 @@
         justify-content: space-between;
         height: 100%;
         width: 28rem;
+
+        @media (max-width: 48em) {
+            width: 37.8rem;
+            flex-direction: column;
+            justify-content: start;
+            gap: 1.6rem;
+        }
     }
 
     &__title {
         font-size: 2.4rem;
         line-height: 116.667%;
         font-weight: 600;
+
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+            line-height: 125%;
+        }
     }
 
     &__bullets {
@@ -43,12 +69,22 @@
         flex-direction: column;
         gap: 0.6rem;
 
+        @media (max-width: 48em) {
+            gap: 0.8rem;
+        }
+
         li {
             font-size: 1.8rem;
             color: #808081;
             line-height: 133.333%;
             padding-left: 2.8rem;
             position: relative;
+
+            @media (max-width: 48em) {
+                font-size: 2.4rem;
+                line-height: 133.333%;
+                padding-left: 4rem;
+            }
 
             &::before {
                 position: absolute;
@@ -59,6 +95,13 @@
                 height: 0.6rem;
                 background-color: #ffc700;
                 border-radius: 0.2rem;
+
+                @media (max-width: 48em) {
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    top: 1.6rem;
+                    left: 1.6rem;
+                }
             }
         }
     }
@@ -70,10 +113,25 @@
         width: 93.7rem;
         padding: 3rem 3rem 1.8rem 3rem;
 
+        @media (max-width: 48em) {
+            flex-direction: row;
+            gap: 3.2rem;
+            height: 27.8rem;
+            width: 100%;
+            border-radius: 0.8rem;
+            border: 0.2rem solid #eff1f4;
+            padding: 2.4rem;
+        }
+
         .card-equip__img {
             width: 87.7rem;
             height: 43.1rem;
             transform: rotate(-7.45deg);
+
+            @media (max-width: 48em) {
+                width: 22rem;
+                height: 22.4rem;
+            }
         }
 
         .card-equip__text {
@@ -82,15 +140,30 @@
             gap: 1.2rem;
             align-self: flex-start;
             z-index: 1;
+
+            @media (max-width: 48em) {
+                width: 37.8rem;
+                justify-content: start;
+                gap: 1.6rem;
+            }
         }
 
         .card-equip__title {
             font-size: 2.8rem;
             line-height: 128.571%;
+
+            @media (max-width: 48em) {
+                font-size: 3.2rem;
+                line-height: 125%;
+            }
         }
 
         .card-equip__bullets {
             gap: 1.2rem;
+
+            @media (max-width: 48em) {
+                gap: 0.8rem;
+            }
         }
     }
 }
