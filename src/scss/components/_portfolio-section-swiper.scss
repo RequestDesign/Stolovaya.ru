@@ -56,9 +56,11 @@
             align-items: center;
             justify-content: center;
             gap: 2.4rem;
+            margin-left: -15rem;
 
             @media (max-width: 48em) {
                 margin-top: 6rem;
+                margin-left: unset;
             }
         }
 

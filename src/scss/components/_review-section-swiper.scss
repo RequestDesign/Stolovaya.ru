@@ -1,0 +1,38 @@
+.review-swiper {
+    &__title {
+        margin-bottom: 4rem;
+        font-size: 4rem;
+        line-height: 115%;
+        font-weight: 500;
+
+        @media (max-width: 48em) {
+            font-size: 4.8rem;
+            line-height: 116.667%;
+            margin-bottom: 6rem;
+        }
+    }
+
+    .swiper-slide {
+        width: 39rem;
+        height: 35.2rem;
+        border-radius: 0.4rem;
+
+        @media (max-width: 48em) {
+            border-radius: 0.8rem;
+            width: 68.8rem;
+            height: 62rem;
+        }
+    }
+
+    .swiper-controls {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+
+        @media (max-width: 48em) {
+            margin-top: 6rem;
+        }
+    }
+}
