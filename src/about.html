@@ -7,17 +7,18 @@
     </head>
     <body>
         <include src="./components/header.html"></include>
-        <section class="about">
-            <div class="container">
-                <div class="breadcrumbs">
+        <div class="about">
+
+                <section class="breadcrumbs container">
                     <a href="#!">Главная</a>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
                         <rect x="8" y="8" width="4" height="4" rx="1" fill="#AE47FF" />
                     </svg>
                     <a href="#!">О компании</a>
-                </div>
+                </section>
 
-                <div class="about__hero">
+                <section class="about__hero container">
+                    
                     <div class="about__title">О компании</div>
 
                     <div class="about__hero__text">
@@ -70,9 +71,9 @@
                             <img src="./assets/images/about/about-2.jpg" alt="" />
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="about__service">
+                <section class="about__service container">
                     <div class="about__service__text">
                         <div class="about__service__title">Сервис и ремонт</div>
                         <div class="about__service__desc">
@@ -88,9 +89,9 @@
                             <img src="./assets/images/about/service-man.png" alt="" />
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="about__approach">
+                <section class="about__approach container">
                     <div class="about__approach__title">Комплексный подход</div>
                     <div class="about__approach__desc">
                         Мы предлагаем индивидуальные проектные решения. <br />
@@ -129,9 +130,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="portfolio-swiper">
+                <section class="portfolio-swiper container">
                     <div class="portfolio-swiper__top">
                         <div class="portfolio-swiper__title">Портфолио</div>
                         
@@ -285,9 +286,9 @@
                         </button>
                     </div>
 
-                </div>
+                </section>
 
-                <div class="about__partners">
+                <section class="about__partners container">
                     <div class="about__partners__title">Cотрудничество с поставщиками</div>
                     <div class="about__partners__grid">
                         <a class="partners-card" href="#!">
@@ -377,9 +378,9 @@
                         </a>
                     </div>
                     <a href="#!" class="load-more-link mobile" id="loadMorePartnersLink">Загрузить еще</a>
-                </div>
+                </section>
 
-                <div class="about__clients">
+                <section class="about__clients container">
 
                     <!-- clienst from main -->
 
@@ -391,9 +392,9 @@
                                 </div>
                             </div>
                             <div class="clients-content__right">
-                                <div class="section-title-btn">
-                                    <div class="section-title-btn__title">Наши клиенты:</div>
-                                </div>
+                                
+                                    <div class="clients-content__right__title">Наши клиенты:</div>
+                                
                                 <div class="clients-content__right__cards">
                                     <a href="#!" class="card-clients">
                                         <div class="card-clients__img">
@@ -523,7 +524,7 @@
                     </div>
 
                     <a href="#!" class="load-more-link mobile" id="loadMoreClientsLink">Загрузить еще</a>
-                </div>
+                </section>
 
                 <section class="contact">
                     <div class="container">
@@ -587,8 +588,8 @@
                         </div>
                     </div>
                 </section>
+            
             </div>
-        </section>
         <include src="./components/footer.html"></include>
     </body>
 </html>

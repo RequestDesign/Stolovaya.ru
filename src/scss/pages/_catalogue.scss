@@ -293,7 +293,8 @@
         flex: 1;
 
         @media (max-width: 48em) {
-            // margin: 0 -3.2rem;
+            flex: unset;
+            width: 68.6rem;
         }
     }
 
@@ -463,6 +464,7 @@
         margin-bottom: 1.6rem;
 
         .swiper-slide {
+            cursor: pointer;
             padding: 1.4rem 2rem;
             font-size: 1.6rem;
             line-height: 125%;
