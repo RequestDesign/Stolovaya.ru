@@ -64,48 +64,6 @@
         }
     }
 
-    &__bullets {
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
-
-        @media (max-width: 48em) {
-            gap: 0.8rem;
-        }
-
-        li {
-            font-size: 1.8rem;
-            color: #808081;
-            line-height: 133.333%;
-            padding-left: 2.8rem;
-            position: relative;
-
-            @media (max-width: 48em) {
-                font-size: 2.4rem;
-                line-height: 133.333%;
-                padding-left: 4rem;
-            }
-
-            &::before {
-                position: absolute;
-                content: "";
-                top: 0.9rem;
-                left: 0.9rem;
-                width: 0.6rem;
-                height: 0.6rem;
-                background-color: #ffc700;
-                border-radius: 0.2rem;
-
-                @media (max-width: 48em) {
-                    width: 0.8rem;
-                    height: 0.8rem;
-                    top: 1.6rem;
-                    left: 1.6rem;
-                }
-            }
-        }
-    }
-
     &--big {
         flex-direction: column;
         gap: 2rem;
