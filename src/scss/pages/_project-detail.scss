@@ -9,10 +9,9 @@
         @media (max-width: 48em) {
             padding-top: 42.4rem;
             padding-left: 0;
-            margin-left: -3.2rem;
-            margin-right: -3.2rem;
+            padding-right: 0;
             margin-bottom: 12rem;
-            margin-top: 3.6rem;
+            margin-top: 3.6rem !important;
         }
 
         &__card {
@@ -245,6 +244,7 @@
             margin-top: 8rem !important;
             margin-bottom: 8rem;
             border-radius: 0.8rem;
+            margin: 0 3.2rem;
         }
 
         &__text {
@@ -298,6 +298,7 @@
 
         @media (max-width: 48em) {
             margin-top: 12rem !important;
+            width: 68.6rem;
         }
 
         &__items {
@@ -397,12 +398,6 @@
             @media (max-width: 48em) {
                 margin-top: 6rem;
             }
-        }
-    }
-
-    .contact {
-        @media (max-width: 48em) {
-            margin: 16rem -3.2rem 0;
         }
     }
 }

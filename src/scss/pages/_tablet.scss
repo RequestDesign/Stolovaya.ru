@@ -61,7 +61,9 @@
 
             @media (max-width: 48em) {
                 top: 11.6rem;
-                width: 100%;
+                left: 3.2rem;
+                right: 3.2rem;
+                width: unset;
                 height: 41rem;
                 border-radius: 0.8rem;
                 overflow: hidden;
@@ -132,12 +134,6 @@
                     grid-area: unset;
                 }
             }
-        }
-    }
-
-    .contact {
-        @media (max-width: 48em) {
-            margin: 16rem -3.2rem 0;
         }
     }
 }

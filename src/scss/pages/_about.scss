@@ -5,6 +5,7 @@
     &__hero {
         position: relative;
         margin-bottom: 21.4rem;
+        margin-top: unset !important;
 
         @media (max-width: 48em) {
             display: flex;
@@ -163,12 +164,11 @@
         background-color: #eff1f4;
         border-radius: 0.4rem;
         padding: 5.2rem 8.8rem;
-        margin-bottom: 13rem;
         position: relative;
 
         @media (max-width: 48em) {
             background-color: unset;
-            padding: unset;
+            padding: 0 3.2rem;
             margin-bottom: 16rem;
         }
 
@@ -241,7 +241,6 @@
     }
 
     &__approach {
-        margin-bottom: 13rem;
 
         @media (max-width: 48em) {
             margin-bottom: 16rem;
@@ -360,7 +359,6 @@
     }
 
     &__partners {
-        margin-bottom: 13rem;
 
         @media (max-width: 48em) {
             margin-bottom: 16rem;
@@ -451,7 +449,19 @@
     }
 
     &__clients {
-        margin-bottom: 13rem;
+
+        .clients-content__right__title{
+            font-size: 4rem;
+            line-height: 115%;
+            font-weight: 500;
+            margin-bottom: 2.4rem;
+
+            @media (max-width: 48em) {
+                font-size: 4.8rem;
+                line-height: 116.667%;
+                margin-bottom: 6rem;
+            }
+        }
 
         .clients__additional {
             margin-top: 2rem;
@@ -466,12 +476,6 @@
                 grid-column-gap: 1.6rem;
                 grid-row-gap: 1.6rem;
             }
-        }
-    }
-
-    .contact {
-        @media (max-width: 48em) {
-            margin: 16rem -3.2rem 0;
         }
     }
 
