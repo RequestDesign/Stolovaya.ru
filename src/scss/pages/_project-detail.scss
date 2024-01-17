@@ -236,15 +236,22 @@
 
     &__contact-sm {
         margin-top: 2rem !important;
-        background-color: #eff1f4;
-        border-radius: 0.4rem;
-        display: flex;
 
         @media (max-width: 48em) {
             margin-top: 8rem !important;
             margin-bottom: 8rem;
             border-radius: 0.8rem;
-            margin: 0 3.2rem;
+        }
+
+        &__content {
+            display: flex;
+            width: 100%;
+            background-color: #eff1f4;
+            border-radius: 0.4rem;
+
+            @media (max-width: 48em) {
+                border-radius: 0.8rem;
+            }
         }
 
         &__text {
@@ -352,7 +359,6 @@
     }
 
     &__used {
-
         @media (max-width: 48em) {
             margin-top: 16rem !important;
         }
@@ -381,9 +387,8 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .card-main{
-
-                &.hidden{
+            .card-main {
+                &.hidden {
                     display: none;
                 }
             }
