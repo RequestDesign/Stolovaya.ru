@@ -93,7 +93,7 @@ body {
                 svg {
                     width: 2.4rem;
                     height: 2.4rem;
-                    
+
                     @media (max-width: 48em) {
                         width: 4rem;
                         height: 4rem;
@@ -170,14 +170,14 @@ body {
     }
 }
 
-.swiper-button-disabled{
+.swiper-button-disabled {
     background-color: #fff;
 
-        svg {
-            path {
-                fill: #8ad74e;
-            }
+    svg {
+        path {
+            fill: #8ad74e;
         }
+    }
 }
 
 //fav icon
@@ -270,7 +270,7 @@ body {
     margin: 4rem auto 0;
 }
 
-.btn__details{
+.btn__details {
     padding: unset;
     font-size: 1.6rem;
     padding: 0.2rem 0.1rem;
@@ -282,19 +282,72 @@ body {
 }
 
 //load more link
-.load-more-link{
-    color: #4E7CD7;
+.load-more-link {
+    color: #4e7cd7;
     line-height: 125%;
     font-size: 1.6rem;
     font-weight: 500;
 
-    &:hover{
+    &:hover {
         color: #345493;
     }
 
     @media (max-width: 48em) {
         line-height: 125%;
         font-size: 3.2rem;
+    }
+}
+
+//switcher
+.switcher__content {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+//bullets
+
+.bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    @media (max-width: 48em) {
+        gap: 0.8rem;
+    }
+
+    li {
+        font-size: 1.8rem;
+        color: #808081;
+        line-height: 133.333%;
+        padding-left: 2.8rem;
+        position: relative;
+
+        @media (max-width: 48em) {
+            font-size: 2.4rem;
+            line-height: 133.333%;
+            padding-left: 4rem;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0.9rem;
+            left: 0.9rem;
+            width: 0.6rem;
+            height: 0.6rem;
+            background-color: #ffc700;
+            border-radius: 0.2rem;
+
+            @media (max-width: 48em) {
+                width: 0.8rem;
+                height: 0.8rem;
+                top: 1.6rem;
+                left: 1.6rem;
+            }
+        }
     }
 }
 
