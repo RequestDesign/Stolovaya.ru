@@ -191,12 +191,6 @@
                 width: 33.6rem;
             }
 
-            &--hidden {
-
-                @media (max-width: 48em) {
-                    display: none;
-                }
-            }
         }
 
         &_img-container {
@@ -238,4 +232,11 @@
         }
     }
 
+}
+
+.hidden {
+
+    @media (max-width: 48em) {
+        display: none;
+    }
 }

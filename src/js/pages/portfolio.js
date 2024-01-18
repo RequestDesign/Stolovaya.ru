@@ -4,6 +4,11 @@ import 'swiper/scss/effect-fade'
 
 const portfolioSwiper = new Swiper('.portfolio__swiper', {
     modules: [Navigation, EffectFade],
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    speed: 1000,
     direction: 'horizontal',
     loop: true,
     navigation: {
@@ -22,8 +27,8 @@ function portfolioShowCards(e) {
 
     let i = 0
     for (; i < 4; i++) {
-        portfolioCardsHidden[0].classList.remove('portfolio__projects-container_project--hidden')
-        portfolioCardsHidden = document.querySelectorAll('.portfolio__projects-container_project--hidden')
+        portfolioCardsHidden[0].classList.remove('hidden')
+        portfolioCardsHidden = document.querySelectorAll('.portfolio__projects-container_project .hiddena')
     }
     i = 0
     if (portfolioCardsHidden.length === 0) {
@@ -31,4 +36,4 @@ function portfolioShowCards(e) {
     }
 }
 
-portfolioBtn.addEventListener('click', portfolioShowCards)
+portfolioBtn && portfolioBtn.addEventListener('click', portfolioShowCards)
