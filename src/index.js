@@ -8,6 +8,7 @@ import "./js/components/header";
 import "./js/components/range";
 import "./js/components/footer";
 import "./js/components/modal";
+import "./js/components/modal-request";
 import "./js/components/portfolio-section-swiper";
 import "./js/components/review-section-swiper";
 import "./js/components/switcher";

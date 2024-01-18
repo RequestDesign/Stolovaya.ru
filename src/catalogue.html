@@ -197,15 +197,20 @@
                                     </svg>
                                 </button>
                             </div>
+
                             <div class="filter__item filter__item--slider">
                                 <div class="title">Цена</div>
                                 <div id="sliderPrice"></div>
                                 <div class="range-inputs">
                                     <div class="range-input">
-                                        <span>От</span><input class="range__input-min" autocomplete="off" type="number" min="20000" max="1000000" id="rangeMinPrice" value="20000" /><span>₽</span>
+                                        <span>От</span>
+                                        <input class="range__input-min" autocomplete="off" type="number" min="20000" max="1000000" id="rangeMinPrice" value="20000" />
+                                        <!-- <span>₽</span> -->
                                     </div>
                                     <div class="range-input">
-                                        <span>До</span><input class="range__input-max" autocomplete="off" type="number" min="20000" max="1000000" id="rangeMaxPrice" value="820000" /><span>₽</span>
+                                        <span>До</span>
+                                        <input class="range__input-max" autocomplete="off" type="number" min="20000" max="1000000" id="rangeMaxPrice" value="820000" />
+                                        <!-- <span>₽</span> -->
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +232,7 @@
                                 </div>
                             </div>
 
-                            <div class="filter__item">
+                            <!-- <div class="filter__item">
                                 <div class="title">Wi-Fi</div>
                                 <div class="filter__inputs">
                                     <label class="checkbox-wrapper">
@@ -248,7 +253,7 @@
                                         <span>Опция</span>
                                     </label>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="filter__item">
                                 <div class="title">Производитель</div>
@@ -299,7 +304,7 @@
                                 </div>
                             </div>
 
-                            <div class="filter__item">
+                            <!-- <div class="filter__item">
                                 <div class="title">Модификация</div>
                                 <div class="filter__inputs">
                                     <label class="checkbox-wrapper">
@@ -346,9 +351,9 @@
 
                                     <a href="#!" class="show-more-link">Показать еще</a>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="filter__item">
+                            <!-- <div class="filter__item">
                                 <div class="title">Страна</div>
                                 <div class="filter__inputs">
                                     <label class="checkbox-wrapper">
@@ -395,9 +400,9 @@
 
                                     <a href="#!" class="show-more-link">Показать еще</a>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="filter__item filter__item--slider">
+                            <!-- <div class="filter__item filter__item--slider">
                                 <div class="title">Глубина (мм)</div>
                                 <div id="sliderDepth"></div>
                                 <div class="range-inputs">
@@ -408,9 +413,9 @@
                                         <span>До</span><input class="range__input-max" autocomplete="off" type="number" min="20000" max="1000000" id="rangeMaxDepth" value="820000" />
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="filter__item filter__item--slider">
+                            <!-- <div class="filter__item filter__item--slider">
                                 <div class="title">Ширина (мм)</div>
                                 <div id="sliderWidth"></div>
                                 <div class="range-inputs">
@@ -421,9 +426,9 @@
                                         <span>До</span><input class="range__input-max" autocomplete="off" type="number" min="20000" max="1000000" id="rangeMaxWidth" value="820000" />
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="filter__item filter__item--slider">
+                            <!-- <div class="filter__item filter__item--slider">
                                 <div class="title">Высота (мм)</div>
                                 <div id="sliderHeight"></div>
                                 <div class="range-inputs">
@@ -434,7 +439,8 @@
                                         <span>До</span><input class="range__input-max" autocomplete="off" type="number" min="20000" max="1000000" id="rangeMaxHeight" value="820000" />
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+
                             <div class="filter__btns">
                                 <button class="btn btn__primary">Показать</button>
                                 <button class="btn btn__transparent">Сбросить фильтры</button>
@@ -447,7 +453,7 @@
                             <div class="catalogue__ad__info">
                                 <div class="title">Скидка 15% на пароконвектоматы UNOX</div>
                                 <div class="desc">Печи Unox являются результатом сотрудничества и взаимодействия фабрики UNOX с наиболее востребованными шеф-поварами и кондитерами мира.</div>
-                                <button class="btn btn__primary">Подробнее</button>
+                                <button class="btn btn__primary" data-modal="request">Подробнее</button>
                             </div>
                             <div class="catalogue__ad__img">
                                 <img src="./assets/images/catalogue/ad-group.png" alt="" />
@@ -677,7 +683,7 @@
 
                                             <div class="card-main__desc__bottom">
                                                 <div class="price">108 000 <span>₽</span></div>
-                                                <button class="btn btn__primary btn__with-icon" data-modal="request">
+                                                <button class="btn btn__primary btn__with-icon" data-modal="thanks">
                                                     <span class="desktop">Заказать</span>
                                                     <div class="icon icon--big mobile">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -1505,6 +1511,26 @@
             </div>
         </section>
 
+        <!-- modal thanks -->
+
+        <div class="modal modal-thanks">
+            <div class="modal-back"></div>
+            <div class="modal-wrapper">
+                <div class="modal-exit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M19.8048 4.19519C19.6798 4.07021 19.5102 4 19.3335 4C19.1567 4 18.9871 4.07021 18.8621 4.19519L12 11.0573L5.13788 4.19519C5.01286 4.07021 4.84332 4 4.66654 4C4.48976 4 4.32022 4.07021 4.19519 4.19519C4.07021 4.32022 4 4.48976 4 4.66654C4 4.84332 4.07021 5.01286 4.19519 5.13788L11.0573 12L4.19519 18.8621C4.07021 18.9871 4 19.1567 4 19.3335C4 19.5102 4.07021 19.6798 4.19519 19.8048C4.32022 19.9298 4.48976 20 4.66654 20C4.84332 20 5.01286 19.9298 5.13788 19.8048L12 12.9427L18.8621 19.8048C18.9871 19.9298 19.1567 20 19.3335 20C19.5102 20 19.6798 19.9298 19.8048 19.8048C19.9298 19.6798 20 19.5102 20 19.3335C20 19.1567 19.9298 18.9871 19.8048 18.8621L12.9427 12L19.8048 5.13788C19.9298 5.01286 20 4.84332 20 4.66654C20 4.48976 19.9298 4.32022 19.8048 4.19519Z"
+                            fill="#3C3C3C"
+                        />
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-thanks__title">Спасибо за вашу заявку!</div>
+                    <div class="modal-thanks__text">Наш специалист свяжется с вами в ближайшее время для уточнения деталей.</div>
+                </div>
+            </div>
+        </div>
+
         <!-- modal request -->
 
         <div class="modal modal-request">
@@ -1519,8 +1545,13 @@
                     </svg>
                 </div>
                 <div class="modal-content">
-                    <div class="modal-request__title">Спасибо за вашу заявку!</div>
-                    <div class="modal-request__text">Наш специалист свяжется с вами в ближайшее время для уточнения деталей.</div>
+                    <div class="modal-request__title">Оставить заявку</div>
+                    <div class="modal-request__text">Оставьте заявку и наш менеджер свяжется с вами для уточнения деталей.</div>
+                    <form class="modal-request__form">
+                        <input class="modal-request__input" placeholder="Ваше имя" type="text" />
+                        <input id="phone-mask" class="modal-request__input" placeholder="Контактный телефон" type="text" />
+                        <button class="btn btn__primary" data-modal="close-modal">Отправить</button>
+                    </form>
                 </div>
             </div>
         </div>

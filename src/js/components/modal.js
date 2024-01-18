@@ -21,6 +21,10 @@ $(function () {
     });
 });
 
+$('[data-modal="thanks"]').on("click", () => {
+    $(".modal-thanks").addClass("active");
+});
+
 $('[data-modal="request"]').on("click", () => {
     $(".modal-request").addClass("active");
 });
