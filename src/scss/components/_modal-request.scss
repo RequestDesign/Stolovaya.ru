@@ -66,25 +66,4 @@
             }
         }
     }
-
-    &__input {
-        background-color: #eff1f4;
-        border-radius: 0.4rem;
-        padding: 1.6rem;
-        font-size: 1.6rem;
-        line-height: 125%;
-        font-weight: 500;
-        width: 100%;
-
-        &::placeholder {
-            color: #afb7c5;
-        }
-
-        @media (max-width: 48em) {
-            border-radius: 0.8rem;
-            padding: 2.4rem 3.2rem;
-            font-size: 2.8rem;
-            line-height: 142.857%;
-        }
-    }
 }
