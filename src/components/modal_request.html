@@ -13,8 +13,14 @@
             <div class="modal-request__title">Оставить заявку</div>
             <div class="modal-request__text">Оставьте заявку и наш менеджер свяжется с вами для уточнения деталей.</div>
             <form class="modal-request__form">
-                <input class="modal-request__input" placeholder="Ваше имя" type="text" />
-                <input id="phone-mask" class="modal-request__input" placeholder="Контактный телефон" type="text" />
+                <label class="request__input">
+                    <input required type="text" />
+                    <span class="request__input-placeholder">Ваше имя</span>
+                </label>
+                <label class="request__input">
+                    <input id="phone-mask" required type="text" />
+                    <span class="request__input-placeholder">Контактный телефон<b>*</b></span>
+                </label>
                 <button class="btn btn__primary" data-modal="close-modal">Отправить</button>
             </form>
         </div>

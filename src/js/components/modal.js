@@ -21,10 +21,12 @@ $(function () {
     });
 });
 
-$('[data-modal="thanks"]').on("click", () => {
+$('[data-modal="thanks"]').on("click", (e) => {
+    e.preventDefault()
     $(".modal-thanks").addClass("active");
 });
 
-$('[data-modal="request"]').on("click", () => {
+$('[data-modal="request"]').on("click", (e) => {
+    e.preventDefault()
     $(".modal-request").addClass("active");
 });
