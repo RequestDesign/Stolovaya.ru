@@ -1,5 +1,8 @@
 import IMask from "imask";
+import $ from "jquery";
 
-IMask(document.getElementById("phone-mask"), {
-    mask: "+{7}(000)000-00-00",
-});
+if ($("#phone-mask").length) {
+    IMask(document.getElementById("phone-mask"), {
+        mask: "+{7}(000)000-00-00",
+    });
+}
