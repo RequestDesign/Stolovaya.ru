@@ -4,6 +4,8 @@ import "./js/pages/catalogue";
 import "./js/pages/about";
 // import "./js/pages/portfolio"
 import "./js/pages/project-detail";
+import "./js/pages/product";
+import "./js/pages/zastroyshikam";
 import "./js/components/header";
 import "./js/components/range";
 import "./js/components/footer";
