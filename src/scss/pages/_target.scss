@@ -1,0 +1,76 @@
+.target {
+  &__title {
+    margin-bottom: 5rem;
+    color: #3c3c3c;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.15;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    &-item {
+      width: 39rem;
+      height: 25.1rem;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #3c3c3c;
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 1.16;
+      border-radius: 0.4rem;
+      background: #fff;
+      box-shadow: 0px 0.4rem 6rem 0px rgba(175, 183, 197, 0.5);
+    }
+    &-img {
+      width: 16.6rem;
+      height: 14.3rem;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__btn {
+    display: none;
+  }
+}
+@media (max-width: 48em) {
+  .target {
+    overflow: hidden;
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+    &__list {
+      margin-bottom: 4rem;
+      column-gap: 0;
+      row-gap: 1.6rem;
+
+      justify-content: space-between;
+      &-item {
+        width: 33.6rem;
+        height: 40.4rem;
+        border-radius: 0.8rem;
+
+        /* Card shadow */
+        box-shadow: 0px 0.8rem 12rem 0px rgba(175, 183, 197, 0.2);
+      }
+      &-name {
+        font-size: 2.8rem;
+      }
+      &-img {
+        width: 27.2rem;
+        height: 22.4rem;
+      }
+    }
+    &__btn {
+      margin: 0 auto;
+    }
+  }
+}
