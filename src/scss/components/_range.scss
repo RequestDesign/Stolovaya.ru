@@ -21,7 +21,7 @@
         border-radius: 100%;
         border: 0.5rem solid #eff1f4;
         cursor: pointer;
-        right: -2rem;
+        right: -1rem;
         top: -1rem;
         background: #ae47ff;
         box-shadow: unset;
@@ -70,6 +70,23 @@
 
         input {
             width: 100%;
+            flex: 1;
         }
     }
+
+    // #rangeMinPrice {
+    //     width: 6rem;
+
+    //     @media (max-width: 48em) {
+    //         width: 12rem;
+    //     }
+    // }
+
+    // #rangeMaxPrice {
+    //     width: 8rem;
+
+    //     @media (max-width: 48em) {
+    //         width: 16rem;
+    //     }
+    // }
 }
