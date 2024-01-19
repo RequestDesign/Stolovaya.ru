@@ -528,7 +528,7 @@
     &__cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, min-content);
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
 

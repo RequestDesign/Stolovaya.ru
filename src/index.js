@@ -14,3 +14,4 @@ import "./js/components/modal";
 import "./js/components/portfolio-section-swiper";
 import "./js/components/review-section-swiper";
 import "./js/components/switcher";
+import "./js/components/map";
