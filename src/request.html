@@ -7,38 +7,38 @@
     </head>
     <body>
         <include src="./components/header.html"></include>
-        <section class="request container">
-            <div class="request__left">
-                <div class="request__title">Оставить заявку</div>
-                <div class="request__desc">Оставьте заявку и наш менеджер свяжется с вами для уточнения деталей.</div>
-                <form class="request__form">
-                    <label class="request__input">
-                        <input type="text" />
-                        <span class="request__input-placeholder">Ваше имя</span>
-                    </label>
-                    <label class="request__input">
-                        <input id="phone-mask" required type="text" />
-                        <span class="request__input-placeholder">Контактный телефон<b>*</b></span>
-                    </label>
-                    <label class="request__input">
-                        <input type="text" />
-                        <span class="request__input-placeholder">E-mail</span>
-                    </label>
+        <main>
+            <section class="request container">
+                <div class="request__left">
+                    <div class="request__title">Оставить заявку</div>
+                    <div class="request__desc">Оставьте заявку и наш менеджер свяжется с вами для уточнения деталей.</div>
+                    <form class="request__form">
+                        <label class="request__input">
+                            <input type="text" />
+                            <span class="request__input-placeholder">Ваше имя</span>
+                        </label>
+                        <label class="request__input">
+                            <input id="phone-mask" required type="text" />
+                            <span class="request__input-placeholder">Контактный телефон<b>*</b></span>
+                        </label>
+                        <label class="request__input">
+                            <input type="text" />
+                            <span class="request__input-placeholder">E-mail</span>
+                        </label>
 
-                    
+                        <label class="request__input request__input--textarea">
+                            <textarea readonly>Товар: Пароконвектомат UNOX XECC 0513 EPR</textarea>
+                        </label>
 
-                    <label class="request__input request__input--textarea">
-                        <textarea readonly>Товар: Пароконвектомат UNOX XECC 0513 EPR</textarea>
-                    </label>
-
-                    <label class="request__input request__input--textarea">
-                        <textarea></textarea>
-                        <span class="request__input-placeholder">Примечания</span>
-                    </label>
-                    <button class="btn btn__primary" data-modal="thanks">Отправить</button>
-                </form>
-            </div>
-        </section>
+                        <label class="request__input request__input--textarea">
+                            <textarea></textarea>
+                            <span class="request__input-placeholder">Примечания</span>
+                        </label>
+                        <button class="btn btn__primary" data-modal="thanks">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </main>
 
         <div class="modal modal-thanks">
             <div class="modal-back"></div>

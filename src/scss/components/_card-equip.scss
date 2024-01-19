@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     gap: 1.2rem;
-    height: 29.4rem;
+    // height: 29.4rem;
+    height: 100%;
     width: 66.3rem;
     overflow: hidden;
     border-radius: 0.4rem;
@@ -12,7 +13,8 @@
 
     @media (max-width: 48em) {
         gap: 3.2rem;
-        height: 27.8rem;
+        // height: 27.8rem;
+        height: fit-content;
         width: 100%;
         border-radius: 0.8rem;
         border: 0.2rem solid #eff1f4;
@@ -67,14 +69,16 @@
     &--big {
         flex-direction: column;
         gap: 2rem;
-        height: 60.7rem;
+        // height: 60.7rem;
+        height: 100%;
         width: 93.7rem;
         padding: 3rem 3rem 1.8rem 3rem;
 
         @media (max-width: 48em) {
             flex-direction: row;
             gap: 3.2rem;
-            height: 27.8rem;
+            // height: 27.8rem;
+            height: fit-content;
             width: 100%;
             border-radius: 0.8rem;
             border: 0.2rem solid #eff1f4;
