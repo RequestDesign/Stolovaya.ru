@@ -1,36 +1,628 @@
 <header class="header header--desk">
-  <div class="header-top">
-    <div class="header-top_container container">
-      <ul class="header-top_pages">
-        <li class="header-top_pages_link"><a href="#">Компания</a></li>
-        <li class="header-top_pages_link"><a href="#">Портфолио</a></li>
-        <li class="header-top_pages_link"><a href="#">Проектирование</a></li>
-        <li class="header-top_pages_link"><a href="#">Застройщикам</a></li>
-        <li class="header-top_pages_link"><a href="#">Гос.Заказчикам</a></li>
-        <li class="header-top_pages_link"><a href="#">Таблет-Питание</a></li>
-        <li class="header-top_pages_link"><a href="#">Доставка и оплата</a></li>
-        <li class="header-top_pages_link"><a href="#">Сервис</a></li>
-        <li class="header-top_pages_link"><a href="#">Контакты</a></li>
-      </ul>
-      <div class="header-top_divider-wrapper">
-        <svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="24" stroke="#4E7CD7" />
-        </svg>
+  <div class="fixed">
+    <div class="header-top">
+      <div class="header-top_container container">
+        <ul class="header-top_pages">
+          <li class="header-top_pages_link"><a href="#">Компания</a></li>
+          <li class="header-top_pages_link"><a href="#">Портфолио</a></li>
+          <li class="header-top_pages_link"><a href="#">Проектирование</a></li>
+          <li class="header-top_pages_link"><a href="#">Застройщикам</a></li>
+          <li class="header-top_pages_link"><a href="#">Гос.Заказчикам</a></li>
+          <li class="header-top_pages_link"><a href="#">Таблет-Питание</a></li>
+          <li class="header-top_pages_link"><a href="#">Доставка и оплата</a></li>
+          <li class="header-top_pages_link"><a href="#">Сервис</a></li>
+          <li class="header-top_pages_link"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="header-top_divider-wrapper">
+          <svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="24" stroke="#4E7CD7" />
+          </svg>
+        </div>
+        <ul class="header-top_contacts">
+          <li class="header-top_contacts_link">
+            <div class="header-top_contacts_link_img-wrapper">
+              <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="01 align center">
+                  <path id="Vector"
+                    d="M21 0.000244141H3C2.20435 0.000244141 1.44129 0.316315 0.87868 0.878924C0.31607 1.44153 0 2.20459 0 3.00024L0 22.0002H24V3.00024C24 2.20459 23.6839 1.44153 23.1213 0.878924C22.5587 0.316315 21.7956 0.000244141 21 0.000244141ZM3 2.00024H21C21.2652 2.00024 21.5196 2.1056 21.7071 2.29314C21.8946 2.48067 22 2.73503 22 3.00024V3.66724L14.122 11.5462C13.5584 12.1076 12.7954 12.4227 12 12.4227C11.2046 12.4227 10.4416 12.1076 9.878 11.5462L2 3.66724V3.00024C2 2.73503 2.10536 2.48067 2.29289 2.29314C2.48043 2.1056 2.73478 2.00024 3 2.00024ZM2 20.0002V6.50024L8.464 12.9602C9.40263 13.8965 10.6743 14.4223 12 14.4223C13.3257 14.4223 14.5974 13.8965 15.536 12.9602L22 6.50024V20.0002H2Z"
+                    fill="#3C3C3C" />
+                </g>
+              </svg>
+            </div>
+            <a href="mailto:Info@stolovaya.ru">Info@stolovaya.ru</a>
+          </li>
+          <li class="header-top_contacts_link">
+            <div class="header-top_contacts_link_img-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Icons 24" clip-path="url(#clip0_584_239)">
+                  <path id="Vector"
+                    d="M14.2002 16.261C11.2887 15.028 8.97343 12.7073 7.7472 9.79297L11.1472 6.38697L4.8872 0.121969L1.7162 3.29197C1.1662 3.84511 0.731342 4.50183 0.436795 5.22412C0.142247 5.94642 -0.00614821 6.71995 0.000195101 7.49997C0.000195101 14.748 9.25219 24 16.5002 24C17.2801 24.0066 18.0536 23.8583 18.7757 23.5637C19.4979 23.2692 20.1544 22.8342 20.7072 22.284L23.8782 19.113L17.6132 12.848L14.2002 16.261ZM19.2942 20.87C18.9264 21.2338 18.4901 21.521 18.0104 21.715C17.5308 21.909 17.0175 22.0058 16.5002 22C10.2672 22 2.0002 13.733 2.0002 7.49997C1.99431 6.9828 2.09116 6.46961 2.28514 5.99016C2.47911 5.51071 2.76635 5.07455 3.1302 4.70697L4.8872 2.94997L8.3242 6.38697L5.38919 9.32197L5.63419 9.93597C6.35544 11.8653 7.48296 13.617 8.94035 15.0725C10.3977 16.528 12.1509 17.6532 14.0812 18.372L14.6872 18.603L17.6132 15.676L21.0502 19.113L19.2942 20.87ZM15.0002 6.52897V1.99997H17.0002V5.61097C17.6612 4.94797 18.4512 4.15297 19.2392 3.36097C20.6052 1.98697 21.9512 0.634969 22.5392 0.0429688L23.9532 1.45697C23.3612 2.04897 22.0172 3.39897 20.6532 4.77097C19.8782 5.55497 19.1002 6.33997 18.4392 6.99997H22.0002V8.99997H17.5002C16.8412 9.00316 16.2078 8.74477 15.7391 8.28151C15.2704 7.81825 15.0047 7.18796 15.0002 6.52897Z"
+                    fill="#3C3C3C" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_584_239">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <a href="tel:+78003338831">(800) 333-88-31</a>
+          </li>
+        </ul>
       </div>
-      <ul class="header-top_contacts">
-        <li class="header-top_contacts_link">
-          <div class="header-top_contacts_link_img-wrapper">
-            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="01 align center">
-                <path id="Vector"
-                  d="M21 0.000244141H3C2.20435 0.000244141 1.44129 0.316315 0.87868 0.878924C0.31607 1.44153 0 2.20459 0 3.00024L0 22.0002H24V3.00024C24 2.20459 23.6839 1.44153 23.1213 0.878924C22.5587 0.316315 21.7956 0.000244141 21 0.000244141ZM3 2.00024H21C21.2652 2.00024 21.5196 2.1056 21.7071 2.29314C21.8946 2.48067 22 2.73503 22 3.00024V3.66724L14.122 11.5462C13.5584 12.1076 12.7954 12.4227 12 12.4227C11.2046 12.4227 10.4416 12.1076 9.878 11.5462L2 3.66724V3.00024C2 2.73503 2.10536 2.48067 2.29289 2.29314C2.48043 2.1056 2.73478 2.00024 3 2.00024ZM2 20.0002V6.50024L8.464 12.9602C9.40263 13.8965 10.6743 14.4223 12 14.4223C13.3257 14.4223 14.5974 13.8965 15.536 12.9602L22 6.50024V20.0002H2Z"
-                  fill="#3C3C3C" />
-              </g>
+    </div>
+    <div class="header-middle container">
+      <a class="header-middle_logo logo-link" href="">
+        <div class="logo-link_img-container">
+          <img class="logo-link__logo-img" src="../assets/images/header/logo.svg" alt="">
+        </div>
+      </a>
+      <button class="header-middle_catalog-btn btn_blue">
+        <div class="header-middle_catalog-btn_img-wrapper">
+          <img class="catalog-btn_square" src="../assets/images/header/catalog-btn.svg" alt="">
+          <img class="catalog-btn_cross disabled  " src="../assets/images/header/header-catalog-btn-cross.svg" alt="">
+        </div>
+        <div class="header-middle_catalog-btn_text">Каталог</div>
+      </button>
+
+      <form class="header-middle_form">
+        <div class="header-middle_form_select-wrapper">
+          <button class="header-middle_form_select-btn">
+            <img src="../assets/images/header/select-btn.svg" alt="">
+          </button>
+          <input class="header-middle_form_select" type="text" name="" id="" value="Все категории" readonly>
+          <div class="header-middle_form_divider">
+            <svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="24" stroke="#4E7CD7" />
             </svg>
           </div>
-          <a href="mailto:Info@stolovaya.ru">Info@stolovaya.ru</a>
+          <div class="header-middle_dropdown-wrapper disabled">
+            <ul class="header-middle_dropdown-wrapper_options" name="category" id="category">
+              <li class="header-middle_dropdown-wrapper_option">Все категории</li>
+              <li class="header-middle_dropdown-wrapper_option">Тепловое</li>
+              <li class="header-middle_dropdown-wrapper_option">Холодильное</li>
+              <li class="header-middle_dropdown-wrapper_option">Электромеханическое</li>
+              <li class="header-middle_dropdown-wrapper_option">Посудомоечное</li>
+              <li class="header-middle_dropdown-wrapper_option">Хлебопекарное</li>
+              <li class="header-middle_dropdown-wrapper_option">Линии раздач</li>
+              <li class="header-middle_dropdown-wrapper_option">Нейтральное</li>
+              <li class="header-middle_dropdown-wrapper_option">Для фастфуда</li>
+              <li class="header-middle_dropdown-wrapper_option">Для зала</li>
+              <li class="header-middle_dropdown-wrapper_option">Вспомогательное</li>
+              <li class="header-middle_dropdown-wrapper_option">Для магазинов</li>
+            </ul>
+          </div>
+        </div>
+        <input class="header-middle_form_search" type="search" name="search" id="search" placeholder="Поиск товаров">
+        <button class="header-middle_form_search-btn btn_blue"><img src="../assets/images/header/search-btn.svg"
+            alt="Поиск"></button>
+      </form>
+      <div id="search-result" class="header-middle_search-result wrap">
+        <div class="header-middle_search-result scroll">
+          <div class="header-middle_search-result popular">
+            <div class="header-middle_search-result block-title">
+              Популярные Категории
+            </div>
+            <ul class="header-middle_search-result popular_list">
+              <li class="header-middle_search-result popular_item">
+                <a href="">Тепловое</a>
+              </li>
+              <li class="header-middle_search-result popular_item">
+                <a href="">Холодильное</a>
+              </li>
+              <li class="header-middle_search-result popular_item">
+                <a href="">Хлебопекарное</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-middle_search-result history">
+            <div class="header-middle_search-result block-title">
+              История
+            </div>
+            <ul class="header-middle_search-result history_list">
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result history_link" href="">
+                  <div class="header-middle_search-result history_inner">
+                    <div class="header-middle_search-result link_img-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_474_6108)">
+                          <path
+                            d="M12 0C9.0455 0.00210637 6.19613 1.09662 4 3.073V1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0C2.73478 0 2.48043 0.105357 2.29289 0.292893C2.10536 0.48043 2 0.734784 2 1V4C2 4.79565 2.31607 5.55871 2.87868 6.12132C3.44129 6.68393 4.20435 7 5 7H8C8.26522 7 8.51957 6.89464 8.70711 6.70711C8.89464 6.51957 9 6.26522 9 6C9 5.73478 8.89464 5.48043 8.70711 5.29289C8.51957 5.10536 8.26522 5 8 5H5C4.96628 4.995 4.93289 4.98799 4.9 4.979C6.52952 3.33783 8.67813 2.31308 10.9791 2.07967C13.28 1.84626 15.5906 2.41866 17.5165 3.69916C19.4424 4.97967 20.8642 6.88889 21.5392 9.10095C22.2142 11.313 22.1005 13.6908 21.2176 15.8283C20.3347 17.9659 18.7372 19.7308 16.698 20.8218C14.6587 21.9127 12.304 22.2621 10.0358 21.8102C7.76764 21.3584 5.72659 20.1333 4.26106 18.3442C2.79553 16.5551 1.99637 14.3127 2 12C2 11.7348 1.89464 11.4804 1.70711 11.2929C1.51957 11.1054 1.26522 11 1 11C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12C0 14.3734 0.703788 16.6935 2.02236 18.6668C3.34094 20.6402 5.21509 22.1783 7.4078 23.0866C9.60051 23.9948 12.0133 24.2324 14.3411 23.7694C16.6689 23.3064 18.8071 22.1635 20.4853 20.4853C22.1635 18.8071 23.3064 16.6689 23.7694 14.3411C24.2324 12.0133 23.9948 9.60051 23.0866 7.4078C22.1783 5.21509 20.6402 3.34094 18.6668 2.02236C16.6935 0.703788 14.3734 0 12 0V0Z"
+                            fill="#AFB7C5" />
+                          <path
+                            d="M12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
+                            fill="#AFB7C5" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_474_6108">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span>Пароконвектоматы</span>
+                  </div>
+                </a>
+                <div class="header-middle_search-result link_img-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M17.9998 6.00006C17.8123 5.81259 17.558 5.70728 17.2928 5.70728C17.0277 5.70728 16.7733 5.81259 16.5858 6.00006L11.9998 10.5861L7.41382 6.00006C7.22629 5.81259 6.97198 5.70728 6.70682 5.70728C6.44165 5.70728 6.18735 5.81259 5.99982 6.00006C5.81235 6.18759 5.70703 6.4419 5.70703 6.70706C5.70703 6.97223 5.81235 7.22653 5.99982 7.41406L10.5858 12.0001L5.99982 16.5861C5.81235 16.7736 5.70703 17.0279 5.70703 17.2931C5.70703 17.5582 5.81235 17.8125 5.99982 18.0001C6.18735 18.1875 6.44165 18.2928 6.70682 18.2928C6.97198 18.2928 7.22629 18.1875 7.41382 18.0001L11.9998 13.4141L16.5858 18.0001C16.7733 18.1875 17.0277 18.2928 17.2928 18.2928C17.558 18.2928 17.8123 18.1875 17.9998 18.0001C18.1873 17.8125 18.2926 17.5582 18.2926 17.2931C18.2926 17.0279 18.1873 16.7736 17.9998 16.5861L13.4138 12.0001L17.9998 7.41406C18.1873 7.22653 18.2926 6.97223 18.2926 6.70706C18.2926 6.4419 18.1873 6.18759 17.9998 6.00006Z"
+                      fill="#AFB7C5" />
+                  </svg>
+                </div>
+              </li>
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result history_link" href="">
+                  <div class="header-middle_search-result history_inner">
+                    <div class="header-middle_search-result link_img-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_474_6108)">
+                          <path
+                            d="M12 0C9.0455 0.00210637 6.19613 1.09662 4 3.073V1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0C2.73478 0 2.48043 0.105357 2.29289 0.292893C2.10536 0.48043 2 0.734784 2 1V4C2 4.79565 2.31607 5.55871 2.87868 6.12132C3.44129 6.68393 4.20435 7 5 7H8C8.26522 7 8.51957 6.89464 8.70711 6.70711C8.89464 6.51957 9 6.26522 9 6C9 5.73478 8.89464 5.48043 8.70711 5.29289C8.51957 5.10536 8.26522 5 8 5H5C4.96628 4.995 4.93289 4.98799 4.9 4.979C6.52952 3.33783 8.67813 2.31308 10.9791 2.07967C13.28 1.84626 15.5906 2.41866 17.5165 3.69916C19.4424 4.97967 20.8642 6.88889 21.5392 9.10095C22.2142 11.313 22.1005 13.6908 21.2176 15.8283C20.3347 17.9659 18.7372 19.7308 16.698 20.8218C14.6587 21.9127 12.304 22.2621 10.0358 21.8102C7.76764 21.3584 5.72659 20.1333 4.26106 18.3442C2.79553 16.5551 1.99637 14.3127 2 12C2 11.7348 1.89464 11.4804 1.70711 11.2929C1.51957 11.1054 1.26522 11 1 11C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12C0 14.3734 0.703788 16.6935 2.02236 18.6668C3.34094 20.6402 5.21509 22.1783 7.4078 23.0866C9.60051 23.9948 12.0133 24.2324 14.3411 23.7694C16.6689 23.3064 18.8071 22.1635 20.4853 20.4853C22.1635 18.8071 23.3064 16.6689 23.7694 14.3411C24.2324 12.0133 23.9948 9.60051 23.0866 7.4078C22.1783 5.21509 20.6402 3.34094 18.6668 2.02236C16.6935 0.703788 14.3734 0 12 0V0Z"
+                            fill="#AFB7C5" />
+                          <path
+                            d="M12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
+                            fill="#AFB7C5" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_474_6108">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span>Хлебопечь</span>
+                  </div>
+                </a>
+                <div class="header-middle_search-result link_img-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M17.9998 6.00006C17.8123 5.81259 17.558 5.70728 17.2928 5.70728C17.0277 5.70728 16.7733 5.81259 16.5858 6.00006L11.9998 10.5861L7.41382 6.00006C7.22629 5.81259 6.97198 5.70728 6.70682 5.70728C6.44165 5.70728 6.18735 5.81259 5.99982 6.00006C5.81235 6.18759 5.70703 6.4419 5.70703 6.70706C5.70703 6.97223 5.81235 7.22653 5.99982 7.41406L10.5858 12.0001L5.99982 16.5861C5.81235 16.7736 5.70703 17.0279 5.70703 17.2931C5.70703 17.5582 5.81235 17.8125 5.99982 18.0001C6.18735 18.1875 6.44165 18.2928 6.70682 18.2928C6.97198 18.2928 7.22629 18.1875 7.41382 18.0001L11.9998 13.4141L16.5858 18.0001C16.7733 18.1875 17.0277 18.2928 17.2928 18.2928C17.558 18.2928 17.8123 18.1875 17.9998 18.0001C18.1873 17.8125 18.2926 17.5582 18.2926 17.2931C18.2926 17.0279 18.1873 16.7736 17.9998 16.5861L13.4138 12.0001L17.9998 7.41406C18.1873 7.22653 18.2926 6.97223 18.2926 6.70706C18.2926 6.4419 18.1873 6.18759 17.9998 6.00006Z"
+                      fill="#AFB7C5" />
+                  </svg>
+                </div>
+              </li>
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result history_link" href="">
+                  <div class="header-middle_search-result history_inner">
+                    <div class="header-middle_search-result link_img-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_474_6108)">
+                          <path
+                            d="M12 0C9.0455 0.00210637 6.19613 1.09662 4 3.073V1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0C2.73478 0 2.48043 0.105357 2.29289 0.292893C2.10536 0.48043 2 0.734784 2 1V4C2 4.79565 2.31607 5.55871 2.87868 6.12132C3.44129 6.68393 4.20435 7 5 7H8C8.26522 7 8.51957 6.89464 8.70711 6.70711C8.89464 6.51957 9 6.26522 9 6C9 5.73478 8.89464 5.48043 8.70711 5.29289C8.51957 5.10536 8.26522 5 8 5H5C4.96628 4.995 4.93289 4.98799 4.9 4.979C6.52952 3.33783 8.67813 2.31308 10.9791 2.07967C13.28 1.84626 15.5906 2.41866 17.5165 3.69916C19.4424 4.97967 20.8642 6.88889 21.5392 9.10095C22.2142 11.313 22.1005 13.6908 21.2176 15.8283C20.3347 17.9659 18.7372 19.7308 16.698 20.8218C14.6587 21.9127 12.304 22.2621 10.0358 21.8102C7.76764 21.3584 5.72659 20.1333 4.26106 18.3442C2.79553 16.5551 1.99637 14.3127 2 12C2 11.7348 1.89464 11.4804 1.70711 11.2929C1.51957 11.1054 1.26522 11 1 11C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12C0 14.3734 0.703788 16.6935 2.02236 18.6668C3.34094 20.6402 5.21509 22.1783 7.4078 23.0866C9.60051 23.9948 12.0133 24.2324 14.3411 23.7694C16.6689 23.3064 18.8071 22.1635 20.4853 20.4853C22.1635 18.8071 23.3064 16.6689 23.7694 14.3411C24.2324 12.0133 23.9948 9.60051 23.0866 7.4078C22.1783 5.21509 20.6402 3.34094 18.6668 2.02236C16.6935 0.703788 14.3734 0 12 0V0Z"
+                            fill="#AFB7C5" />
+                          <path
+                            d="M12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
+                            fill="#AFB7C5" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_474_6108">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span>Фронтальная посудомоечная машина МПК-500Ф</span>
+                  </div>
+                </a>
+                <div class="header-middle_search-result link_img-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M17.9998 6.00006C17.8123 5.81259 17.558 5.70728 17.2928 5.70728C17.0277 5.70728 16.7733 5.81259 16.5858 6.00006L11.9998 10.5861L7.41382 6.00006C7.22629 5.81259 6.97198 5.70728 6.70682 5.70728C6.44165 5.70728 6.18735 5.81259 5.99982 6.00006C5.81235 6.18759 5.70703 6.4419 5.70703 6.70706C5.70703 6.97223 5.81235 7.22653 5.99982 7.41406L10.5858 12.0001L5.99982 16.5861C5.81235 16.7736 5.70703 17.0279 5.70703 17.2931C5.70703 17.5582 5.81235 17.8125 5.99982 18.0001C6.18735 18.1875 6.44165 18.2928 6.70682 18.2928C6.97198 18.2928 7.22629 18.1875 7.41382 18.0001L11.9998 13.4141L16.5858 18.0001C16.7733 18.1875 17.0277 18.2928 17.2928 18.2928C17.558 18.2928 17.8123 18.1875 17.9998 18.0001C18.1873 17.8125 18.2926 17.5582 18.2926 17.2931C18.2926 17.0279 18.1873 16.7736 17.9998 16.5861L13.4138 12.0001L17.9998 7.41406C18.1873 7.22653 18.2926 6.97223 18.2926 6.70706C18.2926 6.4419 18.1873 6.18759 17.9998 6.00006Z"
+                      fill="#AFB7C5" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header-middle_search-result brand_search">
+            <div class="header-middle_search-result block-title">
+              Бренды
+            </div>
+            <ul class="header-middle_search-result brand_list">
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand1.png" alt="">
+                </a>
+              </li>
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand2.png" alt="">
+                </a>
+              </li>
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand3.png" alt="">
+                </a>
+              </li>
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand4.png" alt="">
+                </a>
+              </li>
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand5.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="search-result-input" class="header-middle_search-result wrap">
+        <div class="header-middle_search-result scroll">
+          <div class="header-middle_search-result popular">
+            <div class="header-middle_search-result block-title">
+              Категории
+            </div>
+            <ul class="header-middle_search-result popular_list">
+              <li class="header-middle_search-result popular_item">
+                <a href=""><span class="search-text">П</span>осудомоечное</a>
+              </li>
+              <li class="header-middle_search-result popular_item">
+                <a href=""><span class="search-text">П</span>ароконвектоматы</a>
+              </li>
+              <li class="header-middle_search-result popular_item">
+                <a href="">Те<span class="search-text">п</span>ловое</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-middle_search-result history">
+            <div class="header-middle_search-result block-title">
+              Товары
+            </div>
+            <ul class="header-middle_search-result history_list">
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result goods-link" class="" href="">
+                  <div class="header-middle_search-result goods-img-wrapper">
+                    <img class="header-middle_search-result goods-img " src="../assets/images/header/search-img-1.png"
+                      alt="">
+                  </div>
+                  <div class="header-middle_search-result goods-text">
+                    <div class="header-middle_search-result goods-category">Линии раздачи</div>
+                    <div class="header-middle_search-result goods-name"><span
+                        class="search-text">П</span>рилавок-витрина холодильный ПВВ(Н)-70М-С-ОК с охлаждаемой камерой
+                    </div>
+                  </div>
+                  <div class="header-middle_search-result goods-brand">
+                    <img src="../assets/images/header/header-brand5.png" alt="">
+                  </div>
+                </a>
+              </li>
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result goods-link" class="" href="">
+                  <div class="header-middle_search-result goods-img-wrapper">
+                    <img class="header-middle_search-result goods-img " src="../assets/images/header/search-img-2.png"
+                      alt="">
+                  </div>
+                  <div class="header-middle_search-result goods-text">
+                    <div class="header-middle_search-result goods-category">Тепловое оборудование</div>
+                    <div class="header-middle_search-result goods-name">Конвекционная <span
+                        class="search-text">п</span>ечь КПП-4Э корпус эмалированный</div>
+                  </div>
+                  <div class="header-middle_search-result goods-brand">
+                    <img src="../assets/images/header/header-brand1.png" alt="">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-middle_search-result brand_search">
+            <div class="header-middle_search-result block-title">
+              Бренды
+            </div>
+            <ul class="header-middle_search-result brand_list">
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand1.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="header-middle_call-btn btn_blue">Заказать звонок</button>
+    </div>
+  </div>
+  <div class="fixed_header-bottom">
+    <div class="container header-bottom">
+      <div class="header-bottom-swiper swiper">
+        <div class="header-bottom-swiper-wrapper swiper-wrapper">
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Кондитерские</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Мини-пекарни</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Пищеблок</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Кофейни</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Кондитерская</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Блинная</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Бар</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Кафе</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Ресторан залов</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Вспомогательное</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Для магазинов</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">blank</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">blank</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">blank</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">blank</a>
+          </div>
+        </div>
+        <button class="swiper-button-next  header-bottom-swiper-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="19" viewBox="0 0 9 19" fill="none">
+            <path
+              d="M0.133789 18.116V0.615967L8.00004 8.48222C8.23438 8.71663 8.36602 9.03451 8.36602 9.36597C8.36602 9.69742 8.23438 10.0153 8.00004 10.2497L0.133789 18.116Z"
+              fill="#8AD74E" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header-middle_catalog catalog-wrapper">
+    <div class="header-middle_catalog_left">
+      <ul class="header-middle_catalog main-categories">
+        <li id="heaters" class="header-middle_catalog main-categories_item item--active">
+          <div>Тепловое</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
         </li>
-        <li class="header-top_contacts_link">
+        <li class="header-middle_catalog main-categories_item">
+          <div>Холодильное</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Электромеханическое</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Посудомоечное</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Хлебопекарное</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Линии раздачи</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Нейтральное</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Для фаст фуда</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Для зала</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Вспомогательное </div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Для магазинов</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <img src="../assets/images/header/arrow.svg" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="header-middle_catalog_middle">
+      <div id="heaters-block" class="header-middle_catalog sub-categories_wrap active">
+        <ul class="header-middle_catalog sub-categories_list">
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Пароконвектоматы
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Бойлерные</a></li>
+              <li><a href="">Инжекторные</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Котлы
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Стационарные</a></li>
+              <li><a href="">Опрокидываемые</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Казаны
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Индукционные</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Шкафы жарочные
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Электрические</a></li>
+              <li><a href="">Индукционные</a></li>
+              <li><a href="">Газовые</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Плиты
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Электрические</a></li>
+              <li><a href="">Индукционные</a></li>
+              <li><a href="">Газовые</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Сковороды
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Электросковороды</a></li>
+              <li><a href="">Газовые</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Столы тепловые
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Пристенные</a></li>
+              <li><a href="">Сквозные</a></li>
+              <li><a href="">Островные</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Аппараты контактной обработки
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Жарочные поверхности</a></li>
+              <li><a href="">Гриль</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Фритюрницы
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Настольные</a></li>
+              <li><a href="">Напольные</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Мармиты
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Передвижные</a></li>
+              <li><a href="">Стационарные</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <div class="header-middle_catalog sub-categories_title">
+              Кипятильники
+            </div>
+            <ul class="header-middle_catalog sub-categories_inner">
+              <li><a href="">Проточные</a></li>
+              <li><a href="">Наливные</a></li>
+              <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
+            </ul>
+          </li>
+          <li class="header-middle_catalog sub-categories_item">
+            <ul class="header-middle_catalog sub-categories_solo">
+              <li class="header-middle_catalog sub-categories_title"><a href="">Конвекционные печи</a></li>
+              <li class="header-middle_catalog sub-categories_title"><a href="">Полки тепловые</a></li>
+              <li class="header-middle_catalog sub-categories_title"><a href="">Водонагреватели</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="header-middle_catalog categories_main-link" href="">Смотреть все</a>
+      </div>
+    </div>
+    <div class="header-middle_catalog_right">
+      <ul class="header-middle_catalog brands-list">
+        <li class="header-middle_catalog brands-item">
+          <a class="header-middle_catalog brands-link" href="">
+            <img src="../assets/images/header/header-big-brand1.png" alt="">
+          </a>
+        </li>
+        <li class="header-middle_catalog brands-item">
+          <a class="header-middle_catalog brands-link" href="">
+            <img src="../assets/images/header/header-big-brand2.png" alt="">
+          </a>
+        </li>
+        <li class="header-middle_catalog brands-item">
+          <a class="header-middle_catalog brands-link" href="">
+            <img src="../assets/images/header/header-big-brand3.png" alt="">
+          </a>
+        </li>
+        <li class="header-middle_catalog brands-item">
+          <a class="header-middle_catalog brands-link" href="">
+            <img src="../assets/images/header/header-big-brand4.png" alt="">
+          </a>
+        </li>
+        <li class="header-middle_catalog brands-item">
+          <a class="header-middle_catalog brands-link" href="">
+            <img src="../assets/images/header/header-big-brand5.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<header class="header header--mobile">
+  <div class="fixed">
+    <div class="header-top">
+      <div class="header-top_container container">
+        <a class="header-middle_logo logo-link" href="">
+          <div class="logo-link_img-container">
+            <img class="logo-link__logo-img" src="../assets/images/header/logo.svg" alt="">
+          </div>
+        </a>
+        <div class="header-top_contacts_link">
           <div class="header-top_contacts_link_img-wrapper">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="Icons 24" clip-path="url(#clip0_584_239)">
@@ -46,491 +638,635 @@
             </svg>
           </div>
           <a href="tel:+78003338831">(800) 333-88-31</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-middle container">
+      <button class="header-middle_mobile-btn disabled">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
+          <path
+            d="M20.0002 6.83339V5.16672L2.12932 5.19255L5.73099 1.58922L4.55266 0.410889L0.73099 4.23255C0.262312 4.70137 -0.000976563 5.33714 -0.000976562 6.00005C-0.000976563 6.66297 0.262312 7.29874 0.73099 7.76756L4.55266 11.5892L5.73099 10.4109L2.17932 6.85922L20.0002 6.83339Z"
+            fill="#4E7CD7" />
+        </svg>
+      </button>
+      <form class="header-middle_form">
+        <input class="header-middle_form_search" type="search" name="search" id="search" placeholder="Поиск товаров"
+          autocomplete="off">
+        <button class="header-middle_form_search-btn btn_blue"><img src="../assets/images/header/search-btn.svg"
+            alt="Поиск"></button>
+      </form>
+      <div id="search-result" class="header-middle_search-result wrap">
+        <div class="header-middle_search-result scroll">
+          <div class="header-middle_search-result popular">
+            <div class="header-middle_search-result block-title">
+              Популярные Категории
+            </div>
+            <ul class="header-middle_search-result popular_list">
+              <li class="header-middle_search-result popular_item">
+                <a href="">Тепловое</a>
+              </li>
+              <li class="header-middle_search-result popular_item">
+                <a href="">Холодильное</a>
+              </li>
+              <li class="header-middle_search-result popular_item">
+                <a href="">Хлебопекарное</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-middle_search-result history">
+            <div class="header-middle_search-result block-title">
+              История
+            </div>
+            <ul class="header-middle_search-result history_list">
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result history_link" href="">
+                  <div class="header-middle_search-result history_inner">
+                    <div class="header-middle_search-result link_img-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_474_6108)">
+                          <path
+                            d="M12 0C9.0455 0.00210637 6.19613 1.09662 4 3.073V1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0C2.73478 0 2.48043 0.105357 2.29289 0.292893C2.10536 0.48043 2 0.734784 2 1V4C2 4.79565 2.31607 5.55871 2.87868 6.12132C3.44129 6.68393 4.20435 7 5 7H8C8.26522 7 8.51957 6.89464 8.70711 6.70711C8.89464 6.51957 9 6.26522 9 6C9 5.73478 8.89464 5.48043 8.70711 5.29289C8.51957 5.10536 8.26522 5 8 5H5C4.96628 4.995 4.93289 4.98799 4.9 4.979C6.52952 3.33783 8.67813 2.31308 10.9791 2.07967C13.28 1.84626 15.5906 2.41866 17.5165 3.69916C19.4424 4.97967 20.8642 6.88889 21.5392 9.10095C22.2142 11.313 22.1005 13.6908 21.2176 15.8283C20.3347 17.9659 18.7372 19.7308 16.698 20.8218C14.6587 21.9127 12.304 22.2621 10.0358 21.8102C7.76764 21.3584 5.72659 20.1333 4.26106 18.3442C2.79553 16.5551 1.99637 14.3127 2 12C2 11.7348 1.89464 11.4804 1.70711 11.2929C1.51957 11.1054 1.26522 11 1 11C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12C0 14.3734 0.703788 16.6935 2.02236 18.6668C3.34094 20.6402 5.21509 22.1783 7.4078 23.0866C9.60051 23.9948 12.0133 24.2324 14.3411 23.7694C16.6689 23.3064 18.8071 22.1635 20.4853 20.4853C22.1635 18.8071 23.3064 16.6689 23.7694 14.3411C24.2324 12.0133 23.9948 9.60051 23.0866 7.4078C22.1783 5.21509 20.6402 3.34094 18.6668 2.02236C16.6935 0.703788 14.3734 0 12 0V0Z"
+                            fill="#AFB7C5" />
+                          <path
+                            d="M12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
+                            fill="#AFB7C5" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_474_6108">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span>Пароконвектоматы</span>
+                  </div>
+                </a>
+                <div class="header-middle_search-result link_img-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M17.9998 6.00006C17.8123 5.81259 17.558 5.70728 17.2928 5.70728C17.0277 5.70728 16.7733 5.81259 16.5858 6.00006L11.9998 10.5861L7.41382 6.00006C7.22629 5.81259 6.97198 5.70728 6.70682 5.70728C6.44165 5.70728 6.18735 5.81259 5.99982 6.00006C5.81235 6.18759 5.70703 6.4419 5.70703 6.70706C5.70703 6.97223 5.81235 7.22653 5.99982 7.41406L10.5858 12.0001L5.99982 16.5861C5.81235 16.7736 5.70703 17.0279 5.70703 17.2931C5.70703 17.5582 5.81235 17.8125 5.99982 18.0001C6.18735 18.1875 6.44165 18.2928 6.70682 18.2928C6.97198 18.2928 7.22629 18.1875 7.41382 18.0001L11.9998 13.4141L16.5858 18.0001C16.7733 18.1875 17.0277 18.2928 17.2928 18.2928C17.558 18.2928 17.8123 18.1875 17.9998 18.0001C18.1873 17.8125 18.2926 17.5582 18.2926 17.2931C18.2926 17.0279 18.1873 16.7736 17.9998 16.5861L13.4138 12.0001L17.9998 7.41406C18.1873 7.22653 18.2926 6.97223 18.2926 6.70706C18.2926 6.4419 18.1873 6.18759 17.9998 6.00006Z"
+                      fill="#AFB7C5" />
+                  </svg>
+                </div>
+              </li>
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result history_link" href="">
+                  <div class="header-middle_search-result history_inner">
+                    <div class="header-middle_search-result link_img-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_474_6108)">
+                          <path
+                            d="M12 0C9.0455 0.00210637 6.19613 1.09662 4 3.073V1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0C2.73478 0 2.48043 0.105357 2.29289 0.292893C2.10536 0.48043 2 0.734784 2 1V4C2 4.79565 2.31607 5.55871 2.87868 6.12132C3.44129 6.68393 4.20435 7 5 7H8C8.26522 7 8.51957 6.89464 8.70711 6.70711C8.89464 6.51957 9 6.26522 9 6C9 5.73478 8.89464 5.48043 8.70711 5.29289C8.51957 5.10536 8.26522 5 8 5H5C4.96628 4.995 4.93289 4.98799 4.9 4.979C6.52952 3.33783 8.67813 2.31308 10.9791 2.07967C13.28 1.84626 15.5906 2.41866 17.5165 3.69916C19.4424 4.97967 20.8642 6.88889 21.5392 9.10095C22.2142 11.313 22.1005 13.6908 21.2176 15.8283C20.3347 17.9659 18.7372 19.7308 16.698 20.8218C14.6587 21.9127 12.304 22.2621 10.0358 21.8102C7.76764 21.3584 5.72659 20.1333 4.26106 18.3442C2.79553 16.5551 1.99637 14.3127 2 12C2 11.7348 1.89464 11.4804 1.70711 11.2929C1.51957 11.1054 1.26522 11 1 11C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12C0 14.3734 0.703788 16.6935 2.02236 18.6668C3.34094 20.6402 5.21509 22.1783 7.4078 23.0866C9.60051 23.9948 12.0133 24.2324 14.3411 23.7694C16.6689 23.3064 18.8071 22.1635 20.4853 20.4853C22.1635 18.8071 23.3064 16.6689 23.7694 14.3411C24.2324 12.0133 23.9948 9.60051 23.0866 7.4078C22.1783 5.21509 20.6402 3.34094 18.6668 2.02236C16.6935 0.703788 14.3734 0 12 0V0Z"
+                            fill="#AFB7C5" />
+                          <path
+                            d="M12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
+                            fill="#AFB7C5" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_474_6108">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span>Хлебопечь</span>
+                  </div>
+                </a>
+                <div class="header-middle_search-result link_img-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M17.9998 6.00006C17.8123 5.81259 17.558 5.70728 17.2928 5.70728C17.0277 5.70728 16.7733 5.81259 16.5858 6.00006L11.9998 10.5861L7.41382 6.00006C7.22629 5.81259 6.97198 5.70728 6.70682 5.70728C6.44165 5.70728 6.18735 5.81259 5.99982 6.00006C5.81235 6.18759 5.70703 6.4419 5.70703 6.70706C5.70703 6.97223 5.81235 7.22653 5.99982 7.41406L10.5858 12.0001L5.99982 16.5861C5.81235 16.7736 5.70703 17.0279 5.70703 17.2931C5.70703 17.5582 5.81235 17.8125 5.99982 18.0001C6.18735 18.1875 6.44165 18.2928 6.70682 18.2928C6.97198 18.2928 7.22629 18.1875 7.41382 18.0001L11.9998 13.4141L16.5858 18.0001C16.7733 18.1875 17.0277 18.2928 17.2928 18.2928C17.558 18.2928 17.8123 18.1875 17.9998 18.0001C18.1873 17.8125 18.2926 17.5582 18.2926 17.2931C18.2926 17.0279 18.1873 16.7736 17.9998 16.5861L13.4138 12.0001L17.9998 7.41406C18.1873 7.22653 18.2926 6.97223 18.2926 6.70706C18.2926 6.4419 18.1873 6.18759 17.9998 6.00006Z"
+                      fill="#AFB7C5" />
+                  </svg>
+                </div>
+              </li>
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result history_link" href="">
+                  <div class="header-middle_search-result history_inner">
+                    <div class="header-middle_search-result link_img-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_474_6108)">
+                          <path
+                            d="M12 0C9.0455 0.00210637 6.19613 1.09662 4 3.073V1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0C2.73478 0 2.48043 0.105357 2.29289 0.292893C2.10536 0.48043 2 0.734784 2 1V4C2 4.79565 2.31607 5.55871 2.87868 6.12132C3.44129 6.68393 4.20435 7 5 7H8C8.26522 7 8.51957 6.89464 8.70711 6.70711C8.89464 6.51957 9 6.26522 9 6C9 5.73478 8.89464 5.48043 8.70711 5.29289C8.51957 5.10536 8.26522 5 8 5H5C4.96628 4.995 4.93289 4.98799 4.9 4.979C6.52952 3.33783 8.67813 2.31308 10.9791 2.07967C13.28 1.84626 15.5906 2.41866 17.5165 3.69916C19.4424 4.97967 20.8642 6.88889 21.5392 9.10095C22.2142 11.313 22.1005 13.6908 21.2176 15.8283C20.3347 17.9659 18.7372 19.7308 16.698 20.8218C14.6587 21.9127 12.304 22.2621 10.0358 21.8102C7.76764 21.3584 5.72659 20.1333 4.26106 18.3442C2.79553 16.5551 1.99637 14.3127 2 12C2 11.7348 1.89464 11.4804 1.70711 11.2929C1.51957 11.1054 1.26522 11 1 11C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12C0 14.3734 0.703788 16.6935 2.02236 18.6668C3.34094 20.6402 5.21509 22.1783 7.4078 23.0866C9.60051 23.9948 12.0133 24.2324 14.3411 23.7694C16.6689 23.3064 18.8071 22.1635 20.4853 20.4853C22.1635 18.8071 23.3064 16.6689 23.7694 14.3411C24.2324 12.0133 23.9948 9.60051 23.0866 7.4078C22.1783 5.21509 20.6402 3.34094 18.6668 2.02236C16.6935 0.703788 14.3734 0 12 0V0Z"
+                            fill="#AFB7C5" />
+                          <path
+                            d="M12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
+                            fill="#AFB7C5" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_474_6108">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <span>Фронтальная посудомоечная машина МПК-500Ф</span>
+                  </div>
+                </a>
+                <div class="header-middle_search-result link_img-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M17.9998 6.00006C17.8123 5.81259 17.558 5.70728 17.2928 5.70728C17.0277 5.70728 16.7733 5.81259 16.5858 6.00006L11.9998 10.5861L7.41382 6.00006C7.22629 5.81259 6.97198 5.70728 6.70682 5.70728C6.44165 5.70728 6.18735 5.81259 5.99982 6.00006C5.81235 6.18759 5.70703 6.4419 5.70703 6.70706C5.70703 6.97223 5.81235 7.22653 5.99982 7.41406L10.5858 12.0001L5.99982 16.5861C5.81235 16.7736 5.70703 17.0279 5.70703 17.2931C5.70703 17.5582 5.81235 17.8125 5.99982 18.0001C6.18735 18.1875 6.44165 18.2928 6.70682 18.2928C6.97198 18.2928 7.22629 18.1875 7.41382 18.0001L11.9998 13.4141L16.5858 18.0001C16.7733 18.1875 17.0277 18.2928 17.2928 18.2928C17.558 18.2928 17.8123 18.1875 17.9998 18.0001C18.1873 17.8125 18.2926 17.5582 18.2926 17.2931C18.2926 17.0279 18.1873 16.7736 17.9998 16.5861L13.4138 12.0001L17.9998 7.41406C18.1873 7.22653 18.2926 6.97223 18.2926 6.70706C18.2926 6.4419 18.1873 6.18759 17.9998 6.00006Z"
+                      fill="#AFB7C5" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="header-middle_search-result brand_search">
+            <div class="header-middle_search-result block-title">
+              Популярные Категории
+            </div>
+            <ul class="header-middle_search-result brand_list">
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand1.png" alt="">
+                </a>
+              </li>
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand2.png" alt="">
+                </a>
+              </li>
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand3.png" alt="">
+                </a>
+              </li>
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand4.png" alt="">
+                </a>
+              </li>
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand5.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="search-result-input" class="header-middle_search-result wrap">
+        <div class="header-middle_search-result scroll">
+          <div class="header-middle_search-result popular">
+            <div class="header-middle_search-result block-title">
+              Категории
+            </div>
+            <ul class="header-middle_search-result popular_list">
+              <li class="header-middle_search-result popular_item">
+                <a href=""><span class="search-text">П</span>осудомоечное</a>
+              </li>
+              <li class="header-middle_search-result popular_item">
+                <a href=""><span class="search-text">П</span>ароконвектоматы</a>
+              </li>
+              <li class="header-middle_search-result popular_item">
+                <a href="">Те<span class="search-text">п</span>ловое</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-middle_search-result history">
+            <div class="header-middle_search-result block-title">
+              Товары
+            </div>
+            <ul class="header-middle_search-result history_list">
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result goods-link" class="" href="">
+                  <div class="header-middle_search-result goods-img-wrapper">
+                    <img class="header-middle_search-result goods-img " src="../assets/images/header/search-img-1.png"
+                      alt="">
+                  </div>
+                  <div class="header-middle_search-result goods-text">
+                    <div class="header-middle_search-result goods-category">Линии раздачи</div>
+                    <div class="header-middle_search-result goods-name"><span
+                        class="search-text">П</span>рилавок-витрина холодильный ПВВ(Н)-70М-С-ОК с охлаждаемой камерой
+                    </div>
+                  </div>
+                  <div class="header-middle_search-result goods-brand">
+                    <img src="../assets/images/header/header-brand5.png" alt="">
+                  </div>
+                </a>
+              </li>
+              <li class="header-middle_search-result history_item">
+                <a class="header-middle_search-result goods-link" class="" href="">
+                  <div class="header-middle_search-result goods-img-wrapper">
+                    <img class="header-middle_search-result goods-img " src="../assets/images/header/search-img-2.png"
+                      alt="">
+                  </div>
+                  <div class="header-middle_search-result goods-text">
+                    <div class="header-middle_search-result goods-category">Тепловое оборудование</div>
+                    <div class="header-middle_search-result goods-name">Конвекционная <span
+                        class="search-text">п</span>ечь КПП-4Э корпус эмалированный</div>
+                  </div>
+                  <div class="header-middle_search-result goods-brand">
+                    <img src="../assets/images/header/header-brand1.png" alt="">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-middle_search-result brand_search">
+            <div class="header-middle_search-result block-title">
+              Бренды
+            </div>
+            <ul class="header-middle_search-result brand_list">
+              <li class="header-middle_search-result brand_item">
+                <a class="header-middle_search-result brand_link" href="">
+                  <img src="../assets/images/header/header-brand1.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container header-bottom">
+      <div class="header-bottom-swiper swiper">
+        <div class="header-bottom-swiper-wrapper swiper-wrapper">
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Кондитерские</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Мини-пекарни</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Пищеблок</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Кофейни</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Кондитерская</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Блинная</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Бар</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Кафе</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Ресторан залов</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Вспомогательное</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">Для магазинов</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">blank</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">blank</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">blank</a>
+          </div>
+          <div class="swiper-slide header-bottom-swiper-slide">
+            <a href="" class="header-bottom-swiper-slide_link">blank</a>
+          </div>
+        </div>
+        <button class="swiper-button-next  header-bottom-swiper-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="19" viewBox="0 0 9 19" fill="none">
+            <path
+              d="M0.133789 18.116V0.615967L8.00004 8.48222C8.23438 8.71663 8.36602 9.03451 8.36602 9.36597C8.36602 9.69742 8.23438 10.0153 8.00004 10.2497L0.133789 18.116Z"
+              fill="#8AD74E" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header-middle_catalog catalog-wrapper catalog--mobile disabled">
+    <div class="header-middle_catalog_left catalog_item">
+      <div class="header-middle_catalog_top">
+        <div class="header-middle_catalog_title">
+          Каталог
+        </div>
+        <button class="header-middle_catalog_btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path
+              d="M16.5037 3.49591C16.3995 3.39176 16.2582 3.33325 16.1109 3.33325C15.9636 3.33325 15.8223 3.39176 15.7181 3.49591L9.99967 9.21435L4.28124 3.49591C4.17706 3.39176 4.03577 3.33325 3.88845 3.33325C3.74114 3.33325 3.59985 3.39176 3.49567 3.49591C3.39152 3.6001 3.33301 3.74138 3.33301 3.8887C3.33301 4.03601 3.39152 4.1773 3.49567 4.28148L9.2141 9.99992L3.49567 15.7184C3.39152 15.8225 3.33301 15.9638 3.33301 16.1111C3.33301 16.2585 3.39152 16.3997 3.49567 16.5039C3.59985 16.6081 3.74114 16.6666 3.88845 16.6666C4.03577 16.6666 4.17706 16.6081 4.28124 16.5039L9.99967 10.7855L15.7181 16.5039C15.8223 16.6081 15.9636 16.6666 16.1109 16.6666C16.2582 16.6666 16.3995 16.6081 16.5037 16.5039C16.6078 16.3997 16.6663 16.2585 16.6663 16.1111C16.6663 15.9638 16.6078 15.8225 16.5037 15.7184L10.7852 9.99992L16.5037 4.28148C16.6078 4.1773 16.6663 4.03601 16.6663 3.8887C16.6663 3.74138 16.6078 3.6001 16.5037 3.49591Z"
+              fill="#3C3C3C" />
+          </svg>
+        </button>
+      </div>
+      <ul class="header-middle_catalog main-categories">
+        <li id="heaters" class="header-middle_catalog main-categories_item">
+          <div>Тепловое</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Холодильное</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Электромеханическое</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Посудомоечное</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Хлебопекарное</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Линии раздачи</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Нейтральное</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Для фаст фуда</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Для зала</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Вспомогательное </div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
+        </li>
+        <li class="header-middle_catalog main-categories_item">
+          <div>Для магазинов</div>
+          <div class="header-middle_catalog main-categories_item arrow_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                fill="#3C3C3C" />
+            </svg>
+          </div>
         </li>
       </ul>
     </div>
-  </div>
-  <div class="header-middle container">
-    <a class="header-middle_logo logo-link" href="">
-      <div class="logo-link_img-container">
-        <img class="logo-link__logo-img" src="../assets/images/header/logo.svg" alt="">
-      </div>
-    </a>
-    <button class="header-middle_catalog-btn btn_blue">
-      <div class="header-middle_catalog-btn_img-wrapper">
-        <img src="../assets/images/header/catalog-btn.svg" alt="">
-      </div>
-      <div class="header-middle_catalog-btn_text">Каталог</div>
-    </button>
-    <div class="header-middle_catalog catalog-wrapper">
-      <div class="header-middle_catalog_left">
+    <div class="header-catalog_category catalog_item disabled">
+      <div id="heaters-block" class="category-mobile disabled">
+        <div class="header-middle_catalog_top">
+          <div class="header-middle_catalog_title">
+            Тепловое
+          </div>
+          <button class="header-middle_catalog_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M16.5037 3.49591C16.3995 3.39176 16.2582 3.33325 16.1109 3.33325C15.9636 3.33325 15.8223 3.39176 15.7181 3.49591L9.99967 9.21435L4.28124 3.49591C4.17706 3.39176 4.03577 3.33325 3.88845 3.33325C3.74114 3.33325 3.59985 3.39176 3.49567 3.49591C3.39152 3.6001 3.33301 3.74138 3.33301 3.8887C3.33301 4.03601 3.39152 4.1773 3.49567 4.28148L9.2141 9.99992L3.49567 15.7184C3.39152 15.8225 3.33301 15.9638 3.33301 16.1111C3.33301 16.2585 3.39152 16.3997 3.49567 16.5039C3.59985 16.6081 3.74114 16.6666 3.88845 16.6666C4.03577 16.6666 4.17706 16.6081 4.28124 16.5039L9.99967 10.7855L15.7181 16.5039C15.8223 16.6081 15.9636 16.6666 16.1109 16.6666C16.2582 16.6666 16.3995 16.6081 16.5037 16.5039C16.6078 16.3997 16.6663 16.2585 16.6663 16.1111C16.6663 15.9638 16.6078 15.8225 16.5037 15.7184L10.7852 9.99992L16.5037 4.28148C16.6078 4.1773 16.6663 4.03601 16.6663 3.8887C16.6663 3.74138 16.6078 3.6001 16.5037 3.49591Z"
+                fill="#3C3C3C" />
+            </svg>
+          </button>
+        </div>
         <ul class="header-middle_catalog main-categories">
           <li id="heaters" class="header-middle_catalog main-categories_item">
-            <div>Тепловое</div>
+            <div>Все товары</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
+            </div>
+          </li>
+          <li id="steamconvetctor" class="header-middle_catalog main-categories_item">
+            <div>Пароконвектоматы</div>
+            <div class="header-middle_catalog main-categories_item arrow_wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Холодильное</div>
+            <div>Котлы</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Электромеханическое</div>
+            <div>Казаны</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Посудомоечное</div>
+            <div>Шкафы жарочные</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Хлебопекарное</div>
+            <div>Плиты</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Линии раздачи</div>
+            <div>Сковороды</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Нейтральное</div>
+            <div>Столы тепловые</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Для фаст фуда</div>
+            <div>Аппараты контактной обработки</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Для зала</div>
+            <div>Фритюрницы</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Вспомогательное </div>
+            <div>Мармиты</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
           <li class="header-middle_catalog main-categories_item">
-            <div>Для магазинов</div>
+            <div>Кипятильники</div>
             <div class="header-middle_catalog main-categories_item arrow_wrapper">
-              <img src="../assets/images/header/arrow.svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M12.8334 8.23334L9.00841 4.40834C8.85228 4.25313 8.64107 4.16602 8.42091 4.16602C8.20076 4.16602 7.98955 4.25313 7.83341 4.40834C7.75531 4.48581 7.69331 4.57798 7.651 4.67953C7.6087 4.78108 7.58691 4.89 7.58691 5.00001C7.58691 5.11002 7.6087 5.21894 7.651 5.32049C7.69331 5.42204 7.75531 5.51421 7.83341 5.59168L11.6667 9.40834C11.7449 9.48581 11.8068 9.57798 11.8492 9.67953C11.8915 9.78108 11.9132 9.89 11.9132 10C11.9132 10.11 11.8915 10.2189 11.8492 10.3205C11.8068 10.422 11.7449 10.5142 11.6667 10.5917L7.83341 14.4083C7.67649 14.5642 7.5879 14.7759 7.58712 14.9971C7.58633 15.2182 7.67343 15.4306 7.82925 15.5875C7.98506 15.7444 8.19683 15.833 8.41797 15.8338C8.6391 15.8346 8.85149 15.7475 9.00841 15.5917L12.8334 11.7667C13.3016 11.2979 13.5645 10.6625 13.5645 10C13.5645 9.33751 13.3016 8.7021 12.8334 8.23334Z"
+                  fill="#3C3C3C" />
+              </svg>
             </div>
           </li>
-        </ul>
-      </div>
-      <div class="header-middle_catalog_middle">
-        <div id="heaters-block" class="header-middle_catalog sub-categories_wrap">
-          <ul class="header-middle_catalog sub-categories_list">
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Пароконвектоматы
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Бойлерные</a></li>
-                <li><a href="">Инжекторные</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Котлы
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Стационарные</a></li>
-                <li><a href="">Опрокидываемые</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Казаны
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Индукционные</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Шкафы жарочные
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Электрические</a></li>
-                <li><a href="">Индукционные</a></li>
-                <li><a href="">Газовые</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Плиты
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Электрические</a></li>
-                <li><a href="">Индукционные</a></li>
-                <li><a href="">Газовые</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Сковороды
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Электросковороды</a></li>
-                <li><a href="">Газовые</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Столы тепловые
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Пристенные</a></li>
-                <li><a href="">Сквозные</a></li>
-                <li><a href="">Островные</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Аппараты контактной обработки
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Жарочные поверхности</a></li>
-                <li><a href="">Гриль</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Фритюрницы
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Настольные</a></li>
-                <li><a href="">Напольные</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Мармиты
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Передвижные</a></li>
-                <li><a href="">Стационарные</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <div class="header-middle_catalog sub-categories_title">
-                Кипятильники
-              </div>
-              <ul class="header-middle_catalog sub-categories_inner">
-                <li><a href="">Проточные</a></li>
-                <li><a href="">Наливные</a></li>
-                <li><a class="header-middle_catalog sub-categories_all-link" href="">Все</a></li>
-              </ul>
-            </li>
-            <li class="header-middle_catalog sub-categories_item">
-              <ul class="header-middle_catalog sub-categories_solo">
-                <li class="header-middle_catalog sub-categories_title"><a href="">Конвекционные печи</a></li>
-                <li class="header-middle_catalog sub-categories_title"><a href="">Полки тепловые</a></li>
-                <li class="header-middle_catalog sub-categories_title"><a href="">Водонагреватели</a></li>
-              </ul>
-            </li>
-          </ul>
-          <a class="header-middle_catalog categories_main-link" href="">Смотреть все</a>
-        </div>
-      </div>
-      <div class="header-middle_catalog_right">
-        <ul class="header-middle_catalog brands-list">
-          <li class="header-middle_catalog brands-item">
-            <a class="header-middle_catalog brands-link" href="">
-              <img src="../assets/images/header/header-big-brand1.png" alt="">
-            </a>
+          <li class="header-middle_catalog main-categories_item">
+            <a href="">Конвеционные печи</a>
           </li>
-          <li class="header-middle_catalog brands-item">
-            <a class="header-middle_catalog brands-link" href="">
-              <img src="../assets/images/header/header-big-brand2.png" alt="">
-            </a>
+          <li class="header-middle_catalog main-categories_item">
+            <a href="">Полки тепловые</a>
           </li>
-          <li class="header-middle_catalog brands-item">
-            <a class="header-middle_catalog brands-link" href="">
-              <img src="../assets/images/header/header-big-brand3.png" alt="">
-            </a>
-          </li>
-          <li class="header-middle_catalog brands-item">
-            <a class="header-middle_catalog brands-link" href="">
-              <img src="../assets/images/header/header-big-brand4.png" alt="">
-            </a>
-          </li>
-          <li class="header-middle_catalog brands-item">
-            <a class="header-middle_catalog brands-link" href="">
-              <img src="../assets/images/header/header-big-brand5.png" alt="">
-            </a>
+          <li class="header-middle_catalog main-categories_item">
+            <a href="">Водонагреватели</a>
           </li>
         </ul>
       </div>
     </div>
-    <form class="header-middle_form">
-      <div class="header-middle_form_select-wrapper">
-        <button class="header-middle_form_select-btn">
-          <img src="../assets/images/header/select-btn.svg" alt="">
-        </button>
-        <input class="header-middle_form_select" type="text" name="" id="" value="Все категории" readonly>
-        <div class="header-middle_form_divider">
-          <svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="24" stroke="#4E7CD7" />
+    <div class="header-catalog_sub-category catalog_item disabled">
+      <div id="steamconvetctor-block" class="category-mobile disabled">
+        <div class="header-middle_catalog_top">
+          <div class="header-middle_catalog_title">
+            Пароконвектоматы
+          </div>
+          <button class="header-middle_catalog_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M16.5037 3.49591C16.3995 3.39176 16.2582 3.33325 16.1109 3.33325C15.9636 3.33325 15.8223 3.39176 15.7181 3.49591L9.99967 9.21435L4.28124 3.49591C4.17706 3.39176 4.03577 3.33325 3.88845 3.33325C3.74114 3.33325 3.59985 3.39176 3.49567 3.49591C3.39152 3.6001 3.33301 3.74138 3.33301 3.8887C3.33301 4.03601 3.39152 4.1773 3.49567 4.28148L9.2141 9.99992L3.49567 15.7184C3.39152 15.8225 3.33301 15.9638 3.33301 16.1111C3.33301 16.2585 3.39152 16.3997 3.49567 16.5039C3.59985 16.6081 3.74114 16.6666 3.88845 16.6666C4.03577 16.6666 4.17706 16.6081 4.28124 16.5039L9.99967 10.7855L15.7181 16.5039C15.8223 16.6081 15.9636 16.6666 16.1109 16.6666C16.2582 16.6666 16.3995 16.6081 16.5037 16.5039C16.6078 16.3997 16.6663 16.2585 16.6663 16.1111C16.6663 15.9638 16.6078 15.8225 16.5037 15.7184L10.7852 9.99992L16.5037 4.28148C16.6078 4.1773 16.6663 4.03601 16.6663 3.8887C16.6663 3.74138 16.6078 3.6001 16.5037 3.49591Z"
+                fill="#3C3C3C" />
+            </svg>
+          </button>
+        </div>
+        <ul class="header-middle_catalog main-categories">
+          <li id="heaters" class="header-middle_catalog main-categories_item">
+            <div>Все товары</div>
+          </li>
+          <li class="header-middle_catalog main-categories_item">
+            <a href="">Бойлерные</a>
+          </li>
+          <li class="header-middle_catalog main-categories_item">
+            <a href="">Инжекторные</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header-menu container">
+    <ul class="header-menu_list">
+      <li class="header-menu_item">
+        <div class="header-menu_img-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M13.338 0.833055C12.9707 0.502491 12.4941 0.31958 12 0.31958C11.5059 0.31958 11.0293 0.502491 10.662 0.833055L0 10.4291V20.8291C0 21.6778 0.337142 22.4917 0.937258 23.0918C1.53737 23.6919 2.35131 24.0291 3.2 24.0291H20.8C21.6487 24.0291 22.4626 23.6919 23.0627 23.0918C23.6629 22.4917 24 21.6778 24 20.8291V10.4291L13.338 0.833055ZM15 22.0261H9V17.0001C9 16.2044 9.31607 15.4413 9.87868 14.8787C10.4413 14.3161 11.2044 14.0001 12 14.0001C12.7956 14.0001 13.5587 14.3161 14.1213 14.8787C14.6839 15.4413 15 16.2044 15 17.0001V22.0261ZM22 20.8261C22 21.1443 21.8736 21.4495 21.6485 21.6746C21.4235 21.8996 21.1183 22.0261 20.8 22.0261H17V17.0001C17 15.674 16.4732 14.4022 15.5355 13.4645C14.5979 12.5268 13.3261 12.0001 12 12.0001C10.6739 12.0001 9.40215 12.5268 8.46447 13.4645C7.52678 14.4022 7 15.674 7 17.0001V22.0261H3.2C2.88174 22.0261 2.57652 21.8996 2.35147 21.6746C2.12643 21.4495 2 21.1443 2 20.8261V11.3191L12 2.31906L22 11.3191V20.8261Z"
+              fill="#374957" />
           </svg>
         </div>
-        <div class="header-middle_dropdown-wrapper disabled">
-          <ul class="header-middle_dropdown-wrapper_options" name="category" id="category">
-            <li class="header-middle_dropdown-wrapper_option">Все категории</li>
-            <li class="header-middle_dropdown-wrapper_option">Тепловое</li>
-            <li class="header-middle_dropdown-wrapper_option">Холодильное</li>
-            <li class="header-middle_dropdown-wrapper_option">Электромеханическое</li>
-            <li class="header-middle_dropdown-wrapper_option">Посудомоечное</li>
-            <li class="header-middle_dropdown-wrapper_option">Хлебопекарное</li>
-            <li class="header-middle_dropdown-wrapper_option">Линии раздач</li>
-            <li class="header-middle_dropdown-wrapper_option">Нейтральное</li>
-            <li class="header-middle_dropdown-wrapper_option">Для фастфуда</li>
-            <li class="header-middle_dropdown-wrapper_option">Для зала</li>
-            <li class="header-middle_dropdown-wrapper_option">Вспомогательное</li>
-            <li class="header-middle_dropdown-wrapper_option">Для магазинов</li>
-          </ul>
+        <a href="../main.html">Главная</a>
+      </li>
+      <li class="header-menu_item mobile-catalog-btn">
+        <div class="header-menu_img-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
+            <path
+              d="M17.5 17H2.49999C1.83695 17 1.20107 16.7366 0.732225 16.2678C0.263384 15.7989 -7.62939e-06 15.163 -7.62939e-06 14.5L-7.62939e-06 7H6.66666V8.66667C6.66666 9.10869 6.84225 9.53262 7.15481 9.84518C7.46738 10.1577 7.8913 10.3333 8.33333 10.3333H11.6667C12.1087 10.3333 12.5326 10.1577 12.8452 9.84518C13.1577 9.53262 13.3333 9.10869 13.3333 8.66667V7H20V14.5C20 15.163 19.7366 15.7989 19.2678 16.2678C18.7989 16.7366 18.163 17 17.5 17ZM1.66666 8.66667V14.5C1.66666 14.721 1.75446 14.933 1.91074 15.0893C2.06702 15.2455 2.27898 15.3333 2.49999 15.3333H17.5C17.721 15.3333 17.933 15.2455 18.0892 15.0893C18.2455 14.933 18.3333 14.721 18.3333 14.5V8.66667H15C15 9.55072 14.6488 10.3986 14.0237 11.0237C13.3986 11.6488 12.5507 12 11.6667 12H8.33333C7.44927 12 6.60142 11.6488 5.9763 11.0237C5.35118 10.3986 4.99999 9.55072 4.99999 8.66667H1.66666Z"
+              fill="#3C3C3C" />
+            <path d="M18.3335 3.66699H1.66679V5.33366H18.3335V3.66699Z" fill="#3C3C3C" />
+            <path d="M18.3335 0.333496H1.66679V2.00016H18.3335V0.333496Z" fill="#3C3C3C" />
+          </svg>
         </div>
-      </div>
-      <input class="header-middle_form_search" type="search" name="search" id="search" placeholder="Поиск товаров">
-      <button class="header-middle_form_search-btn btn_blue"><img src="../assets/images/header/search-btn.svg"
-          alt="Поиск"></button>
-    </form>
-    <div id="search-result" class="header-middle_search-result wrap">
-      <div class="header-middle_search-result scroll">
-        <div class="header-middle_search-result popular">
-          <div class="header-middle_search-result block-title">
-            Популярные Категории
-          </div>
-          <ul class="header-middle_search-result popular_list">
-            <li class="header-middle_search-result popular_item">
-              <a href="">Тепловое</a>
-            </li>
-            <li class="header-middle_search-result popular_item">
-              <a href="">Холодильное</a>
-            </li>
-            <li class="header-middle_search-result popular_item">
-              <a href="">Хлебопекарное</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header-middle_search-result history">
-          <div class="header-middle_search-result block-title">
-            История
-          </div>
-          <ul class="header-middle_search-result history_list">
-            <li class="header-middle_search-result history_item">
-              <a class="header-middle_search-result history_link" href="">
-                <div class="header-middle_search-result history_inner">
-                  <div class="header-middle_search-result link_img-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <g clip-path="url(#clip0_474_6108)">
-                        <path
-                          d="M12 0C9.0455 0.00210637 6.19613 1.09662 4 3.073V1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0C2.73478 0 2.48043 0.105357 2.29289 0.292893C2.10536 0.48043 2 0.734784 2 1V4C2 4.79565 2.31607 5.55871 2.87868 6.12132C3.44129 6.68393 4.20435 7 5 7H8C8.26522 7 8.51957 6.89464 8.70711 6.70711C8.89464 6.51957 9 6.26522 9 6C9 5.73478 8.89464 5.48043 8.70711 5.29289C8.51957 5.10536 8.26522 5 8 5H5C4.96628 4.995 4.93289 4.98799 4.9 4.979C6.52952 3.33783 8.67813 2.31308 10.9791 2.07967C13.28 1.84626 15.5906 2.41866 17.5165 3.69916C19.4424 4.97967 20.8642 6.88889 21.5392 9.10095C22.2142 11.313 22.1005 13.6908 21.2176 15.8283C20.3347 17.9659 18.7372 19.7308 16.698 20.8218C14.6587 21.9127 12.304 22.2621 10.0358 21.8102C7.76764 21.3584 5.72659 20.1333 4.26106 18.3442C2.79553 16.5551 1.99637 14.3127 2 12C2 11.7348 1.89464 11.4804 1.70711 11.2929C1.51957 11.1054 1.26522 11 1 11C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12C0 14.3734 0.703788 16.6935 2.02236 18.6668C3.34094 20.6402 5.21509 22.1783 7.4078 23.0866C9.60051 23.9948 12.0133 24.2324 14.3411 23.7694C16.6689 23.3064 18.8071 22.1635 20.4853 20.4853C22.1635 18.8071 23.3064 16.6689 23.7694 14.3411C24.2324 12.0133 23.9948 9.60051 23.0866 7.4078C22.1783 5.21509 20.6402 3.34094 18.6668 2.02236C16.6935 0.703788 14.3734 0 12 0V0Z"
-                          fill="#AFB7C5" />
-                        <path
-                          d="M12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
-                          fill="#AFB7C5" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_474_6108">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <span>Пароконвектоматы</span>
-                </div>
-              </a>
-              <div class="header-middle_search-result link_img-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M17.9998 6.00006C17.8123 5.81259 17.558 5.70728 17.2928 5.70728C17.0277 5.70728 16.7733 5.81259 16.5858 6.00006L11.9998 10.5861L7.41382 6.00006C7.22629 5.81259 6.97198 5.70728 6.70682 5.70728C6.44165 5.70728 6.18735 5.81259 5.99982 6.00006C5.81235 6.18759 5.70703 6.4419 5.70703 6.70706C5.70703 6.97223 5.81235 7.22653 5.99982 7.41406L10.5858 12.0001L5.99982 16.5861C5.81235 16.7736 5.70703 17.0279 5.70703 17.2931C5.70703 17.5582 5.81235 17.8125 5.99982 18.0001C6.18735 18.1875 6.44165 18.2928 6.70682 18.2928C6.97198 18.2928 7.22629 18.1875 7.41382 18.0001L11.9998 13.4141L16.5858 18.0001C16.7733 18.1875 17.0277 18.2928 17.2928 18.2928C17.558 18.2928 17.8123 18.1875 17.9998 18.0001C18.1873 17.8125 18.2926 17.5582 18.2926 17.2931C18.2926 17.0279 18.1873 16.7736 17.9998 16.5861L13.4138 12.0001L17.9998 7.41406C18.1873 7.22653 18.2926 6.97223 18.2926 6.70706C18.2926 6.4419 18.1873 6.18759 17.9998 6.00006Z"
-                    fill="#AFB7C5" />
-                </svg>
-              </div>
-            </li>
-            <li class="header-middle_search-result history_item">
-              <a class="header-middle_search-result history_link" href="">
-                <div class="header-middle_search-result history_inner">
-                  <div class="header-middle_search-result link_img-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <g clip-path="url(#clip0_474_6108)">
-                        <path
-                          d="M12 0C9.0455 0.00210637 6.19613 1.09662 4 3.073V1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0C2.73478 0 2.48043 0.105357 2.29289 0.292893C2.10536 0.48043 2 0.734784 2 1V4C2 4.79565 2.31607 5.55871 2.87868 6.12132C3.44129 6.68393 4.20435 7 5 7H8C8.26522 7 8.51957 6.89464 8.70711 6.70711C8.89464 6.51957 9 6.26522 9 6C9 5.73478 8.89464 5.48043 8.70711 5.29289C8.51957 5.10536 8.26522 5 8 5H5C4.96628 4.995 4.93289 4.98799 4.9 4.979C6.52952 3.33783 8.67813 2.31308 10.9791 2.07967C13.28 1.84626 15.5906 2.41866 17.5165 3.69916C19.4424 4.97967 20.8642 6.88889 21.5392 9.10095C22.2142 11.313 22.1005 13.6908 21.2176 15.8283C20.3347 17.9659 18.7372 19.7308 16.698 20.8218C14.6587 21.9127 12.304 22.2621 10.0358 21.8102C7.76764 21.3584 5.72659 20.1333 4.26106 18.3442C2.79553 16.5551 1.99637 14.3127 2 12C2 11.7348 1.89464 11.4804 1.70711 11.2929C1.51957 11.1054 1.26522 11 1 11C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12C0 14.3734 0.703788 16.6935 2.02236 18.6668C3.34094 20.6402 5.21509 22.1783 7.4078 23.0866C9.60051 23.9948 12.0133 24.2324 14.3411 23.7694C16.6689 23.3064 18.8071 22.1635 20.4853 20.4853C22.1635 18.8071 23.3064 16.6689 23.7694 14.3411C24.2324 12.0133 23.9948 9.60051 23.0866 7.4078C22.1783 5.21509 20.6402 3.34094 18.6668 2.02236C16.6935 0.703788 14.3734 0 12 0V0Z"
-                          fill="#AFB7C5" />
-                        <path
-                          d="M12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
-                          fill="#AFB7C5" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_474_6108">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <span>Хлебопечь</span>
-                </div>
-              </a>
-              <div class="header-middle_search-result link_img-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M17.9998 6.00006C17.8123 5.81259 17.558 5.70728 17.2928 5.70728C17.0277 5.70728 16.7733 5.81259 16.5858 6.00006L11.9998 10.5861L7.41382 6.00006C7.22629 5.81259 6.97198 5.70728 6.70682 5.70728C6.44165 5.70728 6.18735 5.81259 5.99982 6.00006C5.81235 6.18759 5.70703 6.4419 5.70703 6.70706C5.70703 6.97223 5.81235 7.22653 5.99982 7.41406L10.5858 12.0001L5.99982 16.5861C5.81235 16.7736 5.70703 17.0279 5.70703 17.2931C5.70703 17.5582 5.81235 17.8125 5.99982 18.0001C6.18735 18.1875 6.44165 18.2928 6.70682 18.2928C6.97198 18.2928 7.22629 18.1875 7.41382 18.0001L11.9998 13.4141L16.5858 18.0001C16.7733 18.1875 17.0277 18.2928 17.2928 18.2928C17.558 18.2928 17.8123 18.1875 17.9998 18.0001C18.1873 17.8125 18.2926 17.5582 18.2926 17.2931C18.2926 17.0279 18.1873 16.7736 17.9998 16.5861L13.4138 12.0001L17.9998 7.41406C18.1873 7.22653 18.2926 6.97223 18.2926 6.70706C18.2926 6.4419 18.1873 6.18759 17.9998 6.00006Z"
-                    fill="#AFB7C5" />
-                </svg>
-              </div>
-            </li>
-            <li class="header-middle_search-result history_item">
-              <a class="header-middle_search-result history_link" href="">
-                <div class="header-middle_search-result history_inner">
-                  <div class="header-middle_search-result link_img-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <g clip-path="url(#clip0_474_6108)">
-                        <path
-                          d="M12 0C9.0455 0.00210637 6.19613 1.09662 4 3.073V1C4 0.734784 3.89464 0.48043 3.70711 0.292893C3.51957 0.105357 3.26522 0 3 0C2.73478 0 2.48043 0.105357 2.29289 0.292893C2.10536 0.48043 2 0.734784 2 1V4C2 4.79565 2.31607 5.55871 2.87868 6.12132C3.44129 6.68393 4.20435 7 5 7H8C8.26522 7 8.51957 6.89464 8.70711 6.70711C8.89464 6.51957 9 6.26522 9 6C9 5.73478 8.89464 5.48043 8.70711 5.29289C8.51957 5.10536 8.26522 5 8 5H5C4.96628 4.995 4.93289 4.98799 4.9 4.979C6.52952 3.33783 8.67813 2.31308 10.9791 2.07967C13.28 1.84626 15.5906 2.41866 17.5165 3.69916C19.4424 4.97967 20.8642 6.88889 21.5392 9.10095C22.2142 11.313 22.1005 13.6908 21.2176 15.8283C20.3347 17.9659 18.7372 19.7308 16.698 20.8218C14.6587 21.9127 12.304 22.2621 10.0358 21.8102C7.76764 21.3584 5.72659 20.1333 4.26106 18.3442C2.79553 16.5551 1.99637 14.3127 2 12C2 11.7348 1.89464 11.4804 1.70711 11.2929C1.51957 11.1054 1.26522 11 1 11C0.734784 11 0.48043 11.1054 0.292893 11.2929C0.105357 11.4804 0 11.7348 0 12C0 14.3734 0.703788 16.6935 2.02236 18.6668C3.34094 20.6402 5.21509 22.1783 7.4078 23.0866C9.60051 23.9948 12.0133 24.2324 14.3411 23.7694C16.6689 23.3064 18.8071 22.1635 20.4853 20.4853C22.1635 18.8071 23.3064 16.6689 23.7694 14.3411C24.2324 12.0133 23.9948 9.60051 23.0866 7.4078C22.1783 5.21509 20.6402 3.34094 18.6668 2.02236C16.6935 0.703788 14.3734 0 12 0V0Z"
-                          fill="#AFB7C5" />
-                        <path
-                          d="M12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
-                          fill="#AFB7C5" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_474_6108">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <span>Фронтальная посудомоечная машина МПК-500Ф</span>
-                </div>
-              </a>
-              <div class="header-middle_search-result link_img-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M17.9998 6.00006C17.8123 5.81259 17.558 5.70728 17.2928 5.70728C17.0277 5.70728 16.7733 5.81259 16.5858 6.00006L11.9998 10.5861L7.41382 6.00006C7.22629 5.81259 6.97198 5.70728 6.70682 5.70728C6.44165 5.70728 6.18735 5.81259 5.99982 6.00006C5.81235 6.18759 5.70703 6.4419 5.70703 6.70706C5.70703 6.97223 5.81235 7.22653 5.99982 7.41406L10.5858 12.0001L5.99982 16.5861C5.81235 16.7736 5.70703 17.0279 5.70703 17.2931C5.70703 17.5582 5.81235 17.8125 5.99982 18.0001C6.18735 18.1875 6.44165 18.2928 6.70682 18.2928C6.97198 18.2928 7.22629 18.1875 7.41382 18.0001L11.9998 13.4141L16.5858 18.0001C16.7733 18.1875 17.0277 18.2928 17.2928 18.2928C17.558 18.2928 17.8123 18.1875 17.9998 18.0001C18.1873 17.8125 18.2926 17.5582 18.2926 17.2931C18.2926 17.0279 18.1873 16.7736 17.9998 16.5861L13.4138 12.0001L17.9998 7.41406C18.1873 7.22653 18.2926 6.97223 18.2926 6.70706C18.2926 6.4419 18.1873 6.18759 17.9998 6.00006Z"
-                    fill="#AFB7C5" />
-                </svg>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="header-middle_search-result brand_search">
-          <div class="header-middle_search-result block-title">
-            Популярные Категории
-          </div>
-          <ul class="header-middle_search-result brand_list">
-            <li class="header-middle_search-result brand_item">
-              <a class="header-middle_search-result brand_link" href="">
-                <img src="../assets/images/header/header-brand1.png" alt="">
-              </a>
-            </li>
-            <li class="header-middle_search-result brand_item">
-              <a class="header-middle_search-result brand_link" href="">
-                <img src="../assets/images/header/header-brand2.png" alt="">
-              </a>
-            </li>
-            <li class="header-middle_search-result brand_item">
-              <a class="header-middle_search-result brand_link" href="">
-                <img src="../assets/images/header/header-brand3.png" alt="">
-              </a>
-            </li>
-            <li class="header-middle_search-result brand_item">
-              <a class="header-middle_search-result brand_link" href="">
-                <img src="../assets/images/header/header-brand4.png" alt="">
-              </a>
-            </li>
-            <li class="header-middle_search-result brand_item">
-              <a class="header-middle_search-result brand_link" href="">
-                <img src="../assets/images/header/header-brand5.png" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <button class="header-middle_call-btn btn_blue">Заказать звонок</button>
-  </div>
-  <div class="container header-bottom">
-    <div class="header-bottom-swiper swiper">
-      <div class="header-bottom-swiper-wrapper swiper-wrapper">
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Кондитерские</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Мини-пекарни</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Пищеблок</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Кофейни</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Кондитерская</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Блинная</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Бар</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Кафе</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Ресторан залов</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Вспомогательное</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">Для магазинов</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">blank</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">blank</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">blank</a>
-        </div>
-        <div class="swiper-slide header-bottom-swiper-slide">
-          <a href="" class="header-bottom-swiper-slide_link">blank</a>
-        </div>
-      </div>
-      <button class="swiper-button-next  header-bottom-swiper-button-next">
-        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="19" viewBox="0 0 9 19" fill="none">
-          <path
-            d="M0.133789 18.116V0.615967L8.00004 8.48222C8.23438 8.71663 8.36602 9.03451 8.36602 9.36597C8.36602 9.69742 8.23438 10.0153 8.00004 10.2497L0.133789 18.116Z"
-            fill="#8AD74E" />
-        </svg>
-      </button>
-    </div>
+        <a href="">Каталог</a>
+      </li>
+    </ul>
   </div>
 </header>
