@@ -1,6 +1,7 @@
 .catalogue {
     margin: unset;
     margin-bottom: 13rem;
+    overflow-x: clip;
 
     @media (max-width: 48em) {
         margin-bottom: 16rem;
