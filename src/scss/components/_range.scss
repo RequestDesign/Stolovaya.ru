@@ -62,11 +62,6 @@
     .range-input {
         display: flex;
         gap: 0.4rem;
-        width: 12rem;
-
-        @media (max-width: 48em) {
-            width: 22rem;
-        }
 
         input {
             width: 100%;
@@ -74,19 +69,17 @@
         }
     }
 
-    // #rangeMinPrice {
-    //     width: 6rem;
+    #rangeMinPrice {
+        @media (max-width: 48em) {
+            min-width: 12rem;
+            max-width: 100%;
+        }
+    }
 
-    //     @media (max-width: 48em) {
-    //         width: 12rem;
-    //     }
-    // }
-
-    // #rangeMaxPrice {
-    //     width: 8rem;
-
-    //     @media (max-width: 48em) {
-    //         width: 16rem;
-    //     }
-    // }
+    #rangeMaxPrice {
+        @media (max-width: 48em) {
+            min-width: 12rem;
+            max-width: 100%;
+        }
+    }
 }
