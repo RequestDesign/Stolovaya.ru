@@ -1,16 +1,16 @@
 .project-detail {
     &__general {
-        position: relative;
-        padding-left: 68.2rem;
-        margin-bottom: 8rem;
-        margin-top: 4rem !important;
+        &__content {
+            position: relative;
+            padding-left: 68.2rem;
+            margin-top: 4rem;
 
-        @media (max-width: 48em) {
-            padding-top: 42.4rem;
-            padding-left: 0;
-            padding-right: 0;
-            margin-bottom: 12rem;
-            margin-top: 3.6rem !important;
+            @media (max-width: 48em) {
+                padding-top: 42.4rem;
+                padding-left: 0;
+                padding-right: 0;
+
+            }
         }
 
         &__card {
@@ -31,9 +31,8 @@
 
             @media (max-width: 48em) {
                 top: 0;
-                transform: unset;
-                left: 3.2rem;
-                right: 3.2rem;
+                left: 50%;
+                transform: translateX(-50%);
                 width: 68.6rem;
                 bottom: 37.4rem;
                 height: 46rem;
@@ -97,9 +96,14 @@
             overflow: hidden;
 
             @media (max-width: 48em) {
-                width: 100%;
+                width: calc(100% + 6.4rem);
                 height: 41rem;
                 border-radius: 0.8rem;
+
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: -3.2rem;
+                margin-right: -3.2rem;
             }
 
             img {
@@ -111,10 +115,10 @@
     }
 
     &__info {
-        margin-top: 2rem !important;
+        margin-top: 10rem !important;
 
         @media (max-width: 48em) {
-            margin-top: 3.6rem !important;
+            margin-top: 12rem !important;
         }
 
         &__part {

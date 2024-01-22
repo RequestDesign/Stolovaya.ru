@@ -1,12 +1,14 @@
 .delivery-payment {
     &__switcher {
-        display: flex;
-        align-items: start;
-        gap: 15.6rem;
+        &__content {
+            display: flex;
+            align-items: start;
+            gap: 15.6rem;
 
-        @media (max-width: 48em) {
-            flex-direction: column;
-            gap: 4rem;
+            @media (max-width: 48em) {
+                flex-direction: column;
+                gap: 4rem;
+            }
         }
     }
 
