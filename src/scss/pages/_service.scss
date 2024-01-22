@@ -1,0 +1,210 @@
+.service {
+
+    &-content {
+        position: relative;
+        display: flex;
+        gap: 2rem;
+
+        @media (max-width: 48em) {
+            padding-top: 11.6rem;
+            flex-direction: column-reverse;
+            gap: 4rem;
+        }
+
+
+        &_title {
+            margin-bottom: 4rem;
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 4.6rem;
+
+            @media (max-width: 48em) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 4.8rem;
+                line-height: 5.6rem;
+            }
+        }
+
+        &_text {
+            margin-bottom: 3rem;
+            width: 80rem;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+
+            @media (max-width: 48em) {
+                width: 68.6rem;
+                font-size: 2.8rem;
+                line-height: 4rem;
+            }
+        }
+
+        &_download {
+            margin-bottom: 2rem;
+            color: #808081;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            @media (max-width: 48em) {
+                margin-bottom: 3.2rem;
+                gap: 2.4rem;
+            }
+
+            &-title {
+                font-size: 1.8rem;
+                font-weight: 600;
+                line-height: 2.4rem;
+
+                @media (max-width: 48em) {
+                    font-size: 3.2rem;
+                    line-height: 4rem;
+                }
+            }
+
+            &-links {
+                display: flex;
+                gap: 3rem;
+
+                @media (max-width: 48em) {
+                    gap: 2.4rem;
+                }
+            }
+
+            &-link {
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                text-wrap: balance;
+
+                @media (max-width: 48em) {
+                    font-size: 2.4rem;
+                    line-height: 3.2rem;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+
+
+            &-img {
+                width: 3.5rem;
+                height: 3.5rem;
+
+                @media (max-width: 48em) {
+                    width: 6.4rem;
+                    height: 6.4rem;
+                }
+            }
+        }
+
+        &_btn {
+            margin-top: 1rem;
+            padding: 1.8rem 2.4rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2.4rem;
+
+            @media (max-width: 48em) {
+                padding: 2rem 3.8rem;
+                font-size: 2.8rem;
+                line-height: 4rem;
+            }
+        }
+
+        &_img-wrapper {
+            width: 80rem;
+            height: 52.2rem;
+
+            @media (max-width: 48em) {
+                width: 68.4rem;
+                height: 44rem;
+            }
+        }
+    }
+}
+
+.our-services {
+    &_title {
+        margin-bottom: 5rem;
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 4.6rem;
+
+        @media (max-width: 48em) {
+            font-size: 4.8rem;
+            line-height: 5.6rem;
+        }
+    }
+
+    &_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        @media (max-width: 48em) {
+            gap: 1.6rem;
+        }
+    }
+
+    &_card {
+        padding: 1.6rem 1.6rem 2rem 1.6rem;
+        display: block;
+        width: 30.8rem;
+        height: 23.1rem;
+        background: #FFF;
+        border-radius: 4px;
+        box-shadow: 0px 4px 60px 0px rgba(175, 183, 197, 0.20);
+
+        @media (max-width: 48em) {
+            padding: 1.6rem 1.2rem;
+            width: 32rem;
+            height: 36rem;
+        }
+
+        &-name {
+            margin-top: 3.9rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2.4rem;
+
+            @media (max-width: 48em) {
+                width: 100%;
+                margin-top: 3.2rem;
+                font-size: 3.2rem;
+                line-height: 4rem;
+            }
+        }
+
+        &-text {
+            margin-top: 1.2rem;
+            color: #808081;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2rem;
+
+            @media (max-width: 48em) {
+                margin-top: 0.8rem;
+                width: 30.8rem;
+                font-size: 2.4rem;
+                line-height: 3.2rem;
+            }
+        }
+    }
+
+    &_img-wrapper {
+        width: 6rem;
+        height: 6rem;
+
+        @media (max-width: 48em) {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+}
