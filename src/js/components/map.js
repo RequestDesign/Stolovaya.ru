@@ -19,7 +19,6 @@ if ($(".contacts").length) {
         map.controls.remove("fullscreenControl"); //переход в полноэкранный режим
         map.controls.remove("zoomControl"); // контрол зуммирования
         map.controls.remove("rulerControl"); //  контрол правил
-        map.behaviors.disable(["scrollZoom"]); // скролл карты
 
         let placemarkMain = new ymaps.Placemark(
             main,
