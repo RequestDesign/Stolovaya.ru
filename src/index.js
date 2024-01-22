@@ -2,7 +2,7 @@ import "./index.scss";
 import "./js/pages/home";
 import "./js/pages/catalogue";
 import "./js/pages/about";
-// import "./js/pages/portfolio"
+import "./js/pages/portfolio"
 import "./js/pages/project-detail";
 import "./js/pages/product";
 import "./js/pages/zastroyshikam";
