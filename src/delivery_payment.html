@@ -8,103 +8,108 @@
     <body>
         <include src="./components/header.html"></include>
         <main class="delivery-payment">
-            <div class="breadcrumbs container">
-                <a href="#!">Главная</a>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
-                    <rect x="8" y="8" width="4" height="4" rx="1" fill="#AE47FF" />
-                </svg>
-                <a href="#!">Доставка и оплата</a>
-            </div>
-
-            <section class="delivery-payment__switcher switcher container">
-                <div class="switcher__controls">
-                    <a href="#!" class="switcher__btn delivery-payment__tab active">Доставка</a>
-                    <a href="#!" class="switcher__btn delivery-payment__tab">Оплата</a>
-                    <a href="#!" class="switcher__btn delivery-payment__tab">Гарантия и возврат</a>
+            
+            <section class="delivery-payment__switcher container">
+                <div class="breadcrumbs">
+                    <a href="#!">Главная</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+                        <rect x="8" y="8" width="4" height="4" rx="1" fill="#AE47FF" />
+                    </svg>
+                    <a href="#!">Доставка и оплата</a>
                 </div>
 
-                <div class="switcher__container">
-                    <div class="switcher__content active">
-                        <div class="delivery-payment__delivery">
-                            <div class="delivery-payment__title">Доставка</div>
-                            <div class="text-group">
-                                <div class="delivery-payment__subtitle">Самовывоз</div>
-                                <div class="delivery-payment__text">Самовывоз со склада Столовые решения осуществляется по предварительной заявке, по адресу: г. Москва, Большая Семеновская 43с2</div>
-                            </div>
-                            <div class="text-group">
-                                <div class="delivery-payment__subtitle">Транспортные компании</div>
-                                <div class="delivery-payment__text">Также возможна отгрузка купленного вами оборудования в любой город Российской Федерации с помощью следующих компаний:</div>
-                                <ul class="delivery-payment__bullets bullets">
-                                    <li>ПЭК</li>
-                                    <li>СДЭК</li>
-                                    <li>Мэйджик ТРАНС</li>
-                                    <li>Деловые Линии</li>
-                                </ul>
-                            </div>
-                            <div class="text-group">
-                                <div class="delivery-payment__subtitle">Доставка по Москве и области</div>
-                                <div class="delivery-payment__text">
-                                    Возможна доставка по Москве, в отдаленные районы города. Для расчета стоимости доставки по городу, по Свердловской области и Челябинской области обращайтесь к нашим
-                                    менеджерам.
+                <div class="delivery-payment__switcher__content switcher">
+                    <div class="switcher__controls">
+                        <a href="#!" class="switcher__btn delivery-payment__tab active">Доставка</a>
+                        <a href="#!" class="switcher__btn delivery-payment__tab">Оплата</a>
+                        <a href="#!" class="switcher__btn delivery-payment__tab">Гарантия и возврат</a>
+                    </div>
+
+                    <div class="switcher__container">
+                        <div class="switcher__content active">
+                            <div class="delivery-payment__delivery">
+                                <div class="delivery-payment__title">Доставка</div>
+                                <div class="text-group">
+                                    <div class="delivery-payment__subtitle">Самовывоз</div>
+                                    <div class="delivery-payment__text">
+                                        Самовывоз со склада Столовые решения осуществляется по предварительной заявке, по адресу: г. Москва, Большая Семеновская 43с2
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="text-group">
-                                <div class="delivery-payment__subtitle">Сроки и стоимость доставки</div>
-                                <div class="delivery-payment__text">
-                                    Сроки и стоимость доставки рассчитываются индивидуально, зависят от объема и веса товара, категорий и условий выбора транспортной компании. Стоимость доставки по
-                                    Москве и Московской области-<span class="accent">БЕСПЛАТНО</span> при заказе от 10 000р.
+                                <div class="text-group">
+                                    <div class="delivery-payment__subtitle">Транспортные компании</div>
+                                    <div class="delivery-payment__text">Также возможна отгрузка купленного вами оборудования в любой город Российской Федерации с помощью следующих компаний:</div>
+                                    <ul class="delivery-payment__bullets bullets">
+                                        <li>ПЭК</li>
+                                        <li>СДЭК</li>
+                                        <li>Мэйджик ТРАНС</li>
+                                        <li>Деловые Линии</li>
+                                    </ul>
+                                </div>
+                                <div class="text-group">
+                                    <div class="delivery-payment__subtitle">Доставка по Москве и области</div>
+                                    <div class="delivery-payment__text">
+                                        Возможна доставка по Москве, в отдаленные районы города. Для расчета стоимости доставки по городу, по Свердловской области и Челябинской области обращайтесь к
+                                        нашим менеджерам.
+                                    </div>
+                                </div>
+                                <div class="text-group">
+                                    <div class="delivery-payment__subtitle">Сроки и стоимость доставки</div>
+                                    <div class="delivery-payment__text">
+                                        Сроки и стоимость доставки рассчитываются индивидуально, зависят от объема и веса товара, категорий и условий выбора транспортной компании. Стоимость доставки
+                                        по Москве и Московской области-<span class="accent">БЕСПЛАТНО</span> при заказе от 10 000р.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="switcher__content">
-                        <div class="delivery-payment__payment">
+                        <div class="switcher__content">
                             <div class="delivery-payment__payment">
-                                <div class="delivery-payment__title">Оплата</div>
-                                <div class="delivery-payment__subtitle">Варианты оплаты</div>
-                                <div class="delivery-payment__text">После оформления заказа с вами свяжется менеджер и подготовит все необходимые документы для оплаты.</div>
-                                <ul class="delivery-payment__bullets bullets">
-                                    <li>Безналичная оплата по выставленному счету</li>
-                                    <li>Наличная оплата в офисе филиала</li>
-                                    <li>Оплата картой в офисе филиала</li>
-                                    <li>Оплата по платёжной ссылке</li>
-                                </ul>
-                                <div class="delivery-payment__cards">
-                                    <div class="delivery-payment__card">
-                                        <img src="./assets/images/payment/visa.png" alt="Visa" />
-                                    </div>
-                                    <div class="delivery-payment__card">
-                                        <img src="./assets/images/payment/mastercard.png" alt="MasterCard" />
-                                    </div>
-                                    <div class="delivery-payment__card">
-                                        <img src="./assets/images/payment/mir.png" alt="Мир" />
+                                <div class="delivery-payment__payment">
+                                    <div class="delivery-payment__title">Оплата</div>
+                                    <div class="delivery-payment__subtitle">Варианты оплаты</div>
+                                    <div class="delivery-payment__text">После оформления заказа с вами свяжется менеджер и подготовит все необходимые документы для оплаты.</div>
+                                    <ul class="delivery-payment__bullets bullets">
+                                        <li>Безналичная оплата по выставленному счету</li>
+                                        <li>Наличная оплата в офисе филиала</li>
+                                        <li>Оплата картой в офисе филиала</li>
+                                        <li>Оплата по платёжной ссылке</li>
+                                    </ul>
+                                    <div class="delivery-payment__cards">
+                                        <div class="delivery-payment__card">
+                                            <img src="./assets/images/payment/visa.png" alt="Visa" />
+                                        </div>
+                                        <div class="delivery-payment__card">
+                                            <img src="./assets/images/payment/mastercard.png" alt="MasterCard" />
+                                        </div>
+                                        <div class="delivery-payment__card">
+                                            <img src="./assets/images/payment/mir.png" alt="Мир" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="switcher__content">
-                        <div class="delivery-payment__guarantee">
-                            <div class="delivery-payment__title">Гарантия и возврат</div>
-                            <div class="text-group">
-                                <div class="delivery-payment__subtitle">Гарантии</div>
-                                <div class="delivery-payment__text">
-                                    Наличие гарантийного талона от нашей организации на соответствующее оборудование. Мы проводим сертифицированный гарантийный ремонт, а также занимаемся
-                                    послегарантийным обслуживанием своих клиентов.
+                        <div class="switcher__content">
+                            <div class="delivery-payment__guarantee">
+                                <div class="delivery-payment__title">Гарантия и возврат</div>
+                                <div class="text-group">
+                                    <div class="delivery-payment__subtitle">Гарантии</div>
+                                    <div class="delivery-payment__text">
+                                        Наличие гарантийного талона от нашей организации на соответствующее оборудование. Мы проводим сертифицированный гарантийный ремонт, а также занимаемся
+                                        послегарантийным обслуживанием своих клиентов.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="text-group">
-                                <div class="delivery-payment__subtitle">Возврат</div>
-                                <div class="delivery-payment__text">
-                                    Возврат товара осуществляется в соответствии со статьей <a href="#!">26.1 Закона РФ «О защите прав потребителей»</a>. Возврат товара возможен при сохранении его
-                                    товарного вида. Также нужны чеки, договоры, и акты, подтверждающую покупку.
+                                <div class="text-group">
+                                    <div class="delivery-payment__subtitle">Возврат</div>
+                                    <div class="delivery-payment__text">
+                                        Возврат товара осуществляется в соответствии со статьей <a href="#!">26.1 Закона РФ «О защите прав потребителей»</a>. Возврат товара возможен при сохранении его
+                                        товарного вида. Также нужны чеки, договоры, и акты, подтверждающую покупку.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="text-group">
-                                <div class="delivery-payment__subtitle">Способы возврата</div>
-                                <div class="delivery-payment__text">
-                                    Если покупка товара была осуществлена за наличные средства, возврат суммы осуществляется также наличными. При безналичном расчете средства возвращаются также
-                                    безналичным способом, на банковский счет покупателя.
+                                <div class="text-group">
+                                    <div class="delivery-payment__subtitle">Способы возврата</div>
+                                    <div class="delivery-payment__text">
+                                        Если покупка товара была осуществлена за наличные средства, возврат суммы осуществляется также наличными. При безналичном расчете средства возвращаются также
+                                        безналичным способом, на банковский счет покупателя.
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -131,49 +136,37 @@
                     </div>
                     <div class="contact__middle">
                         <div class="contact__middle__contacts">
-                            <div class="middle__contacts__title">
-                                Контактная информация
-                            </div>
+                            <div class="middle__contacts__title">Контактная информация</div>
                             <adress class="middle__contacts__links">
                                 <div class="contacts__link">
                                     <div class="contacts__link__img-wrapper">
-                                        <img src="./assets/images/main/contacts-phone.svg" alt="">
+                                        <img src="./assets/images/main/contacts-phone.svg" alt="" />
                                     </div>
                                     <div class="contacts__link__text-wrapper">
-                                        <a href="tel:+78003338831" class="contacts__link__text">
-                                            8 (800) 333-88-31
-                                        </a>
-                                        <div class="contacts__link__text__sub">
-                                            Пн-пт 09:00-18:00
-                                        </div>
+                                        <a href="tel:+78003338831" class="contacts__link__text"> 8 (800) 333-88-31 </a>
+                                        <div class="contacts__link__text__sub">Пн-пт 09:00-18:00</div>
                                     </div>
                                 </div>
                                 <div class="contacts__link">
                                     <div class="contacts__link__img-wrapper">
-                                        <img src="./assets/images/main/contacts-mail.svg" alt="">
+                                        <img src="./assets/images/main/contacts-mail.svg" alt="" />
                                     </div>
-                                    <a href="" class="contacts__link__text">
-                                        stolovayaaru@bk.ru
-                                    </a>
+                                    <a href="" class="contacts__link__text"> stolovayaaru@bk.ru </a>
                                 </div>
                                 <div class="contacts__link">
                                     <div class="contacts__link__img-wrapper">
-                                        <img src="./assets/images/main/contacts-geo.svg" alt="">
+                                        <img src="./assets/images/main/contacts-geo.svg" alt="" />
                                     </div>
                                     <div class="contacts__link__text-wrapper">
-                                        <a href="" class="contacts__link__text">
-                                            109428, Москва,Большая Семеновская 43с2
-                                        </a>
-                                        <a class="contacts__link__text__map">
-                                            Показать на карте
-                                        </a>
+                                        <a href="" class="contacts__link__text"> 109428, Москва,Большая Семеновская 43с2 </a>
+                                        <a class="contacts__link__text__map"> Показать на карте </a>
                                     </div>
                                 </div>
                             </adress>
                         </div>
                     </div>
                     <div class="contact__right">
-                        <img src="./assets/images/main/consult-img.png" alt="">
+                        <img src="./assets/images/main/consult-img.png" alt="" />
                     </div>
                 </div>
             </section>
