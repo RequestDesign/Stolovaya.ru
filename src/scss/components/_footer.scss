@@ -45,7 +45,7 @@
                 max-width: 30.8rem;
 
                 @media (max-width: 48em) {
-                    max-width: auto;
+                    max-width: fit-content;
                 }
 
                 &__btn {
