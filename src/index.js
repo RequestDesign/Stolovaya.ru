@@ -16,4 +16,4 @@ import "./js/components/portfolio-section-swiper";
 import "./js/components/review-section-swiper";
 import "./js/components/switcher";
 import "./js/components/map";
-import "./js/components/map";
+import "./js/components/phone-mask";
