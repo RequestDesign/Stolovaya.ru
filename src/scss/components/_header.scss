@@ -601,6 +601,7 @@
         & .arrow_wrapper {
           opacity: 0;
           transition: opacity .2s;
+          margin-left: auto;
 
           img {
             width: 2.4rem;
