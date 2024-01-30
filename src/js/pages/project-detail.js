@@ -31,21 +31,3 @@ function initSwiper() {
 
 $(function () {initSwiper()});
 $(window).on("resize", function () {initSwiper()});
-
-//show more cards
-$(function () {
-    $('#showMoreCardsBtn').on('click', function () {
-        let hiddenCards = $('.card-main.hidden');
-
-        for (let i = 0; i < 4; i++) {
-            if (hiddenCards[i]) {
-                $(hiddenCards[i]).slideDown();
-                $(hiddenCards[i]).removeClass('hidden').css('display', 'flex');
-            }
-        }
-
-        if ($('.card-main.hidden').length === 0) {
-            $('.project-detail__used__btn').css('display', 'none');
-        }
-    });
-});
