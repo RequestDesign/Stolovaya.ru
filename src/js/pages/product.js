@@ -37,6 +37,6 @@ tabs.forEach((item, id) => {
 $(function () {
   let count = 1;
   $('.detail__main-add').on('click', () => $('.detail__main-count').text(++count));
-  $('.detail__main-remove').on('click', () => count > 0 && $('.detail__main-count').text(--count));
+  $('.detail__main-remove').on('click', () => count > 1 && $('.detail__main-count').text(--count));
 });
 
