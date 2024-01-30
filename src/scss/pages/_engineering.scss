@@ -61,11 +61,16 @@
 
         &_img-wrapper {
             width: 80rem;
-            height: 52.2rem;
+            height: 49.9rem;
+
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
 
             @media (max-width: 48em) {
-                width: 68.4rem;
-                height: 44rem;
+                width: 100%;
+                height: 41rem;
             }
         }
     }
@@ -161,6 +166,7 @@
                 gap: 2.4rem;
                 margin: 0 auto;
                 width: fit-content;
+                margin-top: 6rem;
             }
         }
 

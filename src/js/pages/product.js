@@ -1,6 +1,7 @@
 import { remToPx } from "../utils/constants";
 import Swiper from "swiper";
 import { EffectFade, Navigation, Thumbs } from "swiper/modules";
+import $ from "jquery";
 
 const productThumbs = new Swiper(".detail__slider-thumbs", {
   slidesPerView: 4,
@@ -32,3 +33,10 @@ tabs.forEach((item, id) => {
     contents[id].classList.add("active");
   });
 });
+
+$(function () {
+  let count = 1;
+  $('.detail__main-add').on('click', () => $('.detail__main-count').text(++count));
+  $('.detail__main-remove').on('click', () => count > 0 && $('.detail__main-count').text(--count));
+});
+
